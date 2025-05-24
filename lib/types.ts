@@ -8,12 +8,12 @@ export interface ImageItem {
   imageUrl: string
 }
 
+export interface PanPosition {
+  x: number
+  y: number
+}
+
 export interface GridPosition {
   row: number
   col: number
-}
-
-export interface FilterState {
-  search: string
-  selectedTags: string[]
 }
