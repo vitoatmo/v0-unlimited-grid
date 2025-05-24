@@ -45,7 +45,7 @@ export function BottomControls({
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
           <Input
             type="text"
-            placeholder={`Search ${totalImages} images...`}
+            placeholder={`Search ${totalImages} image titles...`}
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             className="pl-10 transition-all duration-200 focus:ring-2 focus:ring-blue-500"
