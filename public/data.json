@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "filename": "Antelope.png",
+    "slug": "antelope",
+    "name": "Antelope",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A graceful, fast-moving mammal known for its horns and agility. Antelopes inhabit grasslands and savannas across Africa and Asia.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Antelope-3dveIMQ1hy9mRBmt6XSPmGVNJSv9k9.png"
+  },
+  {
+    "id": "2",
+    "filename": "Armadillo.png",
+    "slug": "armadillo",
+    "name": "Armadillo",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A small mammal with a hard, protective shell. Armadillos are known for their digging ability and live in warm regions.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Armadillo-Jzw7pNRZRT0ESd4eRZ8hl9IIUrrDAC.png"
+  },
+  {
+    "id": "3",
+    "filename": "Bear.png",
+    "slug": "bear",
+    "name": "Bear",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A large, strong mammal with thick fur. Bears are found in forests, mountains, and arctic regions, known for their strength and adaptability.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bear-BiSJXP0vHS2H8h4qmzyuw7ltxzKvEQ.png"
+  },
+  {
+    "id": "4",
+    "filename": "Bee.png",
+    "slug": "bee",
+    "name": "Bee",
+    "tags": ["animals", "insect", "air"],
+    "desc": "A flying insect known for pollinating plants and producing honey. Bees are essential for healthy ecosystems.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bee-k8G17Fw0W0jfIekoHFQxIGyroH4uCc.png"
+  },
+  {
+    "id": "5",
+    "filename": "Box.png",
+    "slug": "box",
+    "name": "Box",
+    "tags": ["objects", "container", "basic"],
+    "desc": "A simple, isometric box icon. Useful for packaging, storage, or generic container visuals.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Box-n4zTiIoTEdtQcOlwwEQ5JNf8nDyHBl.png"
+  },
+  {
+    "id": "6",
+    "filename": "Badger.png",
+    "slug": "badger",
+    "name": "Badger",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A stocky, burrowing mammal with distinctive black and white markings. Badgers are known for their digging prowess and fierce nature.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Badger-vFD8DpSelRR6nxuIXC4hWY4n6kvy6W.png"
+  },
+  {
+    "id": "7",
+    "filename": "Buffalo.png",
+    "slug": "buffalo",
+    "name": "Buffalo",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A large, sturdy mammal with horns. Buffaloes live in grasslands and are important for agriculture and wildlife.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=buffalo"
+  },
+  {
+    "id": "8",
+    "filename": "Cat.png",
+    "slug": "cat",
+    "name": "Cat",
+    "tags": ["animals", "pet", "basic"],
+    "desc": "A small, carnivorous mammal often kept as a pet. Cats are known for their agility, independence, and playful behavior.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=cat"
+  },
+  {
+    "id": "9",
+    "filename": "Computer.png",
+    "slug": "computer",
+    "name": "Computer",
+    "tags": ["objects", "technology", "basic"],
+    "desc": "A modern computing device used for work, entertainment, and communication.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=computer"
+  },
+  {
+    "id": "10",
+    "filename": "Phone.png",
+    "slug": "phone",
+    "name": "Phone",
+    "tags": ["objects", "technology", "basic"],
+    "desc": "A mobile communication device that connects people around the world.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=phone"
+  },
+  {
+    "id": "11",
+    "filename": "Lion.png",
+    "slug": "lion",
+    "name": "Lion",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A large, social big cat known as the 'king of the jungle.' Lions live in prides and are found mostly in African savannas.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=lion"
+  },
+  {
+    "id": "12",
+    "filename": "Table.png",
+    "slug": "table",
+    "name": "Table",
+    "tags": ["objects", "furniture", "basic"],
+    "desc": "A piece of furniture with a flat top and legs, used for various purposes.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=table"
+  },
+  {
+    "id": "13",
+    "filename": "Eagle.png",
+    "slug": "eagle",
+    "name": "Eagle",
+    "tags": ["animals", "bird", "air"],
+    "desc": "A powerful bird of prey with keen eyesight. Eagles soar high and hunt small animals.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=eagle"
+  },
+  {
+    "id": "14",
+    "filename": "Chair.png",
+    "slug": "chair",
+    "name": "Chair",
+    "tags": ["objects", "furniture", "basic"],
+    "desc": "A seat with a back, designed for one person to sit on.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=chair"
+  },
+  {
+    "id": "15",
+    "filename": "Elephant.png",
+    "slug": "elephant",
+    "name": "Elephant",
+    "tags": ["animals", "nature", "land"],
+    "desc": "The largest land mammal, recognized by its trunk and tusks. Elephants live in herds and are found in Africa and Asia.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=elephant"
+  },
+  {
+    "id": "16",
+    "filename": "Lamp.png",
+    "slug": "lamp",
+    "name": "Lamp",
+    "tags": ["objects", "lighting", "basic"],
+    "desc": "A device that produces light, typically used for illumination in homes and offices.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=lamp"
+  },
+  {
+    "id": "17",
+    "filename": "Tiger.png",
+    "slug": "tiger",
+    "name": "Tiger",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A large, striped big cat native to Asia. Tigers are powerful predators and mostly solitary animals found in forests and grasslands.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=tiger"
+  },
+  {
+    "id": "18",
+    "filename": "Book.png",
+    "slug": "book",
+    "name": "Book",
+    "tags": ["objects", "education", "basic"],
+    "desc": "A set of printed or written pages bound together, containing information or stories.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=book"
+  },
+  {
+    "id": "19",
+    "filename": "Penguin.png",
+    "slug": "penguin",
+    "name": "Penguin",
+    "tags": ["animals", "bird", "sea"],
+    "desc": "A flightless bird adapted for swimming. Penguins live in the Southern Hemisphere, mostly in Antarctica.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=penguin"
+  },
+  {
+    "id": "20",
+    "filename": "Clock.png",
+    "slug": "clock",
+    "name": "Clock",
+    "tags": ["objects", "time", "basic"],
+    "desc": "A device used to measure and display time.",
+    "imageUrl": "/placeholder.svg?height=200&width=200&query=clock"
+  }
+]
