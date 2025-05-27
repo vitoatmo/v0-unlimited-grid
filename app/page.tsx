@@ -1,3 +1,5 @@
+// app/page.tsx
+
 "use client"
 
 import { useState, useEffect, useMemo, useCallback } from "react"

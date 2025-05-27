@@ -1,0 +1,3 @@
+[submodule "external/isometric-icon"]
+	path = external/isometric-icon
+	url = https://github.com/vitoatmo/isometric-icon.git

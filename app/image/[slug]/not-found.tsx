@@ -1,3 +1,5 @@
+// app/slug/ not-found.tsx
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"

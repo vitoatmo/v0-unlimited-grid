@@ -1,3 +1,5 @@
+// components/infinite-panable-grix.tsx 
+
 "use client"
 
 import type React from "react"
@@ -7,6 +9,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import type { ImageItem, PanPosition } from "@/lib/types"
 import { slugify } from "@/lib/utils"
+import { Component } from "lucide-react"
 
 interface GridCell {
   id: string

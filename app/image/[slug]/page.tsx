@@ -1,3 +1,5 @@
+// app/image/[slug]/not-found.tsx
+
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"

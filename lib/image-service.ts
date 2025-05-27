@@ -1,90 +1,39 @@
-import type { ImageItem } from "./types"
-import { slugify } from "./utils"
+import type { ImageItem } from "./types";
+import { slugify } from "./utils";
 
-// Client-side fetch function
+// Fetch JSON dari /public/data/animals.json (panggil "/data/animals.json" di fetch)
 export async function fetchImages(): Promise<ImageItem[]> {
   try {
-    const response = await fetch("/data.json")
+    const response = await fetch("/data/animals.json");
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`)
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const data = await response.json()
+    const data = await response.json();
 
-    // Filter out items without images and ensure proper slugs
-    return data
-      .filter((item: any) => {
-        // Remove items without valid image URLs
-        return item.imageUrl && (item.imageUrl.startsWith("http") || item.imageUrl.startsWith("/"))
-      })
-      .map((item: any) => {
-        // Ensure each item has a valid slug
-        if (!item.slug || item.slug.includes("-new")) {
-          // Generate slug from name if missing or has "-new" suffix
-          item.slug = slugify(item.name)
-        }
-        return item
-      })
+    // Map imageUrl jadi path public lokal
+    return data.map((item: any, idx: number) => ({
+      ...item,
+      // Tambahkan id jika belum ada (Next.js butuh unique id!)
+      id: item.id || String(idx + 1),
+      slug: item.slug || slugify(item.name),
+      // Path gambar ke public
+      imageUrl: `/images/01_animals/${item.filename}`,
+      desc: item.description || item.desc || "", // fallback field
+    }));
   } catch (error) {
-    console.error("Failed to fetch images:", error)
-    return []
+    console.error("Failed to fetch images:", error);
+    return [];
   }
 }
 
-// Server-side function to read images
-export async function getImagesFromFile(): Promise<ImageItem[]> {
-  try {
-    // This only works on the server side
-    if (typeof window !== "undefined") {
-      throw new Error("This function should only be called on the server")
-    }
-
-    const { promises: fs } = await import("fs")
-    const path = await import("path")
-
-    const filePath = path.join(process.cwd(), "public", "data.json")
-    const fileContents = await fs.readFile(filePath, "utf8")
-    const data = JSON.parse(fileContents)
-
-    // Filter out items without images and ensure proper slugs
-    return data
-      .filter((item: any) => {
-        // Remove items without valid image URLs
-        return item.imageUrl && (item.imageUrl.startsWith("http") || item.imageUrl.startsWith("/"))
-      })
-      .map((item: any) => {
-        // Ensure each item has a valid slug
-        if (!item.slug || item.slug.includes("-new")) {
-          // Generate slug from name if missing or has "-new" suffix
-          item.slug = slugify(item.name)
-        }
-        return item
-      })
-  } catch (error) {
-    console.error("Failed to read images from file:", error)
-    return []
-  }
-}
-
+// OPTIONAL: filterImages helper jika dibutuhkan
 export function filterImages(images: ImageItem[], searchQuery: string, selectedTag: string | null): ImageItem[] {
   return images.filter((item) => {
     const matchesSearch =
-      searchQuery === "" ||
-      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.desc.toLowerCase().includes(searchQuery.toLowerCase())
-
-    const matchesTag = !selectedTag || item.tags.includes(selectedTag)
-
-    return matchesSearch && matchesTag
-  })
-}
-
-// Helper function to get a single image by slug (server-side)
-export async function getImageBySlug(slug: string): Promise<ImageItem | null> {
-  try {
-    const images = await getImagesFromFile()
-    return images.find((img) => img.slug === slug) || null
-  } catch (error) {
-    console.error("Failed to get image by slug:", error)
-    return null
-  }
+      !searchQuery ||
+      item.name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.desc?.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesTag = !selectedTag || item.tags.includes(selectedTag);
+    return matchesSearch && matchesTag;
+  });
 }

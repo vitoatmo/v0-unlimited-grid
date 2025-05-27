@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-  },
+    "lint": "next lint",
+    "sync-assets": "cp external/isometric-icon/data/animals.json ./public/data/animals.json && cp -R external/isometric-icon/01_animals ./public/images/01_animals"
+},
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "1.2.2",

@@ -1,3 +1,5 @@
+// lib/types.ts
+
 export interface ImageItem {
   id: string
   filename: string
