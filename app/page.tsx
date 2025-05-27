@@ -1,23 +1,23 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { InfiniteGrid } from "@/components/infinite-grid"
+import { useState, useEffect, useMemo, useCallback } from "react"
+import { InfinitePannableGrid } from "@/components/infinite-pannable-grid"
 import { BottomControls } from "@/components/bottom-controls"
+import { fetchImages, filterImages } from "@/lib/image-service"
 import type { ImageItem } from "@/lib/types"
 
 export default function HomePage() {
-  const [images, setImages] = useState<ImageItem[]>([])
+  const [allImages, setAllImages] = useState<ImageItem[]>([])
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedTag, setSelectedTag] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
 
-  // Load images from data.json
+  // Load images on mount
   useEffect(() => {
     const loadImages = async () => {
       try {
-        const response = await fetch("/data.json")
-        const data = await response.json()
-        setImages(data)
+        const images = await fetchImages()
+        setAllImages(images)
       } catch (error) {
         console.error("Failed to load images:", error)
       } finally {
@@ -28,31 +28,42 @@ export default function HomePage() {
     loadImages()
   }, [])
 
-  const handleSearchChange = (query: string) => {
-    setSearchQuery(query)
-  }
+  // Memoized filtered images to prevent unnecessary recalculations
+  const filteredImages = useMemo(() => {
+    return filterImages(allImages, searchQuery, selectedTag)
+  }, [allImages, searchQuery, selectedTag])
 
-  const handleTagChange = (tag: string | null) => {
+  // Debounced search handler
+  const handleSearchChange = useCallback((query: string) => {
+    setSearchQuery(query)
+  }, [])
+
+  // Tag change handler
+  const handleTagChange = useCallback((tag: string | null) => {
     setSelectedTag(tag)
-  }
+  }, [])
 
   if (loading) {
     return (
       <div className="fixed inset-0 bg-white flex items-center justify-center">
-        <div className="text-gray-500">Loading images...</div>
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-8 h-8 border-2 border-gray-300 border-t-gray-600 rounded-full animate-spin"></div>
+          <div className="text-gray-500">Loading images...</div>
+        </div>
       </div>
     )
   }
 
   return (
-    <div className="fixed inset-0 bg-white">
-      {images.length > 0 && <InfiniteGrid images={images} searchQuery={searchQuery} selectedTag={selectedTag} />}
+    <>
+      <InfinitePannableGrid images={filteredImages} />
       <BottomControls
         searchQuery={searchQuery}
         onSearchChange={handleSearchChange}
         selectedTag={selectedTag}
         onTagChange={handleTagChange}
+        totalImages={filteredImages.length}
       />
-    </div>
+    </>
   )
 }
