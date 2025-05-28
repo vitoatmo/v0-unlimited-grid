@@ -1,8 +1,5 @@
-// components/infinite-pannable-grid.tsx
-
 "use client"
 
-import type React from "react"
 import { useState, useRef, useCallback, useEffect, useMemo } from "react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
@@ -22,7 +19,9 @@ interface InfinitePannableGridProps {
   selectedTag?: string | null
 }
 
-// Deterministic, non-random cell assignment
+const CELL_SIZE = 200
+const VIEWPORT_BUFFER = 3
+
 function getImageForCell(row: number, col: number, images: ImageItem[]) {
   if (images.length === 0) return null
   const idx = Math.abs(row * 9973 + col * 7919) % images.length
@@ -45,10 +44,7 @@ export function InfinitePannableGrid({
   const clickedCellRef = useRef<string | null>(null)
   const CLICK_THRESHOLD = 8 // px
 
-  const CELL_SIZE = 250
-  const VIEWPORT_BUFFER = 3
-
-  // Find visible grid cells
+  // Calculate which grid cells should be visible based on pan offset
   const getVisibleCellBounds = useCallback(() => {
     if (!containerRef.current) return { minRow: 0, maxRow: 0, minCol: 0, maxCol: 0 }
     const { clientWidth, clientHeight } = containerRef.current
@@ -63,7 +59,6 @@ export function InfinitePannableGrid({
     return { minRow, maxRow, minCol, maxCol }
   }, [panOffset])
 
-  // Update visible grid cells
   useEffect(() => {
     if (images.length === 0) return
     const { minRow, maxRow, minCol, maxCol } = getVisibleCellBounds()
@@ -150,57 +145,45 @@ export function InfinitePannableGrid({
     [gridCells, searchQuery, selectedTag, router],
   )
 
-  // --- Render grid cells (do NOT use onClick directly!) ---
+  // --- Render grid cells (NO box, only centered image) ---
   const renderedCells = useMemo(() => {
-    return Array.from(gridCells.values()).map((cell) => {
-      const isVisible =
-        Math.abs(cell.col * CELL_SIZE + panOffset.x) < window.innerWidth + CELL_SIZE &&
-        Math.abs(cell.row * CELL_SIZE + panOffset.y) < window.innerHeight + CELL_SIZE
-      return (
-        <div
-          key={cell.id}
-          className="absolute transition-opacity duration-200"
-          style={{
-            left: `${cell.col * CELL_SIZE}px`,
-            top: `${cell.row * CELL_SIZE}px`,
-            width: `${CELL_SIZE}px`,
-            height: `${CELL_SIZE}px`,
-            opacity: isVisible ? 1 : 0.7,
-          }}
+    return Array.from(gridCells.values()).map((cell) => (
+      <div
+        key={cell.id}
+        className="absolute flex items-center justify-center select-none"
+        style={{
+          width: `${CELL_SIZE}px`,
+          height: `${CELL_SIZE}px`,
+          left: `${cell.col * CELL_SIZE}px`,
+          top: `${cell.row * CELL_SIZE}px`,
+          transform: 'none', // biar absolute langsung pakai left/top, bukan translate
+          marginLeft: `-${CELL_SIZE / 2}px`, // supaya center di koordinat grid
+          marginTop: `-${CELL_SIZE / 2}px`,
+          willChange: 'transform',
+        }}
+      >
+        <div className="group absolute inset-5 flex cursor-pointer items-center justify-center bg-white rounded-xl transition-transform duration-300 hover:scale-105 active:scale-95 shadow-none"
+            style={{ opacity: 1, transform: 'none' }}
         >
-          <div className="w-full h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer p-4 select-none">
-            <div className="aspect-square relative mb-3">
-              <Image
-                src={cell.item.imageUrl || "/placeholder.svg"}
-                alt={cell.item.name}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-200"
-                sizes="250px"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+Rj5m4xbDLdpkZfVZGjjVmRZEVgGUjqCOhFEOTLKdKOvYnqeR+lGlLlhiZZbvTbOKC3t4VhgjWOJFCqigBQAOgAGBQB//2Q=="
-              />
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900 text-sm truncate mb-1">{cell.item.name}</h3>
-              <div className="flex gap-1">
-                {cell.item.tags.slice(0, 2).map((tag) => (
-                  <span key={tag} className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+          <Image
+            src={cell.item.imageUrl || "/placeholder.svg"}
+            alt={cell.item.name}
+            width={CELL_SIZE - 30}
+            height={CELL_SIZE - 30}
+            draggable={false}
+            className="h-full w-full transition-transform group-hover:scale-110 active:scale-95 object-contain"
+            loading="lazy"
+          />
         </div>
-      )
-    })
-  }, [gridCells, panOffset])
+      </div>
+    ));
+  }, [gridCells, panOffset]);
+
 
   return (
     <div
       ref={containerRef}
-      className={`fixed inset-0 overflow-hidden bg-gray-50 select-none ${isPanning ? "cursor-grabbing" : "cursor-grab"}`}
+      className={`fixed inset-0 overflow-hidden bg-white select-none ${isPanning ? "cursor-grabbing" : "cursor-grab"}`}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
