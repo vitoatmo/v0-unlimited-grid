@@ -1,3 +1,5 @@
+// app/page.tsx
+
 "use client"
 
 import { useState, useEffect, useMemo, useCallback } from "react"
@@ -6,41 +8,50 @@ import { BottomControls } from "@/components/bottom-controls"
 import { fetchImages, filterImages } from "@/lib/image-service"
 import type { ImageItem } from "@/lib/types"
 
+// Simple shuffle (Fisher–Yates)
+function shuffle<T>(array: T[]): T[] {
+  const arr = array.slice()
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  return arr
+}
+
 export default function HomePage() {
   const [allImages, setAllImages] = useState<ImageItem[]>([])
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedTag, setSelectedTag] = useState<string | null>(null)
+  const [filterTags, setFilterTags] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
 
-  // Load images on mount
   useEffect(() => {
     const loadImages = async () => {
       try {
         const images = await fetchImages()
         setAllImages(images)
+        // Get unique tags from all images, shuffle, pick 3
+        const allTags = Array.from(new Set(images.flatMap(img => img.tags)))
+        setFilterTags(shuffle(allTags).slice(0, 3))
       } catch (error) {
         console.error("Failed to load images:", error)
       } finally {
         setLoading(false)
       }
     }
-
     loadImages()
   }, [])
 
-  // Memoized filtered images
   const filteredImages = useMemo(() => {
     return filterImages(allImages, searchQuery, selectedTag)
   }, [allImages, searchQuery, selectedTag])
 
-  // Debounced search handler
   const handleSearchChange = useCallback((query: string) => {
     setSearchQuery(query)
   }, [])
 
-  // Tag change handler
   const handleTagChange = useCallback((tag: string | null) => {
-    setSelectedTag(tag === "all" ? null : tag)
+    setSelectedTag(tag)
   }, [])
 
   if (loading) {
@@ -64,6 +75,7 @@ export default function HomePage() {
         onTagChange={handleTagChange}
         totalImages={filteredImages.length}
         allImagesCount={allImages.length}
+        filterTags={filterTags}
       />
     </>
   )

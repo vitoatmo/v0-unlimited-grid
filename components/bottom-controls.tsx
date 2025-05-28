@@ -1,3 +1,5 @@
+// components/bottom-controls.tsx
+
 "use client"
 
 import { Search } from "lucide-react"
@@ -9,8 +11,9 @@ interface BottomControlsProps {
   onSearchChange: (query: string) => void
   selectedTag: string | null
   onTagChange: (tag: string | null) => void
-  totalImages: number          // filtered count
-  allImagesCount: number       // original/all count
+  totalImages: number
+  allImagesCount: number
+  filterTags: string[]
 }
 
 export function BottomControls({
@@ -18,29 +21,25 @@ export function BottomControls({
   onSearchChange,
   selectedTag,
   onTagChange,
-  totalImages = 0,
-  allImagesCount = 0,
+  totalImages,
+  allImagesCount,
+  filterTags = [],
 }: BottomControlsProps) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 p-4 z-50 pointer-events-auto">
       <div className="max-w-2xl mx-auto flex items-center gap-4">
         <div className="flex gap-2 shrink-0">
-          <Button
-            variant={selectedTag === "animals" ? "default" : "outline"}
-            size="sm"
-            onClick={() => onTagChange(selectedTag === "animals" ? null : "animals")}
-            className="transition-all duration-200"
-          >
-            animals
-          </Button>
-          <Button
-            variant={selectedTag === "objects" ? "default" : "outline"}
-            size="sm"
-            onClick={() => onTagChange(selectedTag === "objects" ? null : "objects")}
-            className="transition-all duration-200"
-          >
-            objects
-          </Button>
+          {filterTags.map(tag => (
+            <Button
+              key={tag}
+              variant={selectedTag === tag ? "default" : "outline"}
+              size="sm"
+              onClick={() => onTagChange(selectedTag === tag ? null : tag)}
+              className="transition-all duration-200 capitalize"
+            >
+              {tag}
+            </Button>
+          ))}
           <Button
             variant={!selectedTag ? "default" : "outline"}
             size="sm"

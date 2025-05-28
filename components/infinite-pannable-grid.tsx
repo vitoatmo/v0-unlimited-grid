@@ -18,10 +18,8 @@ interface InfinitePannableGridProps {
   images: ImageItem[]
 }
 
-// Deterministic cell-image assignment
 function getImageForCell(row: number, col: number, images: ImageItem[]) {
   if (images.length === 0) return null
-  // Large primes for better spread, never random
   const idx = Math.abs(row * 9973 + col * 7919) % images.length
   return images[idx]
 }
@@ -34,11 +32,15 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
   const [panOffset, setPanOffset] = useState<PanPosition>({ x: 0, y: 0 })
   const [gridCells, setGridCells] = useState<Map<string, GridCell>>(new Map())
 
+  // Track click vs drag
+  const dragStartRef = useRef<{ x: number; y: number; cellKey: string | null } | null>(null)
+  const DRAG_THRESHOLD = 10
+
   // Grid configuration
   const CELL_SIZE = 250
-  const VIEWPORT_BUFFER = 3 // Extra cells outside viewport
+  const VIEWPORT_BUFFER = 3
 
-  // Calculate which grid cells should be visible based on pan offset
+  // Calculate visible grid bounds
   const getVisibleCellBounds = useCallback(() => {
     if (!containerRef.current) return { minRow: 0, maxRow: 0, minCol: 0, maxCol: 0 }
     const { clientWidth, clientHeight } = containerRef.current
@@ -53,7 +55,7 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
     return { minRow, maxRow, minCol, maxCol }
   }, [panOffset])
 
-  // Update visible cells whenever pan or images change
+  // Update grid cells
   useEffect(() => {
     if (images.length === 0) return
     const { minRow, maxRow, minCol, maxCol } = getVisibleCellBounds()
@@ -76,7 +78,7 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
     // eslint-disable-next-line
   }, [images, panOffset, getVisibleCellBounds])
 
-  // Panning events (same as before, works fine)
+  // Panning events
   const handlePointerDown = useCallback(
     (e: React.PointerEvent) => {
       if (e.pointerType === "mouse" && e.button !== 0) return
@@ -86,6 +88,18 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
         x: e.clientX - panOffset.x,
         y: e.clientY - panOffset.y,
       })
+
+      // Find cell key for this pointer down
+      const rect = containerRef.current?.getBoundingClientRect()
+      let cellKey: string | null = null
+      if (rect) {
+        const x = e.clientX - rect.left - panOffset.x
+        const y = e.clientY - rect.top - panOffset.y
+        const col = Math.floor(x / CELL_SIZE)
+        const row = Math.floor(y / CELL_SIZE)
+        cellKey = `${row}-${col}`
+      }
+      dragStartRef.current = { x: e.clientX, y: e.clientY, cellKey }
       if (containerRef.current) {
         containerRef.current.setPointerCapture(e.pointerId)
       }
@@ -110,8 +124,24 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
       if (containerRef.current) {
         containerRef.current.releasePointerCapture(e.pointerId)
       }
+
+      // Handle click: if user didn't drag far, treat as click
+      if (dragStartRef.current) {
+        const dx = e.clientX - dragStartRef.current.x
+        const dy = e.clientY - dragStartRef.current.y
+        const dist = Math.sqrt(dx * dx + dy * dy)
+        if (dist < DRAG_THRESHOLD && dragStartRef.current.cellKey) {
+          // Find the cell that was clicked
+          const cell = gridCells.get(dragStartRef.current.cellKey)
+          if (cell) {
+            const slug = cell.item.slug || slugify(cell.item.name)
+            router.push(`/image/${slug}`)
+          }
+        }
+      }
+      dragStartRef.current = null
     },
-    [],
+    [gridCells, router],
   )
 
   // Memoize the rendered cells
@@ -130,8 +160,8 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
             width: `${CELL_SIZE}px`,
             height: `${CELL_SIZE}px`,
             opacity: isVisible ? 1 : 0.7,
+            // pointerEvents: "auto", // Default is fine!
           }}
-          onClick={() => router.push(`/image/${cell.item.slug || slugify(cell.item.name)}`)}
         >
           <div className="w-full h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer p-4 select-none">
             <div className="aspect-square relative mb-3">
@@ -160,7 +190,7 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
         </div>
       )
     })
-  }, [gridCells, panOffset, router])
+  }, [gridCells, panOffset])
 
   return (
     <div
