@@ -60,7 +60,7 @@
     "name": "Buffalo",
     "tags": ["animals", "nature", "land"],
     "desc": "A large, sturdy mammal with horns. Buffaloes live in grasslands and are important for agriculture and wildlife.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=buffalo"
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Buffalo-J1JU3w7RBDUDkXsTL944e1OXW9uV8N.png"
   },
   {
     "id": "8",
@@ -69,7 +69,7 @@
     "name": "Cat",
     "tags": ["animals", "pet", "basic"],
     "desc": "A small, carnivorous mammal often kept as a pet. Cats are known for their agility, independence, and playful behavior.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=cat"
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cat-0ohC6iorlB0SXUu7aCJUDjg9hLX3vZ.png"
   },
   {
     "id": "9",
@@ -114,7 +114,7 @@
     "name": "Eagle",
     "tags": ["animals", "bird", "air"],
     "desc": "A powerful bird of prey with keen eyesight. Eagles soar high and hunt small animals.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=eagle"
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Eagle-J2BsYsqeoEgGSCXWmWHURnJPPWOHvd.png"
   },
   {
     "id": "14",
@@ -178,5 +178,185 @@
     "tags": ["objects", "time", "basic"],
     "desc": "A device used to measure and display time.",
     "imageUrl": "/placeholder.svg?height=200&width=200&query=clock"
+  },
+  {
+    "id": "21",
+    "filename": "Caracal.png",
+    "slug": "caracal",
+    "name": "Caracal",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A wild cat with distinctive black-tipped ears and tufted appearance. Caracals are agile hunters found in Africa and Asia.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Caracal-XmtAzcpEhVegk3OmFJCNPANgziuDTs.png"
+  },
+  {
+    "id": "22",
+    "filename": "Caterpillar.png",
+    "slug": "caterpillar",
+    "name": "Caterpillar",
+    "tags": ["animals", "insect", "nature"],
+    "desc": "The larval stage of butterflies and moths. Caterpillars are known for their segmented bodies and transformation into adults.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Caterpillar-o2Mp7OQVEWaoAgTOGh3WwtSNqJ1LWC.png"
+  },
+  {
+    "id": "23",
+    "filename": "Chameleon.png",
+    "slug": "chameleon",
+    "name": "Chameleon",
+    "tags": ["animals", "reptile", "land"],
+    "desc": "A colorful lizard famous for changing its skin color. Chameleons live in forests and bushes.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Chameleon-78XFeQNIrsjOA27LNEr5MO9lT0IoAy.png"
+  },
+  {
+    "id": "24",
+    "filename": "Cat.png",
+    "slug": "cat-new",
+    "name": "Cat",
+    "tags": ["animals", "pet", "basic"],
+    "desc": "A small, carnivorous mammal often kept as a pet. Cats are known for their agility, independence, and playful behavior.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cat-0ohC6iorlB0SXUu7aCJUDjg9hLX3vZ.png"
+  },
+  {
+    "id": "25",
+    "filename": "Buffalo.png",
+    "slug": "buffalo-new",
+    "name": "Buffalo",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A large, sturdy mammal with horns. Buffaloes live in grasslands and are important for agriculture and wildlife.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Buffalo-J1JU3w7RBDUDkXsTL944e1OXW9uV8N.png"
+  },
+  {
+    "id": "26",
+    "filename": "Cheetah.png",
+    "slug": "cheetah",
+    "name": "Cheetah",
+    "tags": ["animals", "nature", "land"],
+    "desc": "The fastest land animal, known for its spotted coat and incredible speed. Cheetahs are found in African savannas.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cheetah-Qn8q8DuihDo1U32PCmgtziz4k7KhnS.png"
+  },
+  {
+    "id": "27",
+    "filename": "Duck.png",
+    "slug": "duck",
+    "name": "Duck",
+    "tags": ["animals", "bird", "water"],
+    "desc": "A waterfowl bird with webbed feet and a broad bill. Ducks live near water and are known for their quacking.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Duck-97HQNwwz6TlM6Uqdd7YlS1tADEX3gb.png"
+  },
+  {
+    "id": "28",
+    "filename": "Eagle.png",
+    "slug": "eagle-new",
+    "name": "Eagle",
+    "tags": ["animals", "bird", "air"],
+    "desc": "A powerful bird of prey with keen eyesight. Eagles soar high and hunt small animals.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Eagle-J2BsYsqeoEgGSCXWmWHURnJPPWOHvd.png"
+  },
+  {
+    "id": "29",
+    "filename": "Dog.png",
+    "slug": "dog",
+    "name": "Dog",
+    "tags": ["animals", "pet", "land"],
+    "desc": "A loyal, social mammal commonly kept as a companion. Dogs are known for their intelligence and trainability.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dog-zmGCGewf2HsFl0cHYCBOcKJEfDz5nl.png"
+  },
+  {
+    "id": "30",
+    "filename": "Dolphin.png",
+    "slug": "dolphin",
+    "name": "Dolphin",
+    "tags": ["animals", "nature", "sea"],
+    "desc": "An intelligent aquatic mammal with a sleek body. Dolphins live in oceans and rivers, known for their playful nature and high intelligence.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dolphin-aOZzmDXUPFo7wpVMoT2KZjHU0RnYis.png"
+  },
+  {
+    "id": "31",
+    "filename": "Vulture.png",
+    "slug": "vulture",
+    "name": "Vulture",
+    "tags": ["animals", "bird", "air"],
+    "desc": "A large bird of prey known for scavenging. Vultures help keep ecosystems clean by feeding on dead animals.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vulture-AzK3JhcMcQDHiOJZbodNIrgxysE2fM.png"
+  },
+  {
+    "id": "32",
+    "filename": "Tiger.png",
+    "slug": "tiger",
+    "name": "Tiger",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A large, striped big cat native to Asia. Tigers are powerful predators and mostly solitary animals found in forests and grasslands.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tiger-UmL6bgU3Mes0IjVxjRkLm0dpemlGhw.png"
+  },
+  {
+    "id": "33",
+    "filename": "Urchin.png",
+    "slug": "urchin",
+    "name": "Urchin",
+    "tags": ["animals", "sea", "nature"],
+    "desc": "A spiny marine creature with a spherical body. Sea urchins are found on the ocean floor and are important for marine ecosystems.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Urchin-tdCzARVXklM6XePDNYbZXXd51BeiEi.png"
+  },
+  {
+    "id": "34",
+    "filename": "Tortoise.png",
+    "slug": "tortoise",
+    "name": "Tortoise",
+    "tags": ["animals", "reptile", "land"],
+    "desc": "A slow-moving reptile with a protective shell. Tortoises are known for their longevity and can live for over 100 years.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tortoise-aNEpfUYwdzBMTyKRf2SC8bYosyOfgG.png"
+  },
+  {
+    "id": "35",
+    "filename": "Urial.png",
+    "slug": "urial",
+    "name": "Urial",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A wild sheep with curved horns, found in Central and South Asia. Urials live in hilly and mountainous regions.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Urial-AoEJrQsdV2WsDh51ClqrORcHMzVG5J.png"
+  },
+  {
+    "id": "36",
+    "filename": "Zebu.png",
+    "slug": "zebu",
+    "name": "Zebu",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A type of domestic cattle with a distinctive hump on its shoulders. Zebus are adapted to hot climates and are important for agriculture in many regions.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zebu-NXgtxsFYrYKSOWD1wzOgJtQ7s4wdG1.png"
+  },
+  {
+    "id": "37",
+    "filename": "Wolf.png",
+    "slug": "wolf",
+    "name": "Wolf",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A social, intelligent predator living in packs. Wolves are found in forests, tundra, and grasslands across the Northern Hemisphere.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Wolf-MBjuLqGZTg3IlJr1yL2y9hxsUE4x0P.png"
+  },
+  {
+    "id": "38",
+    "filename": "Xerus.png",
+    "slug": "xerus",
+    "name": "Xerus",
+    "tags": ["animals", "rodent", "land"],
+    "desc": "A ground-dwelling squirrel found in Africa. Xerus live in colonies and are known for their burrowing and social behavior.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Xerus-MvlrX0by5s8SDZ438YAzFI7Evb92Fg.png"
+  },
+  {
+    "id": "39",
+    "filename": "Wombat.png",
+    "slug": "wombat",
+    "name": "Wombat",
+    "tags": ["animals", "nature", "land"],
+    "desc": "A sturdy, burrowing marsupial native to Australia. Wombats are known for their powerful digging abilities and cube-shaped droppings.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Wombat-HsXDnS1E7AkxajbnjurmCB6edW3K04.png"
+  },
+  {
+    "id": "40",
+    "filename": "Zebra.png",
+    "slug": "zebra",
+    "name": "Zebra",
+    "tags": ["animals", "nature", "land"],
+    "desc": "An African mammal known for its black-and-white striped coat. Zebras live in herds on grasslands and are closely related to horses.",
+    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zebra-Y6PVQqbFIDpYHxp2ZdopydMeakFvKN.png"
   }
 ]

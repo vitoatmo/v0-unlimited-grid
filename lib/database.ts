@@ -1,3 +1,5 @@
+// lib/database.ts
+
 import type { ImageItem } from "./types"
 
 // Extended database with the provided data plus additional items
