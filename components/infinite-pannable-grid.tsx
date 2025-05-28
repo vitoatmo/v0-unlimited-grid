@@ -1,189 +1,149 @@
-"use client"
+// components/infinite-pannable-grid.tsx
 
-import { useState, useRef, useCallback, useEffect, useMemo } from "react"
-import Image from "next/image"
-import { useRouter } from "next/navigation"
-import type { ImageItem, PanPosition } from "@/lib/types"
-import { slugify } from "@/lib/utils"
+"use client";
 
-interface GridCell {
-  id: string
-  item: ImageItem
-  row: number
-  col: number
-}
+import { useState, useRef, useCallback, useEffect, useMemo } from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import type { ImageItem, PanPosition } from "@/lib/types";
 
 interface InfinitePannableGridProps {
-  images: ImageItem[]
-  searchQuery?: string
-  selectedTag?: string | null
+  images: ImageItem[];
 }
 
-const CELL_SIZE = 200
-const VIEWPORT_BUFFER = 3
+const CELL_SIZE = 220; // px (adjust for your design)
+const GRID_COLS = 5; // how many columns in viewport (adjust as you wish)
+const VIEWPORT_BUFFER = 2; // extra rows/cols outside viewport for smoothness
 
-function getImageForCell(row: number, col: number, images: ImageItem[]) {
-  if (images.length === 0) return null
-  const idx = Math.abs(row * 9973 + col * 7919) % images.length
-  return images[idx]
-}
+export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
+  const router = useRouter();
+  const containerRef = useRef<HTMLDivElement>(null);
 
-export function InfinitePannableGrid({
-  images,
-  searchQuery = "",
-  selectedTag = null,
-}: InfinitePannableGridProps) {
-  const router = useRouter()
-  const containerRef = useRef<HTMLDivElement>(null)
-  const [isPanning, setIsPanning] = useState(false)
-  const [startPoint, setStartPoint] = useState<PanPosition>({ x: 0, y: 0 })
-  const [panOffset, setPanOffset] = useState<PanPosition>({ x: 0, y: 0 })
-  const [gridCells, setGridCells] = useState<Map<string, GridCell>>(new Map())
-  const panDistanceRef = useRef(0)
-  const pointerDownPos = useRef<{ x: number, y: number }>({ x: 0, y: 0 })
-  const clickedCellRef = useRef<string | null>(null)
-  const CLICK_THRESHOLD = 8 // px
+  const [isPanning, setIsPanning] = useState(false);
+  const [startPoint, setStartPoint] = useState<PanPosition>({ x: 0, y: 0 });
+  const [panOffset, setPanOffset] = useState<PanPosition>({ x: 0, y: 0 });
+  const panDistanceRef = useRef(0);
+  const pointerDownPos = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
-  // Calculate which grid cells should be visible based on pan offset
-  const getVisibleCellBounds = useCallback(() => {
-    if (!containerRef.current) return { minRow: 0, maxRow: 0, minCol: 0, maxCol: 0 }
-    const { clientWidth, clientHeight } = containerRef.current
-    const leftEdge = -panOffset.x - VIEWPORT_BUFFER * CELL_SIZE
-    const rightEdge = -panOffset.x + clientWidth + VIEWPORT_BUFFER * CELL_SIZE
-    const topEdge = -panOffset.y - VIEWPORT_BUFFER * CELL_SIZE
-    const bottomEdge = -panOffset.y + clientHeight + VIEWPORT_BUFFER * CELL_SIZE
-    const minCol = Math.floor(leftEdge / CELL_SIZE)
-    const maxCol = Math.ceil(rightEdge / CELL_SIZE)
-    const minRow = Math.floor(topEdge / CELL_SIZE)
-    const maxRow = Math.ceil(bottomEdge / CELL_SIZE)
-    return { minRow, maxRow, minCol, maxCol }
-  }, [panOffset])
+  // Compute grid shape for current filtered images
+  const numRows = Math.ceil(images.length / GRID_COLS);
 
-  useEffect(() => {
-    if (images.length === 0) return
-    const { minRow, maxRow, minCol, maxCol } = getVisibleCellBounds()
-    const newCells = new Map<string, GridCell>()
-    for (let row = minRow; row <= maxRow; row++) {
-      for (let col = minCol; col <= maxCol; col++) {
-        const key = `${row}-${col}`
-        const image = getImageForCell(row, col, images)
-        if (image) {
-          newCells.set(key, {
-            id: `${image.id}-${row}-${col}`,
-            item: image,
-            row,
-            col,
-          })
-        }
-      }
-    }
-    setGridCells(newCells)
-  }, [images, panOffset, getVisibleCellBounds])
+  // Which images are visible in viewport + buffer
+  const getVisibleIndices = useCallback(() => {
+    if (!containerRef.current) return { minRow: 0, maxRow: 0, minCol: 0, maxCol: 0 };
 
-  // --- Gesture Handlers (panning + click detection) ---
+    const { clientWidth, clientHeight } = containerRef.current;
+    const leftEdge = -panOffset.x - VIEWPORT_BUFFER * CELL_SIZE;
+    const rightEdge = -panOffset.x + clientWidth + VIEWPORT_BUFFER * CELL_SIZE;
+    const topEdge = -panOffset.y - VIEWPORT_BUFFER * CELL_SIZE;
+    const bottomEdge = -panOffset.y + clientHeight + VIEWPORT_BUFFER * CELL_SIZE;
+
+    const minCol = Math.max(0, Math.floor(leftEdge / CELL_SIZE));
+    const maxCol = Math.min(GRID_COLS - 1, Math.ceil(rightEdge / CELL_SIZE));
+    const minRow = Math.max(0, Math.floor(topEdge / CELL_SIZE));
+    const maxRow = Math.min(numRows - 1, Math.ceil(bottomEdge / CELL_SIZE));
+
+    return { minRow, maxRow, minCol, maxCol };
+  }, [panOffset, numRows]);
+
+  // Gesture handlers for panning
   const handlePointerDown = useCallback(
     (e: React.PointerEvent) => {
-      if (e.pointerType === "mouse" && e.button !== 0) return
-      setIsPanning(true)
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      setIsPanning(true);
       setStartPoint({
         x: e.clientX - panOffset.x,
         y: e.clientY - panOffset.y,
-      })
-      pointerDownPos.current = { x: e.clientX, y: e.clientY }
-      panDistanceRef.current = 0
+      });
+      pointerDownPos.current = { x: e.clientX, y: e.clientY };
+      panDistanceRef.current = 0;
 
-      // Find which cell we start in
-      const rect = containerRef.current?.getBoundingClientRect()
-      if (rect) {
-        const x = e.clientX - rect.left - panOffset.x
-        const y = e.clientY - rect.top - panOffset.y
-        const col = Math.floor(x / CELL_SIZE)
-        const row = Math.floor(y / CELL_SIZE)
-        clickedCellRef.current = `${row}-${col}`
-      }
       if (containerRef.current) {
-        containerRef.current.setPointerCapture(e.pointerId)
+        containerRef.current.setPointerCapture(e.pointerId);
       }
     },
-    [panOffset],
-  )
+    [panOffset]
+  );
 
   const handlePointerMove = useCallback(
     (e: React.PointerEvent) => {
-      if (!isPanning) return
-      const dx = e.clientX - pointerDownPos.current.x
-      const dy = e.clientY - pointerDownPos.current.y
-      panDistanceRef.current = Math.sqrt(dx * dx + dy * dy)
+      if (!isPanning) return;
+      const dx = e.clientX - pointerDownPos.current.x;
+      const dy = e.clientY - pointerDownPos.current.y;
+      panDistanceRef.current = Math.sqrt(dx * dx + dy * dy);
       setPanOffset({
         x: e.clientX - startPoint.x,
         y: e.clientY - startPoint.y,
-      })
+      });
     },
-    [isPanning, startPoint],
-  )
+    [isPanning, startPoint]
+  );
 
-  const handlePointerUp = useCallback(
-    (e: React.PointerEvent) => {
-      setIsPanning(false)
-      if (containerRef.current) {
-        containerRef.current.releasePointerCapture(e.pointerId)
-      }
-      // Only treat as click if drag/pan distance is very small
-      if (panDistanceRef.current < CLICK_THRESHOLD && clickedCellRef.current) {
-        const cell = gridCells.get(clickedCellRef.current)
-        if (cell) {
-          // preserve query params
-          const params = new URLSearchParams()
-          if (searchQuery) params.set("search", searchQuery)
-          if (selectedTag) params.set("tag", selectedTag)
-          const slug = cell.item.slug || slugify(cell.item.name)
-          router.push(`/image/${slug}${params.toString() ? `?${params}` : ""}`)
-        }
-      }
-      clickedCellRef.current = null
-    },
-    [gridCells, searchQuery, selectedTag, router],
-  )
+  const handlePointerUp = useCallback((e: React.PointerEvent) => {
+    setIsPanning(false);
+    if (containerRef.current) {
+      containerRef.current.releasePointerCapture(e.pointerId);
+    }
+  }, []);
 
-  // --- Render grid cells (NO box, only centered image) ---
+  // Render grid in a stable, predictable order: images[0]...images[n]
   const renderedCells = useMemo(() => {
-    return Array.from(gridCells.values()).map((cell) => (
-      <div
-        key={cell.id}
-        className="absolute flex items-center justify-center select-none"
-        style={{
-          width: `${CELL_SIZE}px`,
-          height: `${CELL_SIZE}px`,
-          left: `${cell.col * CELL_SIZE}px`,
-          top: `${cell.row * CELL_SIZE}px`,
-          transform: 'none', // biar absolute langsung pakai left/top, bukan translate
-          marginLeft: `-${CELL_SIZE / 2}px`, // supaya center di koordinat grid
-          marginTop: `-${CELL_SIZE / 2}px`,
-          willChange: 'transform',
-        }}
-      >
-        <div className="group absolute inset-5 flex cursor-pointer items-center justify-center bg-white rounded-xl transition-transform duration-300 hover:scale-105 active:scale-95 shadow-none"
-            style={{ opacity: 1, transform: 'none' }}
-        >
-          <Image
-            src={cell.item.imageUrl || "/placeholder.svg"}
-            alt={cell.item.name}
-            width={CELL_SIZE - 30}
-            height={CELL_SIZE - 30}
-            draggable={false}
-            className="h-full w-full transition-transform group-hover:scale-110 active:scale-95 object-contain"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    ));
-  }, [gridCells, panOffset]);
-
+    const { minRow, maxRow, minCol, maxCol } = getVisibleIndices();
+    const cells = [];
+    for (let row = minRow; row <= maxRow; row++) {
+      for (let col = minCol; col <= maxCol; col++) {
+        const idx = row * GRID_COLS + col;
+        if (idx >= images.length) continue;
+        const img = images[idx];
+        cells.push(
+          <div
+            key={img.slug}
+            className="absolute transition-all duration-200"
+            style={{
+              left: `${col * CELL_SIZE}px`,
+              top: `${row * CELL_SIZE}px`,
+              width: `${CELL_SIZE}px`,
+              height: `${CELL_SIZE}px`,
+            }}
+            onClick={() => router.push(`/image/${img.slug}`)}
+            tabIndex={0}
+            role="button"
+            aria-label={`View details of ${img.name}`}
+          >
+            <div className="w-full h-full bg-white overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer p-4 select-none">
+              <div className="aspect-square relative mb-3">
+                <Image
+                  src={img.imageUrl || "/placeholder.svg"}
+                  alt={img.name}
+                  fill
+                  className="object-cover"
+                  sizes="220px"
+                  draggable={false}
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-900 text-sm truncate mb-1">{img.name}</h3>
+                <div className="flex gap-1">
+                  {(img.tags || []).slice(0, 2).map((tag) => (
+                    <span key={tag} className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    }
+    return cells;
+  }, [images, panOffset, getVisibleIndices, router]);
 
   return (
     <div
       ref={containerRef}
-      className={`fixed inset-0 overflow-hidden bg-white select-none ${isPanning ? "cursor-grabbing" : "cursor-grab"}`}
+      className={`fixed inset-0 overflow-hidden bg-gray-50 select-none ${isPanning ? "cursor-grabbing" : "cursor-grab"}`}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
@@ -192,6 +152,8 @@ export function InfinitePannableGrid({
       <div
         className="relative w-full h-full"
         style={{
+          width: GRID_COLS * CELL_SIZE,
+          height: numRows * CELL_SIZE,
           transform: `translate3d(${panOffset.x}px, ${panOffset.y}px, 0)`,
           willChange: isPanning ? "transform" : "auto",
         }}
@@ -199,5 +161,5 @@ export function InfinitePannableGrid({
         {renderedCells}
       </div>
     </div>
-  )
+  );
 }

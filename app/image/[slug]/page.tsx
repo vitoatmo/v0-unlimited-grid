@@ -22,7 +22,16 @@ async function getImageBySlug(slug: string) {
     let image = images.find((img: any) => img.slug === slug);
     if (!image) image = images.find((img: any) => slugify(img.name) === slug);
 
-    return image || null;
+    // Map ke konsisten field
+    if (image) {
+      return {
+        ...image,
+        imageUrl: `/images/${image.filename}`,
+        desc: image.description ?? "",
+        tags: image.tags ?? [],
+      }
+    }
+    return null;
   } catch (error) {
     console.error("Failed to read image data:", error);
     return null;
@@ -50,7 +59,7 @@ export default async function ImagePage({ params }: ImagePageProps) {
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 p-4 md:p-8">
             <div className="relative aspect-square bg-gray-100 w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0">
               <Image
-                src={`/images/${image.filename ?? "placeholder.svg"}`}
+                src={image.imageUrl ?? "/placeholder.svg"}
                 alt={image.name ?? "Animal"}
                 fill
                 className="object-contain p-4"
