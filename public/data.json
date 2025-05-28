@@ -1,362 +1,3370 @@
 [
   {
-    "id": "1",
-    "filename": "Antelope.png",
+    "filename": "aardvark.png",
+    "slug": "aardvark",
+    "name": "Aardvark",
+    "tags": [
+      "mammal",
+      "nocturnal",
+      "insect-eater"
+    ],
+    "description": "Nocturnal African mammal with a long snout, digs for ants and termites using its tongue."
+  },
+  {
+    "filename": "aardwolf.png",
+    "slug": "aardwolf",
+    "name": "Aardwolf",
+    "tags": [
+      "mammal",
+      "carnivore",
+      "Africa"
+    ],
+    "description": "Small, shy relative of hyenas. Aardwolf feeds on termites and is active at night."
+  },
+  {
+    "filename": "addax.png",
+    "slug": "addax",
+    "name": "Addax",
+    "tags": [
+      "mammal",
+      "desert",
+      "endangered"
+    ],
+    "description": "Rare antelope with twisted horns. Adapted for harsh Sahara, now critically endangered."
+  },
+  {
+    "filename": "african-wild-dog.png",
+    "slug": "african-wild-dog",
+    "name": "African Wild Dog",
+    "tags": [
+      "mammal",
+      "canine",
+      "endangered"
+    ],
+    "description": "Wild dog with big ears and patchy fur. Hunts in packs across African grasslands."
+  },
+  {
+    "filename": "albatross.png",
+    "slug": "albatross",
+    "name": "Albatross",
+    "tags": [
+      "bird",
+      "sea",
+      "migratory"
+    ],
+    "description": "Large seabird with long wings. Albatrosses can glide for days over oceans."
+  },
+  {
+    "filename": "alligator.png",
+    "slug": "alligator",
+    "name": "Alligator",
+    "tags": [
+      "reptile",
+      "predator",
+      "swamp"
+    ],
+    "description": "Large reptile with a strong jaw, found in swamps and rivers. Excellent ambush predator."
+  },
+  {
+    "filename": "alpaca.png",
+    "slug": "alpaca",
+    "name": "Alpaca",
+    "tags": [
+      "mammal",
+      "farm",
+      "wool"
+    ],
+    "description": "Gentle, fluffy animal raised for its soft wool. Alpacas live in herds in South America."
+  },
+  {
+    "filename": "american-bison.png",
+    "slug": "american-bison",
+    "name": "American Bison",
+    "tags": [
+      "mammal",
+      "bison",
+      "America"
+    ],
+    "description": "Massive, shaggy animal once roaming North American plains in huge herds."
+  },
+  {
+    "filename": "anaconda.png",
+    "slug": "anaconda",
+    "name": "Anaconda",
+    "tags": [
+      "reptile",
+      "snake",
+      "constrictor"
+    ],
+    "description": "Huge South American snake that squeezes prey. Anacondas are among the world’s heaviest snakes."
+  },
+  {
+    "filename": "angelfish.png",
+    "slug": "angelfish",
+    "name": "Angelfish",
+    "tags": [
+      "fish",
+      "tropical",
+      "colorful"
+    ],
+    "description": "Small, bright fish found in coral reefs. Angelfish are popular in home aquariums."
+  },
+  {
+    "filename": "anglerfish.png",
+    "slug": "anglerfish",
+    "name": "Anglerfish",
+    "tags": [
+      "fish",
+      "deep-sea",
+      "bioluminescent"
+    ],
+    "description": "Strange-looking fish with a glowing lure. Lives in deep ocean darkness, hunts with its light."
+  },
+  {
+    "filename": "anole.png",
+    "slug": "anole",
+    "name": "Anole",
+    "tags": [
+      "reptile",
+      "lizard",
+      "color-changing"
+    ],
+    "description": "Small lizard able to change colors for camouflage. Lives in trees and shrubs."
+  },
+  {
+    "filename": "ant.png",
+    "slug": "ant",
+    "name": "Ant",
+    "tags": [
+      "insect",
+      "colony",
+      "hardworking"
+    ],
+    "description": "Tiny, social insect living in colonies. Ants build tunnels and work together efficiently."
+  },
+  {
+    "filename": "antelope.png",
     "slug": "antelope",
     "name": "Antelope",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A graceful, fast-moving mammal known for its horns and agility. Antelopes inhabit grasslands and savannas across Africa and Asia.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Antelope-3dveIMQ1hy9mRBmt6XSPmGVNJSv9k9.png"
+    "tags": [
+      "mammal",
+      "grazer",
+      "fast"
+    ],
+    "description": "Graceful, horned herbivore of grasslands and savannas. Known for speed and agility."
   },
   {
-    "id": "2",
-    "filename": "Armadillo.png",
+    "filename": "arctic-fox.png",
+    "slug": "arctic-fox",
+    "name": "Arctic Fox",
+    "tags": [
+      "mammal",
+      "arctic",
+      "camouflage"
+    ],
+    "description": "White-furred fox adapted for cold. Changes color with seasons for camouflage in the snow."
+  },
+  {
+    "filename": "arctic-hare.png",
+    "slug": "arctic-hare",
+    "name": "Arctic Hare",
+    "tags": [
+      "mammal",
+      "arctic",
+      "herbivore"
+    ],
+    "description": "Thick-furred hare that survives freezing tundra. Changes fur color with seasons."
+  },
+  {
+    "filename": "armadillo.png",
     "slug": "armadillo",
     "name": "Armadillo",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A small mammal with a hard, protective shell. Armadillos are known for their digging ability and live in warm regions.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Armadillo-Jzw7pNRZRT0ESd4eRZ8hl9IIUrrDAC.png"
+    "tags": [
+      "mammal",
+      "armor",
+      "burrower"
+    ],
+    "description": "Small mammal with a hard shell. Good digger, lives in warm regions of the Americas."
   },
   {
-    "id": "3",
-    "filename": "Bear.png",
-    "slug": "bear",
-    "name": "Bear",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A large, strong mammal with thick fur. Bears are found in forests, mountains, and arctic regions, known for their strength and adaptability.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bear-BiSJXP0vHS2H8h4qmzyuw7ltxzKvEQ.png"
+    "filename": "axolotl.png",
+    "slug": "axolotl",
+    "name": "Axolotl",
+    "tags": [
+      "amphibian",
+      "aquatic",
+      "regenerative"
+    ],
+    "description": "Mexican salamander famous for its ability to regenerate limbs. Lives its whole life in water."
   },
   {
-    "id": "4",
-    "filename": "Bee.png",
-    "slug": "bee",
-    "name": "Bee",
-    "tags": ["animals", "insect", "air"],
-    "desc": "A flying insect known for pollinating plants and producing honey. Bees are essential for healthy ecosystems.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bee-k8G17Fw0W0jfIekoHFQxIGyroH4uCc.png"
+    "filename": "aye-aye.png",
+    "slug": "aye-aye",
+    "name": "Aye Aye",
+    "tags": [
+      "mammal",
+      "lemur",
+      "Madagascar"
+    ],
+    "description": "Nocturnal lemur with large eyes and a long finger to find insects inside trees."
   },
   {
-    "id": "5",
-    "filename": "Box.png",
-    "slug": "box",
-    "name": "Box",
-    "tags": ["objects", "container", "basic"],
-    "desc": "A simple, isometric box icon. Useful for packaging, storage, or generic container visuals.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Box-n4zTiIoTEdtQcOlwwEQ5JNf8nDyHBl.png"
+    "filename": "baboon.png",
+    "slug": "baboon",
+    "name": "Baboon",
+    "tags": [
+      "mammal",
+      "primate",
+      "social"
+    ],
+    "description": "Large monkey with a dog-like snout. Lives in troops and is highly social and expressive."
   },
   {
-    "id": "6",
-    "filename": "Badger.png",
+    "filename": "badger.png",
     "slug": "badger",
     "name": "Badger",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A stocky, burrowing mammal with distinctive black and white markings. Badgers are known for their digging prowess and fierce nature.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Badger-vFD8DpSelRR6nxuIXC4hWY4n6kvy6W.png"
+    "tags": [
+      "mammal",
+      "burrower",
+      "forest"
+    ],
+    "description": "Stocky animal with striped face. Badgers are strong diggers and mostly nocturnal."
   },
   {
-    "id": "7",
-    "filename": "Buffalo.png",
+    "filename": "bald-eagle.png",
+    "slug": "bald-eagle",
+    "name": "Bald Eagle",
+    "tags": [
+      "bird",
+      "raptor",
+      "USA"
+    ],
+    "description": "Iconic American bird with a white head. Bald eagles are powerful hunters and national symbols."
+  },
+  {
+    "filename": "barracuda.png",
+    "slug": "barracuda",
+    "name": "Barracuda",
+    "tags": [
+      "fish",
+      "predator",
+      "sea"
+    ],
+    "description": "Fast, fierce fish with sharp teeth. Barracuda are top predators in tropical and subtropical seas."
+  },
+  {
+    "filename": "bass.png",
+    "slug": "bass",
+    "name": "Bass",
+    "tags": [
+      "fish",
+      "freshwater",
+      "angler"
+    ],
+    "description": "Common freshwater fish. Bass are popular with anglers and found in lakes and rivers worldwide."
+  },
+  {
+    "filename": "bat.png",
+    "slug": "bat",
+    "name": "Bat",
+    "tags": [
+      "mammal",
+      "nocturnal",
+      "flying"
+    ],
+    "description": "Only mammal capable of true flight. Bats use echolocation and eat insects or fruit."
+  },
+  {
+    "filename": "bear.png",
+    "slug": "bear",
+    "name": "Bear",
+    "tags": [
+      "mammal",
+      "large",
+      "omnivore"
+    ],
+    "description": "Big, strong mammal with thick fur. Bears live in forests and mountains worldwide."
+  },
+  {
+    "filename": "beaver.png",
+    "slug": "beaver",
+    "name": "Beaver",
+    "tags": [
+      "mammal",
+      "rodent",
+      "aquatic"
+    ],
+    "description": "Large, water-loving rodent known for building dams and lodges with wood and mud."
+  },
+  {
+    "filename": "bee.png",
+    "slug": "bee",
+    "name": "Bee",
+    "tags": [
+      "insect",
+      "pollinator",
+      "flying"
+    ],
+    "description": "Vital insect for pollination, lives in hives and produces honey. Essential for nature."
+  },
+  {
+    "filename": "beetle.png",
+    "slug": "beetle",
+    "name": "Beetle",
+    "tags": [
+      "insect",
+      "diverse",
+      "hard-shelled"
+    ],
+    "description": "Most diverse group of insects, beetles have tough shells and many shapes and sizes."
+  },
+  {
+    "filename": "beluga.png",
+    "slug": "beluga",
+    "name": "Beluga",
+    "tags": [
+      "mammal",
+      "whale",
+      "arctic"
+    ],
+    "description": "Small, white whale with a rounded forehead. Known for its vocal \"canary\" sounds."
+  },
+  {
+    "filename": "betta-fish.png",
+    "slug": "betta-fish",
+    "name": "Betta Fish",
+    "tags": [
+      "fish",
+      "freshwater",
+      "colorful"
+    ],
+    "description": "Vibrant, territorial fish popular in aquariums. Betta males are famous for their fins."
+  },
+  {
+    "filename": "binturong.png",
+    "slug": "binturong",
+    "name": "Binturong",
+    "tags": [
+      "mammal",
+      "arboreal",
+      "SE Asia"
+    ],
+    "description": "Large, shaggy mammal called \"bearcat.\" Binturongs smell like popcorn and live in trees."
+  },
+  {
+    "filename": "bison.png",
+    "slug": "bison",
+    "name": "Bison",
+    "tags": [
+      "mammal",
+      "bison",
+      "prairie"
+    ],
+    "description": "Heavily built grazing mammal with humped shoulders. Bison are icons of the American plains."
+  },
+  {
+    "filename": "black-mamba.png",
+    "slug": "black-mamba",
+    "name": "Black Mamba",
+    "tags": [
+      "reptile",
+      "snake",
+      "venomous"
+    ],
+    "description": "Africa’s fastest, deadliest snake. Black mambas are long and have potent venom."
+  },
+  {
+    "filename": "blue-jay.png",
+    "slug": "blue-jay",
+    "name": "Blue Jay",
+    "tags": [
+      "bird",
+      "songbird",
+      "blue"
+    ],
+    "description": "Bright blue songbird of North America, known for loud calls and social behavior."
+  },
+  {
+    "filename": "blue-whale.png",
+    "slug": "blue-whale",
+    "name": "Blue Whale",
+    "tags": [
+      "mammal",
+      "whale",
+      "ocean"
+    ],
+    "description": "The largest animal on Earth. Blue whales eat tiny krill and can grow over 30 meters."
+  },
+  {
+    "filename": "boa.png",
+    "slug": "boa",
+    "name": "Boa",
+    "tags": [
+      "reptile",
+      "snake",
+      "constrictor"
+    ],
+    "description": "Large, non-venomous snake. Boas squeeze prey to eat and live in tropical forests."
+  },
+  {
+    "filename": "boar.png",
+    "slug": "boar",
+    "name": "Boar",
+    "tags": [
+      "mammal",
+      "wild",
+      "tusked"
+    ],
+    "description": "Wild pig with tusks, coarse fur, and a strong sense of smell. Found in forests worldwide."
+  },
+  {
+    "filename": "bobcat.png",
+    "slug": "bobcat",
+    "name": "Bobcat",
+    "tags": [
+      "mammal",
+      "feline",
+      "wild"
+    ],
+    "description": "Solitary wild cat of North America. Bobcats have short tails and spotted coats."
+  },
+  {
+    "filename": "bonobo.png",
+    "slug": "bonobo",
+    "name": "Bonobo",
+    "tags": [
+      "mammal",
+      "ape",
+      "endangered"
+    ],
+    "description": "Rare great ape, closely related to chimps. Bonobos are peaceful and found in Congo."
+  },
+  {
+    "filename": "booby.png",
+    "slug": "booby",
+    "name": "Booby",
+    "tags": [
+      "bird",
+      "seabird",
+      "tropics"
+    ],
+    "description": "Ocean bird with bright feet, dives for fish. Boobies nest on islands in large colonies."
+  },
+  {
+    "filename": "budgerigar.png",
+    "slug": "budgerigar",
+    "name": "Budgerigar",
+    "tags": [
+      "bird",
+      "parrot",
+      "pet"
+    ],
+    "description": "Small, colorful parrot. Budgerigars are playful, sociable, and popular as pets."
+  },
+  {
+    "filename": "buffalo.png",
     "slug": "buffalo",
     "name": "Buffalo",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A large, sturdy mammal with horns. Buffaloes live in grasslands and are important for agriculture and wildlife.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Buffalo-J1JU3w7RBDUDkXsTL944e1OXW9uV8N.png"
+    "tags": [
+      "mammal",
+      "bovine",
+      "herd"
+    ],
+    "description": "Large, horned grazer of Africa and Asia. Buffalo are strong and often live near water."
   },
   {
-    "id": "8",
-    "filename": "Cat.png",
-    "slug": "cat",
-    "name": "Cat",
-    "tags": ["animals", "pet", "basic"],
-    "desc": "A small, carnivorous mammal often kept as a pet. Cats are known for their agility, independence, and playful behavior.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cat-0ohC6iorlB0SXUu7aCJUDjg9hLX3vZ.png"
+    "filename": "bushbaby.png",
+    "slug": "bushbaby",
+    "name": "Bushbaby",
+    "tags": [
+      "mammal",
+      "primate",
+      "nocturnal"
+    ],
+    "description": "Tiny, big-eyed primate from Africa. Bushbabies leap between trees at night."
   },
   {
-    "id": "9",
-    "filename": "Computer.png",
-    "slug": "computer",
-    "name": "Computer",
-    "tags": ["objects", "technology", "basic"],
-    "desc": "A modern computing device used for work, entertainment, and communication.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=computer"
+    "filename": "butterfly.png",
+    "slug": "butterfly",
+    "name": "Butterfly",
+    "tags": [
+      "insect",
+      "winged",
+      "metamorphosis"
+    ],
+    "description": "Delicate insect with colorful wings. Butterflies start as caterpillars before flying."
   },
   {
-    "id": "10",
-    "filename": "Phone.png",
-    "slug": "phone",
-    "name": "Phone",
-    "tags": ["objects", "technology", "basic"],
-    "desc": "A mobile communication device that connects people around the world.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=phone"
+    "filename": "caiman.png",
+    "slug": "caiman",
+    "name": "Caiman",
+    "tags": [
+      "reptile",
+      "crocodilian",
+      "river"
+    ],
+    "description": "Small, tropical relative of alligators. Caimans are found in Central and South America."
   },
   {
-    "id": "11",
-    "filename": "Lion.png",
-    "slug": "lion",
-    "name": "Lion",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A large, social big cat known as the 'king of the jungle.' Lions live in prides and are found mostly in African savannas.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=lion"
+    "filename": "calf.png",
+    "slug": "calf",
+    "name": "Calf",
+    "tags": [
+      "mammal",
+      "young",
+      "livestock"
+    ],
+    "description": "Young cow or bull, known for playful behavior. Calves grow quickly into adults."
   },
   {
-    "id": "12",
-    "filename": "Table.png",
-    "slug": "table",
-    "name": "Table",
-    "tags": ["objects", "furniture", "basic"],
-    "desc": "A piece of furniture with a flat top and legs, used for various purposes.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=table"
+    "filename": "camel.png",
+    "slug": "camel",
+    "name": "Camel",
+    "tags": [
+      "mammal",
+      "desert",
+      "pack-animal"
+    ],
+    "description": "Long-legged animal with a humped back. Camels are well adapted for life in the desert."
   },
   {
-    "id": "13",
-    "filename": "Eagle.png",
-    "slug": "eagle",
-    "name": "Eagle",
-    "tags": ["animals", "bird", "air"],
-    "desc": "A powerful bird of prey with keen eyesight. Eagles soar high and hunt small animals.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Eagle-J2BsYsqeoEgGSCXWmWHURnJPPWOHvd.png"
+    "filename": "canary.png",
+    "slug": "canary",
+    "name": "Canary",
+    "tags": [
+      "bird",
+      "songbird",
+      "yellow"
+    ],
+    "description": "Small, bright-yellow songbird. Canaries are prized for their melodious singing."
   },
   {
-    "id": "14",
-    "filename": "Chair.png",
-    "slug": "chair",
-    "name": "Chair",
-    "tags": ["objects", "furniture", "basic"],
-    "desc": "A seat with a back, designed for one person to sit on.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=chair"
+    "filename": "capuchin.png",
+    "slug": "capuchin",
+    "name": "Capuchin",
+    "tags": [
+      "mammal",
+      "primate",
+      "agile"
+    ],
+    "description": "Small, clever monkey from Central/South America. Capuchins use tools and live in trees."
   },
   {
-    "id": "15",
-    "filename": "Elephant.png",
-    "slug": "elephant",
-    "name": "Elephant",
-    "tags": ["animals", "nature", "land"],
-    "desc": "The largest land mammal, recognized by its trunk and tusks. Elephants live in herds and are found in Africa and Asia.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=elephant"
+    "filename": "capybara.png",
+    "slug": "capybara",
+    "name": "Capybara",
+    "tags": [
+      "mammal",
+      "rodent",
+      "semi-aquatic"
+    ],
+    "description": "The world’s largest rodent. Capybaras love water and live in social groups."
   },
   {
-    "id": "16",
-    "filename": "Lamp.png",
-    "slug": "lamp",
-    "name": "Lamp",
-    "tags": ["objects", "lighting", "basic"],
-    "desc": "A device that produces light, typically used for illumination in homes and offices.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=lamp"
-  },
-  {
-    "id": "17",
-    "filename": "Tiger.png",
-    "slug": "tiger",
-    "name": "Tiger",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A large, striped big cat native to Asia. Tigers are powerful predators and mostly solitary animals found in forests and grasslands.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=tiger"
-  },
-  {
-    "id": "18",
-    "filename": "Book.png",
-    "slug": "book",
-    "name": "Book",
-    "tags": ["objects", "education", "basic"],
-    "desc": "A set of printed or written pages bound together, containing information or stories.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=book"
-  },
-  {
-    "id": "19",
-    "filename": "Penguin.png",
-    "slug": "penguin",
-    "name": "Penguin",
-    "tags": ["animals", "bird", "sea"],
-    "desc": "A flightless bird adapted for swimming. Penguins live in the Southern Hemisphere, mostly in Antarctica.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=penguin"
-  },
-  {
-    "id": "20",
-    "filename": "Clock.png",
-    "slug": "clock",
-    "name": "Clock",
-    "tags": ["objects", "time", "basic"],
-    "desc": "A device used to measure and display time.",
-    "imageUrl": "/placeholder.svg?height=200&width=200&query=clock"
-  },
-  {
-    "id": "21",
-    "filename": "Caracal.png",
+    "filename": "caracal.png",
     "slug": "caracal",
     "name": "Caracal",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A wild cat with distinctive black-tipped ears and tufted appearance. Caracals are agile hunters found in Africa and Asia.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Caracal-XmtAzcpEhVegk3OmFJCNPANgziuDTs.png"
+    "tags": [
+      "mammal",
+      "feline",
+      "Africa"
+    ],
+    "description": "Wild cat with long tufted ears. Caracals are fast, powerful hunters in Africa and Asia."
   },
   {
-    "id": "22",
-    "filename": "Caterpillar.png",
+    "filename": "caribou.png",
+    "slug": "caribou",
+    "name": "Caribou",
+    "tags": [
+      "mammal",
+      "arctic",
+      "antlered"
+    ],
+    "description": "Large, wild reindeer found in cold climates. Caribou migrate long distances each year."
+  },
+  {
+    "filename": "carp.png",
+    "slug": "carp",
+    "name": "Carp",
+    "tags": [
+      "fish",
+      "freshwater",
+      "hardy"
+    ],
+    "description": "Common freshwater fish, often kept in ponds. Carp can adapt to many environments."
+  },
+  {
+    "filename": "cassowary.png",
+    "slug": "cassowary",
+    "name": "Cassowary",
+    "tags": [
+      "bird",
+      "flightless",
+      "prehistoric"
+    ],
+    "description": "Huge, flightless bird from Australia and New Guinea. Cassowaries have bright necks."
+  },
+  {
+    "filename": "cat.png",
+    "slug": "cat",
+    "name": "Cat",
+    "tags": [
+      "mammal",
+      "feline",
+      "pet"
+    ],
+    "description": "Small, playful, and independent mammal. Cats are beloved as house pets worldwide."
+  },
+  {
+    "filename": "caterpillar.png",
     "slug": "caterpillar",
     "name": "Caterpillar",
-    "tags": ["animals", "insect", "nature"],
-    "desc": "The larval stage of butterflies and moths. Caterpillars are known for their segmented bodies and transformation into adults.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Caterpillar-o2Mp7OQVEWaoAgTOGh3WwtSNqJ1LWC.png"
+    "tags": [
+      "insect",
+      "larva",
+      "metamorphosis"
+    ],
+    "description": "The larval stage of butterflies and moths, known for eating leaves and transforming."
   },
   {
-    "id": "23",
-    "filename": "Chameleon.png",
+    "filename": "catfish.png",
+    "slug": "catfish",
+    "name": "Catfish",
+    "tags": [
+      "fish",
+      "freshwater",
+      "whiskered"
+    ],
+    "description": "Fish with whisker-like barbels, found in rivers and lakes. Catfish are bottom dwellers."
+  },
+  {
+    "filename": "cavy.png",
+    "slug": "cavy",
+    "name": "Cavy",
+    "tags": [
+      "mammal",
+      "rodent",
+      "small"
+    ],
+    "description": "Small rodent, also known as guinea pig. Cavies are social and kept as pets."
+  },
+  {
+    "filename": "centipede.png",
+    "slug": "centipede",
+    "name": "Centipede",
+    "tags": [
+      "insect",
+      "many-legged",
+      "fast"
+    ],
+    "description": "Long, segmented arthropod with many legs. Centipedes are fast predators in soil/leaves."
+  },
+  {
+    "filename": "chameleon.png",
     "slug": "chameleon",
     "name": "Chameleon",
-    "tags": ["animals", "reptile", "land"],
-    "desc": "A colorful lizard famous for changing its skin color. Chameleons live in forests and bushes.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Chameleon-78XFeQNIrsjOA27LNEr5MO9lT0IoAy.png"
+    "tags": [
+      "reptile",
+      "lizard",
+      "color-changing"
+    ],
+    "description": "Lizard with eyes that move independently and skin that changes color for camouflage."
   },
   {
-    "id": "24",
-    "filename": "Cat.png",
-    "slug": "cat-new",
-    "name": "Cat",
-    "tags": ["animals", "pet", "basic"],
-    "desc": "A small, carnivorous mammal often kept as a pet. Cats are known for their agility, independence, and playful behavior.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cat-0ohC6iorlB0SXUu7aCJUDjg9hLX3vZ.png"
-  },
-  {
-    "id": "25",
-    "filename": "Buffalo.png",
-    "slug": "buffalo-new",
-    "name": "Buffalo",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A large, sturdy mammal with horns. Buffaloes live in grasslands and are important for agriculture and wildlife.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Buffalo-J1JU3w7RBDUDkXsTL944e1OXW9uV8N.png"
-  },
-  {
-    "id": "26",
-    "filename": "Cheetah.png",
+    "filename": "cheetah.png",
     "slug": "cheetah",
     "name": "Cheetah",
-    "tags": ["animals", "nature", "land"],
-    "desc": "The fastest land animal, known for its spotted coat and incredible speed. Cheetahs are found in African savannas.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cheetah-Qn8q8DuihDo1U32PCmgtziz4k7KhnS.png"
+    "tags": [
+      "mammal",
+      "feline",
+      "speed"
+    ],
+    "description": "The fastest land animal, cheetahs sprint after prey on African grasslands."
   },
   {
-    "id": "27",
-    "filename": "Duck.png",
-    "slug": "duck",
-    "name": "Duck",
-    "tags": ["animals", "bird", "water"],
-    "desc": "A waterfowl bird with webbed feet and a broad bill. Ducks live near water and are known for their quacking.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Duck-97HQNwwz6TlM6Uqdd7YlS1tADEX3gb.png"
+    "filename": "chickadee.png",
+    "slug": "chickadee",
+    "name": "Chickadee",
+    "tags": [
+      "bird",
+      "songbird",
+      "black-cap"
+    ],
+    "description": "Small, cheerful bird with a black cap. Chickadees are known for their “chick-a-dee” call."
   },
   {
-    "id": "28",
-    "filename": "Eagle.png",
-    "slug": "eagle-new",
-    "name": "Eagle",
-    "tags": ["animals", "bird", "air"],
-    "desc": "A powerful bird of prey with keen eyesight. Eagles soar high and hunt small animals.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Eagle-J2BsYsqeoEgGSCXWmWHURnJPPWOHvd.png"
+    "filename": "chicken.png",
+    "slug": "chicken",
+    "name": "Chicken",
+    "tags": [
+      "bird",
+      "farm",
+      "domestic"
+    ],
+    "description": "Common domestic bird raised for eggs and meat. Chickens are found worldwide."
   },
   {
-    "id": "29",
-    "filename": "Dog.png",
+    "filename": "chimpanzee.png",
+    "slug": "chimpanzee",
+    "name": "Chimpanzee",
+    "tags": [
+      "mammal",
+      "ape",
+      "intelligent"
+    ],
+    "description": "Intelligent, social primate using tools. Chimpanzees live in African forests."
+  },
+  {
+    "filename": "chinchilla.png",
+    "slug": "chinchilla",
+    "name": "Chinchilla",
+    "tags": [
+      "mammal",
+      "rodent",
+      "fluffy"
+    ],
+    "description": "Soft, fluffy rodent from South America. Chinchillas are prized for their dense fur."
+  },
+  {
+    "filename": "chipmunk.png",
+    "slug": "chipmunk",
+    "name": "Chipmunk",
+    "tags": [
+      "mammal",
+      "rodent",
+      "striped"
+    ],
+    "description": "Small rodent with cheek pouches and striped back. Chipmunks are active and agile."
+  },
+  {
+    "filename": "cicada.png",
+    "slug": "cicada",
+    "name": "Cicada",
+    "tags": [
+      "insect",
+      "singing",
+      "summer"
+    ],
+    "description": "Insect famous for loud summer sounds. Cicadas emerge in cycles and live underground as nymphs."
+  },
+  {
+    "filename": "civet.png",
+    "slug": "civet",
+    "name": "Civet",
+    "tags": [
+      "mammal",
+      "carnivore",
+      "nocturnal"
+    ],
+    "description": "Cat-like mammal with a long tail and spots. Civets are active at night and eat fruit."
+  },
+  {
+    "filename": "clam.png",
+    "slug": "clam",
+    "name": "Clam",
+    "tags": [
+      "mollusk",
+      "shell",
+      "filter-feeder"
+    ],
+    "description": "Soft-bodied animal in a two-part shell. Clams burrow in sand and filter water for food."
+  },
+  {
+    "filename": "clownfish.png",
+    "slug": "clownfish",
+    "name": "Clownfish",
+    "tags": [
+      "fish",
+      "coral",
+      "colorful"
+    ],
+    "description": "Bright orange and white fish, known for living in sea anemones. Clownfish are social."
+  },
+  {
+    "filename": "coati.png",
+    "slug": "coati",
+    "name": "Coati",
+    "tags": [
+      "mammal",
+      "raccoon",
+      "tropical"
+    ],
+    "description": "Tropical mammal with a long nose and tail. Coatis are playful and curious foragers."
+  },
+  {
+    "filename": "cobra.png",
+    "slug": "cobra",
+    "name": "Cobra",
+    "tags": [
+      "reptile",
+      "snake",
+      "venomous"
+    ],
+    "description": "Highly venomous snake with a hood. Cobras are famous for their warning display."
+  },
+  {
+    "filename": "cockroach.png",
+    "slug": "cockroach",
+    "name": "Cockroach",
+    "tags": [
+      "insect",
+      "pest",
+      "scavenger"
+    ],
+    "description": "Hardy insect found everywhere. Cockroaches adapt quickly and eat almost anything."
+  },
+  {
+    "filename": "colobus.png",
+    "slug": "colobus",
+    "name": "Colobus",
+    "tags": [
+      "mammal",
+      "primate",
+      "leaf-eater"
+    ],
+    "description": "Black-and-white monkey from Africa. Colobus monkeys eat leaves and leap between trees."
+  },
+  {
+    "filename": "coral.png",
+    "slug": "coral",
+    "name": "Coral",
+    "tags": [
+      "animal",
+      "sea",
+      "reef"
+    ],
+    "description": "Marine animal that forms reefs. Corals provide shelter for countless ocean species."
+  },
+  {
+    "filename": "cormorant.png",
+    "slug": "cormorant",
+    "name": "Cormorant",
+    "tags": [
+      "bird",
+      "aquatic",
+      "diver"
+    ],
+    "description": "Water bird with a long neck. Cormorants dive deep to catch fish underwater."
+  },
+  {
+    "filename": "cow.png",
+    "slug": "cow",
+    "name": "Cow",
+    "tags": [
+      "mammal",
+      "livestock",
+      "farm"
+    ],
+    "description": "Domesticated for milk, meat, and labor. Cows are gentle, social herd animals."
+  },
+  {
+    "filename": "coyote.png",
+    "slug": "coyote",
+    "name": "Coyote",
+    "tags": [
+      "mammal",
+      "canine",
+      "wild"
+    ],
+    "description": "Wild dog of North America. Coyotes adapt to many habitats and are skilled hunters."
+  },
+  {
+    "filename": "crab.png",
+    "slug": "crab",
+    "name": "Crab",
+    "tags": [
+      "animal",
+      "crustacean",
+      "aquatic"
+    ],
+    "description": "Small, hard-shelled animal found in oceans and rivers. Crabs walk sideways and scavenge."
+  },
+  {
+    "filename": "crane.png",
+    "slug": "crane",
+    "name": "Crane",
+    "tags": [
+      "bird",
+      "wetland",
+      "tall"
+    ],
+    "description": "Long-legged bird found near water. Cranes perform elaborate mating dances."
+  },
+  {
+    "filename": "cricket.png",
+    "slug": "cricket",
+    "name": "Cricket",
+    "tags": [
+      "insect",
+      "jumping",
+      "singing"
+    ],
+    "description": "Small, jumping insect famous for its chirping at night. Crickets are common everywhere."
+  },
+  {
+    "filename": "crocodile.png",
+    "slug": "crocodile",
+    "name": "Crocodile",
+    "tags": [
+      "reptile",
+      "predator",
+      "river"
+    ],
+    "description": "Large, predatory reptile. Crocodiles have powerful jaws and live in rivers and swamps."
+  },
+  {
+    "filename": "crow.png",
+    "slug": "crow",
+    "name": "Crow",
+    "tags": [
+      "bird",
+      "smart",
+      "black"
+    ],
+    "description": "Intelligent, adaptable bird, known for problem-solving. Crows live worldwide."
+  },
+  {
+    "filename": "deer.png",
+    "slug": "deer",
+    "name": "Deer",
+    "tags": [
+      "mammal",
+      "deer",
+      "antlered"
+    ],
+    "description": "Hoofed grazer with antlers, found in forests and fields worldwide. Deer are shy and alert."
+  },
+  {
+    "filename": "dhole.png",
+    "slug": "dhole",
+    "name": "Dhole",
+    "tags": [
+      "mammal",
+      "canine",
+      "wild"
+    ],
+    "description": "Wild dog from Asia. Dhole lives and hunts in packs in dense forests."
+  },
+  {
+    "filename": "dik-dik.png",
+    "slug": "dik-dik",
+    "name": "Dik Dik",
+    "tags": [
+      "mammal",
+      "antelope",
+      "tiny"
+    ],
+    "description": "One of the smallest antelopes. Dik-diks live in African grasslands and are very alert."
+  },
+  {
+    "filename": "dingo.png",
+    "slug": "dingo",
+    "name": "Dingo",
+    "tags": [
+      "mammal",
+      "canine",
+      "Australia"
+    ],
+    "description": "Wild dog native to Australia. Dingoes live in deserts, forests, and grasslands."
+  },
+  {
+    "filename": "dodo.png",
+    "slug": "dodo",
+    "name": "Dodo",
+    "tags": [
+      "bird",
+      "extinct",
+      "flightless"
+    ],
+    "description": "Extinct, flightless bird from Mauritius. Dodo became a symbol of extinction."
+  },
+  {
+    "filename": "dog.png",
     "slug": "dog",
     "name": "Dog",
-    "tags": ["animals", "pet", "land"],
-    "desc": "A loyal, social mammal commonly kept as a companion. Dogs are known for their intelligence and trainability.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dog-zmGCGewf2HsFl0cHYCBOcKJEfDz5nl.png"
+    "tags": [
+      "mammal",
+      "canine",
+      "pet"
+    ],
+    "description": "Loyal, social mammal kept as a pet. Dogs are known for intelligence and companionship."
   },
   {
-    "id": "30",
-    "filename": "Dolphin.png",
+    "filename": "dolphin.png",
     "slug": "dolphin",
     "name": "Dolphin",
-    "tags": ["animals", "nature", "sea"],
-    "desc": "An intelligent aquatic mammal with a sleek body. Dolphins live in oceans and rivers, known for their playful nature and high intelligence.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dolphin-aOZzmDXUPFo7wpVMoT2KZjHU0RnYis.png"
+    "tags": [
+      "mammal",
+      "whale",
+      "intelligent"
+    ],
+    "description": "Social, intelligent marine mammal. Dolphins communicate with clicks and leaps."
   },
   {
-    "id": "31",
-    "filename": "Vulture.png",
-    "slug": "vulture",
-    "name": "Vulture",
-    "tags": ["animals", "bird", "air"],
-    "desc": "A large bird of prey known for scavenging. Vultures help keep ecosystems clean by feeding on dead animals.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vulture-AzK3JhcMcQDHiOJZbodNIrgxysE2fM.png"
+    "filename": "donkey.png",
+    "slug": "donkey",
+    "name": "Donkey",
+    "tags": [
+      "mammal",
+      "equine",
+      "strong"
+    ],
+    "description": "Hardy working animal. Donkeys are sure-footed and valued for carrying heavy loads."
   },
   {
-    "id": "32",
-    "filename": "Tiger.png",
+    "filename": "dove.png",
+    "slug": "dove",
+    "name": "Dove",
+    "tags": [
+      "bird",
+      "peaceful",
+      "white"
+    ],
+    "description": "Gentle bird symbolizing peace. Doves coo softly and are found in cities and forests."
+  },
+  {
+    "filename": "dragonfly.png",
+    "slug": "dragonfly",
+    "name": "Dragonfly",
+    "tags": [
+      "insect",
+      "flying",
+      "agile"
+    ],
+    "description": "Fast, colorful insect with two pairs of wings. Dragonflies eat mosquitoes and other insects."
+  },
+  {
+    "filename": "duck.png",
+    "slug": "duck",
+    "name": "Duck",
+    "tags": [
+      "bird",
+      "water",
+      "webbed-feet"
+    ],
+    "description": "Waterfowl with webbed feet and a broad bill. Ducks are found on ponds, lakes, and rivers."
+  },
+  {
+    "filename": "duckling.png",
+    "slug": "duckling",
+    "name": "Duckling",
+    "tags": [
+      "bird",
+      "young",
+      "waterfowl"
+    ],
+    "description": "Young duck covered in soft down. Ducklings swim after their mother and learn quickly."
+  },
+  {
+    "filename": "dugong.png",
+    "slug": "dugong",
+    "name": "Dugong",
+    "tags": [
+      "mammal",
+      "marine",
+      "gentle"
+    ],
+    "description": "Large, gentle sea mammal called a \"sea cow.\" Dugongs graze on seagrass in shallow waters."
+  },
+  {
+    "filename": "eagle.png",
+    "slug": "eagle",
+    "name": "Eagle",
+    "tags": [
+      "bird",
+      "raptor",
+      "sharp-eyed"
+    ],
+    "description": "Large, powerful bird of prey with keen eyesight. Eagles soar high and hunt skillfully."
+  },
+  {
+    "filename": "echidna.png",
+    "slug": "echidna",
+    "name": "Echidna",
+    "tags": [
+      "mammal",
+      "monotreme",
+      "spiny"
+    ],
+    "description": "Egg-laying mammal with spines like a hedgehog. Echidnas eat ants and live in Australia."
+  },
+  {
+    "filename": "eel.png",
+    "slug": "eel",
+    "name": "Eel",
+    "tags": [
+      "fish",
+      "snake-like",
+      "slippery"
+    ],
+    "description": "Long, slender fish with smooth skin. Eels live in both fresh and salt water."
+  },
+  {
+    "filename": "egret.png",
+    "slug": "egret",
+    "name": "Egret",
+    "tags": [
+      "bird",
+      "wader",
+      "elegant"
+    ],
+    "description": "Tall, graceful bird found in wetlands. Egrets have white plumage and hunt for fish."
+  },
+  {
+    "filename": "electric-eel.png",
+    "slug": "electric-eel",
+    "name": "Electric Eel",
+    "tags": [
+      "fish",
+      "electric",
+      "river"
+    ],
+    "description": "Fish that generates electric shocks. Electric eels use electricity to hunt and navigate."
+  },
+  {
+    "filename": "elephant.png",
+    "slug": "elephant",
+    "name": "Elephant",
+    "tags": [
+      "mammal",
+      "largest",
+      "tusked"
+    ],
+    "description": "The largest land animal. Elephants have trunks and tusks and live in Africa and Asia."
+  },
+  {
+    "filename": "emu.png",
+    "slug": "emu",
+    "name": "Emu",
+    "tags": [
+      "bird",
+      "flightless",
+      "Australia"
+    ],
+    "description": "Large, fast-running, flightless bird native to Australia. Emus have long legs and necks."
+  },
+  {
+    "filename": "falcon.png",
+    "slug": "falcon",
+    "name": "Falcon",
+    "tags": [
+      "bird",
+      "raptor",
+      "speed"
+    ],
+    "description": "Swift, predatory bird with sharp talons and a hooked beak. Falcons hunt by diving at high speed."
+  },
+  {
+    "filename": "fennec-fox.png",
+    "slug": "fennec-fox",
+    "name": "Fennec Fox",
+    "tags": [
+      "mammal",
+      "fox",
+      "desert"
+    ],
+    "description": "Small fox with huge ears, adapted for desert life. Fennec foxes stay cool in the Sahara."
+  },
+  {
+    "filename": "ferret.png",
+    "slug": "ferret",
+    "name": "Ferret",
+    "tags": [
+      "mammal",
+      "weasel",
+      "playful"
+    ],
+    "description": "Slender, playful mammal with a long body. Ferrets are energetic and curious pets."
+  },
+  {
+    "filename": "finch.png",
+    "slug": "finch",
+    "name": "Finch",
+    "tags": [
+      "bird",
+      "songbird",
+      "small"
+    ],
+    "description": "Tiny, lively songbird found worldwide. Finches have colorful plumage and varied songs."
+  },
+  {
+    "filename": "firefly.png",
+    "slug": "firefly",
+    "name": "Firefly",
+    "tags": [
+      "insect",
+      "glowing",
+      "night"
+    ],
+    "description": "Beetle that lights up at night to attract mates. Fireflies are a summer night delight."
+  },
+  {
+    "filename": "flamingo.png",
+    "slug": "flamingo",
+    "name": "Flamingo",
+    "tags": [
+      "bird",
+      "wader",
+      "pink"
+    ],
+    "description": "Tall wading bird with pink feathers. Flamingos get their color from their diet."
+  },
+  {
+    "filename": "fly.png",
+    "slug": "fly",
+    "name": "Fly",
+    "tags": [
+      "insect",
+      "flying",
+      "pest"
+    ],
+    "description": "Common, fast-breeding insect. Flies are found everywhere and feed on many things."
+  },
+  {
+    "filename": "foal.png",
+    "slug": "foal",
+    "name": "Foal",
+    "tags": [
+      "mammal",
+      "equine",
+      "young"
+    ],
+    "description": "Young horse, full of energy and curiosity. Foals can stand and run shortly after birth."
+  },
+  {
+    "filename": "fossa.png",
+    "slug": "fossa",
+    "name": "Fossa",
+    "tags": [
+      "mammal",
+      "predator",
+      "Madagascar"
+    ],
+    "description": "Cat-like predator from Madagascar. Fossas are agile hunters in forests."
+  },
+  {
+    "filename": "fox.png",
+    "slug": "fox",
+    "name": "Fox",
+    "tags": [
+      "mammal",
+      "canine",
+      "clever"
+    ],
+    "description": "Small, smart mammal with a bushy tail. Foxes adapt to many environments."
+  },
+  {
+    "filename": "frigatebird.png",
+    "slug": "frigatebird",
+    "name": "Frigatebird",
+    "tags": [
+      "bird",
+      "seabird",
+      "pirate"
+    ],
+    "description": "Large seabird known for stealing food from others. Frigatebirds glide effortlessly over oceans."
+  },
+  {
+    "filename": "frog.png",
+    "slug": "frog",
+    "name": "Frog",
+    "tags": [
+      "amphibian",
+      "jumping",
+      "aquatic"
+    ],
+    "description": "Moist-skinned animal that jumps. Frogs lay eggs in water and have a loud croak."
+  },
+  {
+    "filename": "galago.png",
+    "slug": "galago",
+    "name": "Galago",
+    "tags": [
+      "mammal",
+      "primate",
+      "small"
+    ],
+    "description": "Also called bushbaby. Galagos are tiny, nocturnal primates from Africa."
+  },
+  {
+    "filename": "gaur.png",
+    "slug": "gaur",
+    "name": "Gaur",
+    "tags": [
+      "mammal",
+      "bovine",
+      "India"
+    ],
+    "description": "Wild cattle native to South Asia. Gaur are huge, strong animals living in forests."
+  },
+  {
+    "filename": "gazelle.png",
+    "slug": "gazelle",
+    "name": "Gazelle",
+    "tags": [
+      "mammal",
+      "antelope",
+      "swift"
+    ],
+    "description": "Swift antelope with slender build and curved horns. Gazelles live in African grasslands."
+  },
+  {
+    "filename": "gecko.png",
+    "slug": "gecko",
+    "name": "Gecko",
+    "tags": [
+      "reptile",
+      "lizard",
+      "sticky-toed"
+    ],
+    "description": "Small lizard with sticky toe pads for climbing. Geckos are active at night."
+  },
+  {
+    "filename": "genet.png",
+    "slug": "genet",
+    "name": "Genet",
+    "tags": [
+      "mammal",
+      "carnivore",
+      "agile"
+    ],
+    "description": "Small, spotted predator from Africa. Genets have long tails and live in trees."
+  },
+  {
+    "filename": "gibbon.png",
+    "slug": "gibbon",
+    "name": "Gibbon",
+    "tags": [
+      "mammal",
+      "primate",
+      "swinging"
+    ],
+    "description": "Small, acrobatic ape known for swinging through trees. Gibbons are loud and social."
+  },
+  {
+    "filename": "gila-monster.png",
+    "slug": "gila-monster",
+    "name": "Gila Monster",
+    "tags": [
+      "reptile",
+      "lizard",
+      "venomous"
+    ],
+    "description": "Large, venomous lizard from the US Southwest. Gila monsters store fat in their tails."
+  },
+  {
+    "filename": "giraffe.png",
+    "slug": "giraffe",
+    "name": "Giraffe",
+    "tags": [
+      "mammal",
+      "tall",
+      "herbivore"
+    ],
+    "description": "The tallest land animal. Giraffes have long necks to reach high leaves in African trees."
+  },
+  {
+    "filename": "glass-frog.png",
+    "slug": "glass-frog",
+    "name": "Glass Frog",
+    "tags": [
+      "amphibian",
+      "translucent",
+      "tropical"
+    ],
+    "description": "Small frog with see-through skin, revealing organs. Glass frogs live in Central/South America."
+  },
+  {
+    "filename": "glowworm.png",
+    "slug": "glowworm",
+    "name": "Glowworm",
+    "tags": [
+      "insect",
+      "glowing",
+      "larval"
+    ],
+    "description": "Insect larva that glows in the dark. Glowworms are found in caves and forests."
+  },
+  {
+    "filename": "gnu.png",
+    "slug": "gnu",
+    "name": "Gnu",
+    "tags": [
+      "mammal",
+      "antelope",
+      "wildebeest"
+    ],
+    "description": "Large African antelope, also called wildebeest. Gnus migrate in massive herds."
+  },
+  {
+    "filename": "goat.png",
+    "slug": "goat",
+    "name": "Goat",
+    "tags": [
+      "mammal",
+      "livestock",
+      "horned"
+    ],
+    "description": "Domesticated for milk, meat, and wool. Goats are hardy, agile animals in many climates."
+  },
+  {
+    "filename": "golden-lion-tamarin.png",
+    "slug": "golden-lion-tamarin",
+    "name": "Golden Lion Tamarin",
+    "tags": [
+      "mammal",
+      "primate",
+      "endangered"
+    ],
+    "description": "Bright orange monkey from Brazil. Golden lion tamarins live in treetops and are rare."
+  },
+  {
+    "filename": "goldfish.png",
+    "slug": "goldfish",
+    "name": "Goldfish",
+    "tags": [
+      "fish",
+      "freshwater",
+      "ornamental"
+    ],
+    "description": "Bright orange fish often kept in ponds and aquariums. Goldfish are peaceful and hardy."
+  },
+  {
+    "filename": "goose.png",
+    "slug": "goose",
+    "name": "Goose",
+    "tags": [
+      "bird",
+      "waterfowl",
+      "honking"
+    ],
+    "description": "Large, honking bird found near water. Geese fly in flocks and are known for migration."
+  },
+  {
+    "filename": "gopher.png",
+    "slug": "gopher",
+    "name": "Gopher",
+    "tags": [
+      "mammal",
+      "rodent",
+      "burrowing"
+    ],
+    "description": "Small, burrowing rodent that creates tunnels in fields and gardens. Gophers are diggers."
+  },
+  {
+    "filename": "gorilla.png",
+    "slug": "gorilla",
+    "name": "Gorilla",
+    "tags": [
+      "mammal",
+      "ape",
+      "strong"
+    ],
+    "description": "The largest living primate. Gorillas live in forests and form close family groups."
+  },
+  {
+    "filename": "grasshopper.png",
+    "slug": "grasshopper",
+    "name": "Grasshopper",
+    "tags": [
+      "insect",
+      "jumping",
+      "green"
+    ],
+    "description": "Small, green insect with strong legs for jumping. Grasshoppers are found in fields."
+  },
+  {
+    "filename": "griffon-vulture.png",
+    "slug": "griffon-vulture",
+    "name": "Griffon Vulture",
+    "tags": [
+      "bird",
+      "scavenger",
+      "large"
+    ],
+    "description": "Large scavenging bird with broad wings. Griffon vultures soar over mountains in Europe/Asia."
+  },
+  {
+    "filename": "grizzly-bear.png",
+    "slug": "grizzly-bear",
+    "name": "Grizzly Bear",
+    "tags": [
+      "mammal",
+      "bear",
+      "powerful"
+    ],
+    "description": "Large, powerful brown bear found in North America. Grizzly bears are top predators."
+  },
+  {
+    "filename": "grouse.png",
+    "slug": "grouse",
+    "name": "Grouse",
+    "tags": [
+      "bird",
+      "game",
+      "ground-dwelling"
+    ],
+    "description": "Medium-sized ground bird. Grouse are found in forests and are hunted for sport."
+  },
+  {
+    "filename": "guinea-fowl.png",
+    "slug": "guinea-fowl",
+    "name": "Guinea Fowl",
+    "tags": [
+      "bird",
+      "fowl",
+      "spotted"
+    ],
+    "description": "Spotted, ground-dwelling bird from Africa. Guinea fowl are raised for meat and eggs."
+  },
+  {
+    "filename": "guppy.png",
+    "slug": "guppy",
+    "name": "Guppy",
+    "tags": [
+      "fish",
+      "freshwater",
+      "tiny"
+    ],
+    "description": "Small, colorful fish popular in aquariums. Guppies breed rapidly and have lively colors."
+  },
+  {
+    "filename": "hagfish.png",
+    "slug": "hagfish",
+    "name": "Hagfish",
+    "tags": [
+      "fish",
+      "jawless",
+      "deep-sea"
+    ],
+    "description": "Eel-like, jawless fish producing slime. Hagfish live in deep seas and scavenge on dead animals."
+  },
+  {
+    "filename": "hamster.png",
+    "slug": "hamster",
+    "name": "Hamster",
+    "tags": [
+      "mammal",
+      "rodent",
+      "pet"
+    ],
+    "description": "Small, round rodent often kept as a pet. Hamsters store food in their cheeks."
+  },
+  {
+    "filename": "hare.png",
+    "slug": "hare",
+    "name": "Hare",
+    "tags": [
+      "mammal",
+      "lagomorph",
+      "fast"
+    ],
+    "description": "Fast-moving mammal with long ears. Hares live in grasslands and open forests."
+  },
+  {
+    "filename": "hawk.png",
+    "slug": "hawk",
+    "name": "Hawk",
+    "tags": [
+      "bird",
+      "raptor",
+      "keen-eyed"
+    ],
+    "description": "Bird of prey with sharp vision and powerful talons. Hawks hunt rodents and small birds."
+  },
+  {
+    "filename": "hedgehog.png",
+    "slug": "hedgehog",
+    "name": "Hedgehog",
+    "tags": [
+      "mammal",
+      "spiny",
+      "nocturnal"
+    ],
+    "description": "Small mammal covered in sharp spines. Hedgehogs roll into a ball for protection."
+  },
+  {
+    "filename": "hen.png",
+    "slug": "hen",
+    "name": "Hen",
+    "tags": [
+      "bird",
+      "farm",
+      "domestic"
+    ],
+    "description": "Female chicken that lays eggs. Hens are common in farms and backyards."
+  },
+  {
+    "filename": "heron.png",
+    "slug": "heron",
+    "name": "Heron",
+    "tags": [
+      "bird",
+      "wader",
+      "long-legged"
+    ],
+    "description": "Tall, slender bird found near water. Herons hunt fish with their sharp beaks."
+  },
+  {
+    "filename": "herring.png",
+    "slug": "herring",
+    "name": "Herring",
+    "tags": [
+      "fish",
+      "sea",
+      "schooling"
+    ],
+    "description": "Small, silvery fish that travel in schools. Herrings are important food for many animals."
+  },
+  {
+    "filename": "hippopotamus.png",
+    "slug": "hippopotamus",
+    "name": "Hippopotamus",
+    "tags": [
+      "mammal",
+      "large",
+      "river"
+    ],
+    "description": "Huge, mostly aquatic mammal with large jaws. Hippos spend most of their day in water."
+  },
+  {
+    "filename": "hog.png",
+    "slug": "hog",
+    "name": "Hog",
+    "tags": [
+      "mammal",
+      "pig",
+      "farm"
+    ],
+    "description": "Domestic pig with a stocky build and a flat snout. Hogs are raised for meat."
+  },
+  {
+    "filename": "horse.png",
+    "slug": "horse",
+    "name": "Horse",
+    "tags": [
+      "mammal",
+      "equine",
+      "riding"
+    ],
+    "description": "Large, strong animal used for riding, racing, and work. Horses have lived with humans for centuries."
+  },
+  {
+    "filename": "hummingbird.png",
+    "slug": "hummingbird",
+    "name": "Hummingbird",
+    "tags": [
+      "bird",
+      "nectar",
+      "tiny"
+    ],
+    "description": "Tiny, hovering bird with fast wings. Hummingbirds drink nectar from flowers."
+  },
+  {
+    "filename": "hyena.png",
+    "slug": "hyena",
+    "name": "Hyena",
+    "tags": [
+      "mammal",
+      "carnivore",
+      "scavenger"
+    ],
+    "description": "Large African predator known for its laugh-like calls. Hyenas live in clans and scavenge."
+  },
+  {
+    "filename": "ibex.png",
+    "slug": "ibex",
+    "name": "Ibex",
+    "tags": [
+      "mammal",
+      "mountain",
+      "wild"
+    ],
+    "description": "Wild goat with long, curved horns. Ibex are expert climbers found in rocky mountains."
+  },
+  {
+    "filename": "iguana.png",
+    "slug": "iguana",
+    "name": "Iguana",
+    "tags": [
+      "reptile",
+      "lizard",
+      "tropical"
+    ],
+    "description": "Large, calm lizard with a spiny back. Iguanas live in tropical forests and bask in the sun."
+  },
+  {
+    "filename": "impala.png",
+    "slug": "impala",
+    "name": "Impala",
+    "tags": [
+      "mammal",
+      "antelope",
+      "swift"
+    ],
+    "description": "Sleek African antelope, famous for speed and leaping. Impalas gather in large herds."
+  },
+  {
+    "filename": "jackal.png",
+    "slug": "jackal",
+    "name": "Jackal",
+    "tags": [
+      "mammal",
+      "canine",
+      "wild"
+    ],
+    "description": "Small, clever wild dog of Africa and Asia. Jackals are scavengers and hunters."
+  },
+  {
+    "filename": "jaguar.png",
+    "slug": "jaguar",
+    "name": "Jaguar",
+    "tags": [
+      "mammal",
+      "feline",
+      "predator"
+    ],
+    "description": "Powerful big cat with rosettes on its coat. Jaguars are skilled swimmers and hunters."
+  },
+  {
+    "filename": "jellyfish.png",
+    "slug": "jellyfish",
+    "name": "Jellyfish",
+    "tags": [
+      "animal",
+      "marine",
+      "gelatinous"
+    ],
+    "description": "Soft, transparent sea creature. Jellyfish drift and sting with tentacles."
+  },
+  {
+    "filename": "kangaroo.png",
+    "slug": "kangaroo",
+    "name": "Kangaroo",
+    "tags": [
+      "mammal",
+      "marsupial",
+      "hopping"
+    ],
+    "description": "Unique marsupial from Australia, known for its powerful jumps and front pouch."
+  },
+  {
+    "filename": "kingfisher.png",
+    "slug": "kingfisher",
+    "name": "Kingfisher",
+    "tags": [
+      "bird",
+      "river",
+      "bright"
+    ],
+    "description": "Vibrant bird with a long bill. Kingfishers dive into water to catch fish."
+  },
+  {
+    "filename": "kitten.png",
+    "slug": "kitten",
+    "name": "Kitten",
+    "tags": [
+      "mammal",
+      "feline",
+      "pet"
+    ],
+    "description": "Young, playful cat. Kittens are curious, active, and love to explore."
+  },
+  {
+    "filename": "koala.png",
+    "slug": "koala",
+    "name": "Koala",
+    "tags": [
+      "mammal",
+      "marsupial",
+      "Australia"
+    ],
+    "description": "Eucalyptus-loving marsupial with big nose and fluffy ears. Koalas sleep up to 20 hours."
+  },
+  {
+    "filename": "koi.png",
+    "slug": "koi",
+    "name": "Koi",
+    "tags": [
+      "fish",
+      "ornamental",
+      "pond"
+    ],
+    "description": "Ornamental carp, known for bright colors. Koi are popular in garden ponds."
+  },
+  {
+    "filename": "komodo-dragon.png",
+    "slug": "komodo-dragon",
+    "name": "Komodo Dragon",
+    "tags": [
+      "reptile",
+      "lizard",
+      "giant"
+    ],
+    "description": "Largest living lizard. Komodo dragons are powerful predators from Indonesian islands."
+  },
+  {
+    "filename": "kookaburra.png",
+    "slug": "kookaburra",
+    "name": "Kookaburra",
+    "tags": [
+      "bird",
+      "laughing",
+      "Australia"
+    ],
+    "description": "Stocky, brown-and-white bird with a loud laugh. Kookaburras eat insects and small prey."
+  },
+  {
+    "filename": "ladybug.png",
+    "slug": "ladybug",
+    "name": "Ladybug",
+    "tags": [
+      "insect",
+      "beetle",
+      "spotted"
+    ],
+    "description": "Small beetle with red wings and black spots. Ladybugs eat aphids and are garden friends."
+  },
+  {
+    "filename": "lamb.png",
+    "slug": "lamb",
+    "name": "Lamb",
+    "tags": [
+      "mammal",
+      "sheep",
+      "young"
+    ],
+    "description": "Young sheep, known for its playful jumps. Lambs are symbols of innocence."
+  },
+  {
+    "filename": "lemur.png",
+    "slug": "lemur",
+    "name": "Lemur",
+    "tags": [
+      "mammal",
+      "primate",
+      "Madagascar"
+    ],
+    "description": "Tree-dwelling primate with big eyes and a long tail. Lemurs are only found in Madagascar."
+  },
+  {
+    "filename": "lion.png",
+    "slug": "lion",
+    "name": "Lion",
+    "tags": [
+      "mammal",
+      "feline",
+      "big cat"
+    ],
+    "description": "The “king of the jungle.” Lions live in prides and are powerful hunters."
+  },
+  {
+    "filename": "lizard.png",
+    "slug": "lizard",
+    "name": "Lizard",
+    "tags": [
+      "reptile",
+      "lizard",
+      "adaptable"
+    ],
+    "description": "Cold-blooded reptile with scaly skin. Lizards can regrow their tails if lost."
+  },
+  {
+    "filename": "llama.png",
+    "slug": "llama",
+    "name": "Llama",
+    "tags": [
+      "mammal",
+      "livestock",
+      "woolly"
+    ],
+    "description": "Woolly, pack-carrying mammal from South America. Llamas are gentle and social."
+  },
+  {
+    "filename": "lobster.png",
+    "slug": "lobster",
+    "name": "Lobster",
+    "tags": [
+      "animal",
+      "crustacean",
+      "sea"
+    ],
+    "description": "Sea creature with a hard shell and large claws. Lobsters live on the ocean floor."
+  },
+  {
+    "filename": "lynx.png",
+    "slug": "lynx",
+    "name": "Lynx",
+    "tags": [
+      "mammal",
+      "feline",
+      "wildcat"
+    ],
+    "description": "Medium-sized wildcat with tufted ears. Lynx are stealthy and live in forests."
+  },
+  {
+    "filename": "macaw.png",
+    "slug": "macaw",
+    "name": "Macaw",
+    "tags": [
+      "bird",
+      "parrot",
+      "tropical"
+    ],
+    "description": "Large, colorful parrot. Macaws have strong beaks and long tails, living in rainforests."
+  },
+  {
+    "filename": "mackerel.png",
+    "slug": "mackerel",
+    "name": "Mackerel",
+    "tags": [
+      "fish",
+      "ocean",
+      "fast"
+    ],
+    "description": "Fast-swimming, silver fish. Mackerels are important for human consumption."
+  },
+  {
+    "filename": "magpie.png",
+    "slug": "magpie",
+    "name": "Magpie",
+    "tags": [
+      "bird",
+      "songbird",
+      "black-white"
+    ],
+    "description": "Intelligent bird with black and white feathers. Magpies are known for collecting objects."
+  },
+  {
+    "filename": "manatee.png",
+    "slug": "manatee",
+    "name": "Manatee",
+    "tags": [
+      "mammal",
+      "sea",
+      "gentle"
+    ],
+    "description": "Large, slow-moving sea mammal, also called sea cow. Manatees eat aquatic plants."
+  },
+  {
+    "filename": "mandrill.png",
+    "slug": "mandrill",
+    "name": "Mandrill",
+    "tags": [
+      "mammal",
+      "primate",
+      "colorful"
+    ],
+    "description": "Large monkey with colorful face and rump. Mandrills live in African rainforests."
+  },
+  {
+    "filename": "mare.png",
+    "slug": "mare",
+    "name": "Mare",
+    "tags": [
+      "mammal",
+      "horse",
+      "female"
+    ],
+    "description": "Adult female horse, used for riding and work. Mares are strong and nurturing."
+  },
+  {
+    "filename": "margay.png",
+    "slug": "margay",
+    "name": "Margay",
+    "tags": [
+      "mammal",
+      "feline",
+      "agile"
+    ],
+    "description": "Small, agile wild cat from Central/South America. Margays live in trees and hunt at night."
+  },
+  {
+    "filename": "meerkat.png",
+    "slug": "meerkat",
+    "name": "Meerkat",
+    "tags": [
+      "mammal",
+      "mongoose",
+      "vigilant"
+    ],
+    "description": "Small, upright mammal known for sentry duty. Meerkats live in groups in African deserts."
+  },
+  {
+    "filename": "millipede.png",
+    "slug": "millipede",
+    "name": "Millipede",
+    "tags": [
+      "arthropod",
+      "many-legged",
+      "soil"
+    ],
+    "description": "Long-bodied, multi-segmented animal. Millipedes eat decaying plants and live in moist soil."
+  },
+  {
+    "filename": "mole.png",
+    "slug": "mole",
+    "name": "Mole",
+    "tags": [
+      "mammal",
+      "rodent",
+      "digging"
+    ],
+    "description": "Small, burrowing mammal with velvety fur. Moles are nearly blind and live underground."
+  },
+  {
+    "filename": "mongoose.png",
+    "slug": "mongoose",
+    "name": "Mongoose",
+    "tags": [
+      "mammal",
+      "carnivore",
+      "slender"
+    ],
+    "description": "Small, fast mammal famous for snake-fighting skills. Mongooses are clever hunters."
+  },
+  {
+    "filename": "monitor-lizard.png",
+    "slug": "monitor-lizard",
+    "name": "Monitor Lizard",
+    "tags": [
+      "reptile",
+      "lizard",
+      "predator"
+    ],
+    "description": "Large, carnivorous lizard. Monitor lizards are active, strong, and found in Asia/Africa."
+  },
+  {
+    "filename": "monkey.png",
+    "slug": "monkey",
+    "name": "Monkey",
+    "tags": [
+      "mammal",
+      "primate",
+      "social"
+    ],
+    "description": "Clever, social primate. Monkeys live in troops and swing through trees."
+  },
+  {
+    "filename": "moose.png",
+    "slug": "moose",
+    "name": "Moose",
+    "tags": [
+      "mammal",
+      "deer",
+      "antlered"
+    ],
+    "description": "The largest species of deer. Moose have broad antlers and live in cold forests."
+  },
+  {
+    "filename": "moray-eel.png",
+    "slug": "moray-eel",
+    "name": "Moray Eel",
+    "tags": [
+      "fish",
+      "eel",
+      "predatory"
+    ],
+    "description": "Long, snake-like sea predator. Moray eels hide in reefs and have sharp teeth."
+  },
+  {
+    "filename": "mosquito.png",
+    "slug": "mosquito",
+    "name": "Mosquito",
+    "tags": [
+      "insect",
+      "flying",
+      "biting"
+    ],
+    "description": "Small, buzzing insect known for biting and spreading diseases. Mosquitoes love water."
+  },
+  {
+    "filename": "moth.png",
+    "slug": "moth",
+    "name": "Moth",
+    "tags": [
+      "insect",
+      "flying",
+      "night"
+    ],
+    "description": "Moth with soft, scaly wings. Moths are nocturnal and are attracted to light."
+  },
+  {
+    "filename": "mouse.png",
+    "slug": "mouse",
+    "name": "Mouse",
+    "tags": [
+      "mammal",
+      "rodent",
+      "small"
+    ],
+    "description": "Small, quick rodent with a long tail. Mice are found worldwide and adapt easily."
+  },
+  {
+    "filename": "musk-ox.png",
+    "slug": "musk-ox",
+    "name": "Musk Ox",
+    "tags": [
+      "mammal",
+      "ox",
+      "arctic"
+    ],
+    "description": "Large, shaggy animal from arctic tundra. Musk oxen have thick fur for extreme cold."
+  },
+  {
+    "filename": "mussel.png",
+    "slug": "mussel",
+    "name": "Mussel",
+    "tags": [
+      "mollusk",
+      "shellfish",
+      "edible"
+    ],
+    "description": "Soft-bodied animal inside a blue-black shell. Mussels cling to rocks in the sea."
+  },
+  {
+    "filename": "narwhal.png",
+    "slug": "narwhal",
+    "name": "Narwhal",
+    "tags": [
+      "mammal",
+      "whale",
+      "arctic"
+    ],
+    "description": "Long-toothed whale with a spiral tusk. Narwhals live in Arctic waters."
+  },
+  {
+    "filename": "newt.png",
+    "slug": "newt",
+    "name": "Newt",
+    "tags": [
+      "amphibian",
+      "aquatic",
+      "small"
+    ],
+    "description": "Small amphibian with a slender body and tail. Newts live both in water and on land."
+  },
+  {
+    "filename": "numbat.png",
+    "slug": "numbat",
+    "name": "Numbat",
+    "tags": [
+      "mammal",
+      "marsupial",
+      "termite"
+    ],
+    "description": "Small, termite-eating marsupial from Australia. Numbats have striped backs and long tongues."
+  },
+  {
+    "filename": "ocelot.png",
+    "slug": "ocelot",
+    "name": "Ocelot",
+    "tags": [
+      "mammal",
+      "feline",
+      "wildcat"
+    ],
+    "description": "Small wildcat with spots and stripes. Ocelots hunt at night in forests of the Americas."
+  },
+  {
+    "filename": "octopus.png",
+    "slug": "octopus",
+    "name": "Octopus",
+    "tags": [
+      "animal",
+      "sea",
+      "intelligent"
+    ],
+    "description": "Eight-armed mollusk. Octopuses are clever, flexible, and can camouflage themselves."
+  },
+  {
+    "filename": "okapi.png",
+    "slug": "okapi",
+    "name": "Okapi",
+    "tags": [
+      "mammal",
+      "giraffe",
+      "forest"
+    ],
+    "description": "Rare, giraffe-like mammal from Africa. Okapis have striped legs and a long tongue."
+  },
+  {
+    "filename": "opposum.png",
+    "slug": "opposum",
+    "name": "Opposum",
+    "tags": [
+      "mammal",
+      "marsupial",
+      "night"
+    ],
+    "description": "Small, nocturnal marsupial with a prehensile tail. Opossums are common in the Americas."
+  },
+  {
+    "filename": "orangutan.png",
+    "slug": "orangutan",
+    "name": "Orangutan",
+    "tags": [
+      "mammal",
+      "ape",
+      "endangered"
+    ],
+    "description": "Large, orange ape native to Indonesia. Orangutans are tree-dwellers and use tools."
+  },
+  {
+    "filename": "orca.png",
+    "slug": "orca",
+    "name": "Orca",
+    "tags": [
+      "mammal",
+      "whale",
+      "black-white"
+    ],
+    "description": "Large, intelligent dolphin, also called killer whale. Orcas live and hunt in groups."
+  },
+  {
+    "filename": "oriole.png",
+    "slug": "oriole",
+    "name": "Oriole",
+    "tags": [
+      "bird",
+      "songbird",
+      "colorful"
+    ],
+    "description": "Small, bright yellow or orange songbird. Orioles are known for their hanging nests."
+  },
+  {
+    "filename": "ostrich.png",
+    "slug": "ostrich",
+    "name": "Ostrich",
+    "tags": [
+      "bird",
+      "flightless",
+      "fast"
+    ],
+    "description": "World’s largest bird, native to Africa. Ostriches run at high speed and lay huge eggs."
+  },
+  {
+    "filename": "otter.png",
+    "slug": "otter",
+    "name": "Otter",
+    "tags": [
+      "mammal",
+      "aquatic",
+      "playful"
+    ],
+    "description": "Playful, fish-eating mammal. Otters have webbed feet and love to swim."
+  },
+  {
+    "filename": "owl.png",
+    "slug": "owl",
+    "name": "Owl",
+    "tags": [
+      "bird",
+      "nocturnal",
+      "wise"
+    ],
+    "description": "Night-hunting bird with large eyes and silent wings. Owls are symbols of wisdom."
+  },
+  {
+    "filename": "oyster.png",
+    "slug": "oyster",
+    "name": "Oyster",
+    "tags": [
+      "mollusk",
+      "shellfish",
+      "pearl"
+    ],
+    "description": "Soft-bodied marine animal inside a rough shell. Oysters filter water and can make pearls."
+  },
+  {
+    "filename": "paca.png",
+    "slug": "paca",
+    "name": "Paca",
+    "tags": [
+      "mammal",
+      "rodent",
+      "burrowing"
+    ],
+    "description": "Nocturnal, burrowing rodent from South America. Pacas have spotted coats and short tails."
+  },
+  {
+    "filename": "panda.png",
+    "slug": "panda",
+    "name": "Panda",
+    "tags": [
+      "mammal",
+      "bear",
+      "bamboo-eating"
+    ],
+    "description": "Large, black and white bear native to China. Pandas mostly eat bamboo."
+  },
+  {
+    "filename": "pangolin.png",
+    "slug": "pangolin",
+    "name": "Pangolin",
+    "tags": [
+      "mammal",
+      "scaly",
+      "endangered"
+    ],
+    "description": "Armored, scale-covered mammal. Pangolins roll into a ball to escape predators."
+  },
+  {
+    "filename": "parakeet.png",
+    "slug": "parakeet",
+    "name": "Parakeet",
+    "tags": [
+      "bird",
+      "parrot",
+      "small"
+    ],
+    "description": "Small, colorful parrot with a long tail. Parakeets are playful and often kept as pets."
+  },
+  {
+    "filename": "parrot.png",
+    "slug": "parrot",
+    "name": "Parrot",
+    "tags": [
+      "bird",
+      "parrot",
+      "talking"
+    ],
+    "description": "Intelligent, colorful parrot that can mimic sounds. Parrots are social and long-lived."
+  },
+  {
+    "filename": "peacock.png",
+    "slug": "peacock",
+    "name": "Peacock",
+    "tags": [
+      "bird",
+      "display",
+      "colorful"
+    ],
+    "description": "Large bird with a vibrant fan tail. Peacocks display to attract mates."
+  },
+  {
+    "filename": "pelican.png",
+    "slug": "pelican",
+    "name": "Pelican",
+    "tags": [
+      "bird",
+      "water",
+      "large-billed"
+    ],
+    "description": "Big water bird with a long bill and throat pouch. Pelicans scoop up fish when feeding."
+  },
+  {
+    "filename": "penguin.png",
+    "slug": "penguin",
+    "name": "Penguin",
+    "tags": [
+      "bird",
+      "swimming",
+      "tuxedo"
+    ],
+    "description": "Flightless, aquatic bird. Penguins “fly” underwater and live in cold southern regions."
+  },
+  {
+    "filename": "pig.png",
+    "slug": "pig",
+    "name": "Pig",
+    "tags": [
+      "mammal",
+      "pig",
+      "livestock"
+    ],
+    "description": "Domesticated animal with a snout. Pigs are raised for meat and are highly intelligent."
+  },
+  {
+    "filename": "pigeon.png",
+    "slug": "pigeon",
+    "name": "Pigeon",
+    "tags": [
+      "bird",
+      "urban",
+      "adaptable"
+    ],
+    "description": "Small, plump bird common in cities. Pigeons can navigate long distances."
+  },
+  {
+    "filename": "piglet.png",
+    "slug": "piglet",
+    "name": "Piglet",
+    "tags": [
+      "mammal",
+      "pig",
+      "young"
+    ],
+    "description": "Young pig, small and playful. Piglets grow quickly and love to root in the ground."
+  },
+  {
+    "filename": "pika.png",
+    "slug": "pika",
+    "name": "Pika",
+    "tags": [
+      "mammal",
+      "rodent",
+      "alpine"
+    ],
+    "description": "Small, mountain-dwelling rodent with round ears. Pikas make haypiles for winter."
+  },
+  {
+    "filename": "piranha.png",
+    "slug": "piranha",
+    "name": "Piranha",
+    "tags": [
+      "fish",
+      "freshwater",
+      "predatory"
+    ],
+    "description": "Small, fierce fish with sharp teeth. Piranhas live in South American rivers."
+  },
+  {
+    "filename": "platypus.png",
+    "slug": "platypus",
+    "name": "Platypus",
+    "tags": [
+      "mammal",
+      "monotreme",
+      "rare"
+    ],
+    "description": "Egg-laying mammal from Australia. Platypuses have a bill like a duck and webbed feet."
+  },
+  {
+    "filename": "polar-bear.png",
+    "slug": "polar-bear",
+    "name": "Polar Bear",
+    "tags": [
+      "mammal",
+      "bear",
+      "arctic"
+    ],
+    "description": "White bear native to Arctic. Polar bears are strong swimmers and hunt seals."
+  },
+  {
+    "filename": "porcupine.png",
+    "slug": "porcupine",
+    "name": "Porcupine",
+    "tags": [
+      "mammal",
+      "rodent",
+      "spiny"
+    ],
+    "description": "Rodent with a coat of sharp quills for defense. Porcupines are slow-moving but protected."
+  },
+  {
+    "filename": "porpoise.png",
+    "slug": "porpoise",
+    "name": "Porpoise",
+    "tags": [
+      "mammal",
+      "whale",
+      "dolphin"
+    ],
+    "description": "Small, toothed whale related to dolphins. Porpoises are shy and swim in coastal waters."
+  },
+  {
+    "filename": "puffin.png",
+    "slug": "puffin",
+    "name": "Puffin",
+    "tags": [
+      "bird",
+      "seabird",
+      "arctic"
+    ],
+    "description": "Small, black and white seabird. Puffins have colorful beaks and nest in cliffs."
+  },
+  {
+    "filename": "puppy.png",
+    "slug": "puppy",
+    "name": "Puppy",
+    "tags": [
+      "mammal",
+      "dog",
+      "young"
+    ],
+    "description": "Young dog, energetic and playful. Puppies are popular pets and learn quickly."
+  },
+  {
+    "filename": "python.png",
+    "slug": "python",
+    "name": "Python",
+    "tags": [
+      "reptile",
+      "snake",
+      "constrictor"
+    ],
+    "description": "Large, non-venomous snake. Pythons squeeze prey and can grow to massive sizes."
+  },
+  {
+    "filename": "quail.png",
+    "slug": "quail",
+    "name": "Quail",
+    "tags": [
+      "bird",
+      "game",
+      "small"
+    ],
+    "description": "Small, ground-nesting bird. Quails are known for quick dashes and short flights."
+  },
+  {
+    "filename": "quetzal.png",
+    "slug": "quetzal",
+    "name": "Quetzal",
+    "tags": [
+      "bird",
+      "tropical",
+      "vibrant"
+    ],
+    "description": "Strikingly colored bird of Central/South America. Quetzals have long tail feathers."
+  },
+  {
+    "filename": "quokka.png",
+    "slug": "quokka",
+    "name": "Quokka",
+    "tags": [
+      "mammal",
+      "marsupial",
+      "friendly"
+    ],
+    "description": "Small, happy-looking marsupial from Australia. Quokkas are famous for their smiles."
+  },
+  {
+    "filename": "rabbit.png",
+    "slug": "rabbit",
+    "name": "Rabbit",
+    "tags": [
+      "mammal",
+      "rodent",
+      "long-eared"
+    ],
+    "description": "Small, fluffy mammal with long ears. Rabbits dig burrows and eat plants."
+  },
+  {
+    "filename": "raccoon.png",
+    "slug": "raccoon",
+    "name": "Raccoon",
+    "tags": [
+      "mammal",
+      "carnivore",
+      "masked"
+    ],
+    "description": "Small, nocturnal mammal with a striped tail. Raccoons are curious and use their hands skillfully."
+  },
+  {
+    "filename": "rat.png",
+    "slug": "rat",
+    "name": "Rat",
+    "tags": [
+      "mammal",
+      "rodent",
+      "clever"
+    ],
+    "description": "Small, clever rodent with a long tail. Rats thrive in cities and countrysides."
+  },
+  {
+    "filename": "raven.png",
+    "slug": "raven",
+    "name": "Raven",
+    "tags": [
+      "bird",
+      "smart",
+      "black"
+    ],
+    "description": "Large, intelligent bird. Ravens can mimic sounds and solve puzzles."
+  },
+  {
+    "filename": "red-panda.png",
+    "slug": "red-panda",
+    "name": "Red Panda",
+    "tags": [
+      "mammal",
+      "bear",
+      "red",
+      "tree"
+    ],
+    "description": "Small, red-furred mammal from Asia. Red pandas are agile and live in bamboo forests."
+  },
+  {
+    "filename": "reindeer.png",
+    "slug": "reindeer",
+    "name": "Reindeer",
+    "tags": [
+      "mammal",
+      "deer",
+      "arctic"
+    ],
+    "description": "Large deer adapted to cold climates. Reindeer are famous for their long migrations."
+  },
+  {
+    "filename": "retriever.png",
+    "slug": "retriever",
+    "name": "Retriever",
+    "tags": [
+      "mammal",
+      "dog",
+      "retriever"
+    ],
+    "description": "Friendly, energetic dog breed. Retrievers are great swimmers and love to fetch."
+  },
+  {
+    "filename": "rhea.png",
+    "slug": "rhea",
+    "name": "Rhea",
+    "tags": [
+      "bird",
+      "flightless",
+      "tall"
+    ],
+    "description": "Large, flightless bird from South America. Rheas run fast and live in grasslands."
+  },
+  {
+    "filename": "rhinoceros.png",
+    "slug": "rhinoceros",
+    "name": "Rhinoceros",
+    "tags": [
+      "mammal",
+      "rhinoceros",
+      "horned"
+    ],
+    "description": "Large, thick-skinned herbivore with one or two horns. Rhinos are endangered."
+  },
+  {
+    "filename": "rooster.png",
+    "slug": "rooster",
+    "name": "Rooster",
+    "tags": [
+      "bird",
+      "farm",
+      "crowing"
+    ],
+    "description": "Male chicken, famous for its crow. Roosters are colorful and protect their flock."
+  },
+  {
+    "filename": "salamander.png",
+    "slug": "salamander",
+    "name": "Salamander",
+    "tags": [
+      "amphibian",
+      "moist",
+      "tail"
+    ],
+    "description": "Moist-skinned amphibian with a long tail. Salamanders are often found near water."
+  },
+  {
+    "filename": "salmon.png",
+    "slug": "salmon",
+    "name": "Salmon",
+    "tags": [
+      "fish",
+      "salmon",
+      "migrating"
+    ],
+    "description": "Strong, silvery fish. Salmon migrate from ocean to river to spawn."
+  },
+  {
+    "filename": "samoyed.png",
+    "slug": "samoyed",
+    "name": "Samoyed",
+    "tags": [
+      "mammal",
+      "dog",
+      "fluffy"
+    ],
+    "description": "Large, white, fluffy dog. Samoyeds are friendly and great for cold climates."
+  },
+  {
+    "filename": "saola.png",
+    "slug": "saola",
+    "name": "Saola",
+    "tags": [
+      "mammal",
+      "antelope",
+      "rare"
+    ],
+    "description": "Rare wild bovine from Asia. Saolas have long, straight horns and are very elusive."
+  },
+  {
+    "filename": "sardine.png",
+    "slug": "sardine",
+    "name": "Sardine",
+    "tags": [
+      "fish",
+      "small",
+      "schooling"
+    ],
+    "description": "Small, oily fish found in large schools. Sardines are vital for the ocean food chain."
+  },
+  {
+    "filename": "scorpion.png",
+    "slug": "scorpion",
+    "name": "Scorpion",
+    "tags": [
+      "arthropod",
+      "arachnid",
+      "stinger"
+    ],
+    "description": "Small, nocturnal predator with pincers and a venomous tail. Scorpions live in deserts."
+  },
+  {
+    "filename": "sea-cucumber.png",
+    "slug": "sea-cucumber",
+    "name": "Sea Cucumber",
+    "tags": [
+      "animal",
+      "sea",
+      "echinoderm"
+    ],
+    "description": "Soft, cylindrical animal found on the sea floor. Sea cucumbers clean the ocean bottom."
+  },
+  {
+    "filename": "sea-lion.png",
+    "slug": "sea-lion",
+    "name": "Sea Lion",
+    "tags": [
+      "mammal",
+      "sea",
+      "playful"
+    ],
+    "description": "Playful marine mammal with flippers. Sea lions bark loudly and love sunbathing."
+  },
+  {
+    "filename": "seagull.png",
+    "slug": "seagull",
+    "name": "Seagull",
+    "tags": [
+      "bird",
+      "coast",
+      "scavenger"
+    ],
+    "description": "Coastal bird with a loud call and white-gray feathers. Seagulls eat almost anything."
+  },
+  {
+    "filename": "seahorse.png",
+    "slug": "seahorse",
+    "name": "Seahorse",
+    "tags": [
+      "fish",
+      "marine",
+      "horse-shaped"
+    ],
+    "description": "Small fish with a horse-like head. Seahorses swim upright and males carry the young."
+  },
+  {
+    "filename": "seal.png",
+    "slug": "seal",
+    "name": "Seal",
+    "tags": [
+      "mammal",
+      "sea",
+      "blubber"
+    ],
+    "description": "Marine mammal with flippers and thick blubber. Seals are playful and hunt fish."
+  },
+  {
+    "filename": "serval.png",
+    "slug": "serval",
+    "name": "Serval",
+    "tags": [
+      "mammal",
+      "feline",
+      "wild"
+    ],
+    "description": "Medium-sized, spotted wild cat from Africa. Servals have long legs and large ears."
+  },
+  {
+    "filename": "shark.png",
+    "slug": "shark",
+    "name": "Shark",
+    "tags": [
+      "fish",
+      "ocean",
+      "predatory"
+    ],
+    "description": "Powerful ocean predator with sharp teeth. Sharks have existed for over 400 million years."
+  },
+  {
+    "filename": "sheep.png",
+    "slug": "sheep",
+    "name": "Sheep",
+    "tags": [
+      "mammal",
+      "livestock",
+      "woolly"
+    ],
+    "description": "Farm animal with thick, curly wool. Sheep are raised for fleece and meat."
+  },
+  {
+    "filename": "shoebill.png",
+    "slug": "shoebill",
+    "name": "Shoebill",
+    "tags": [
+      "bird",
+      "wetland",
+      "large bill"
+    ],
+    "description": "Tall bird with a wide, shoe-shaped bill. Shoebills live in African swamps."
+  },
+  {
+    "filename": "shrimp.png",
+    "slug": "shrimp",
+    "name": "Shrimp",
+    "tags": [
+      "animal",
+      "crustacean",
+      "small"
+    ],
+    "description": "Small, shrimp-like creature. Shrimps swim backward and are important for ocean food chains."
+  },
+  {
+    "filename": "skunk.png",
+    "slug": "skunk",
+    "name": "Skunk",
+    "tags": [
+      "mammal",
+      "rodent",
+      "smelly"
+    ],
+    "description": "Small, black and white mammal. Skunks spray a strong odor as defense."
+  },
+  {
+    "filename": "sloth.png",
+    "slug": "sloth",
+    "name": "Sloth",
+    "tags": [
+      "mammal",
+      "arboreal",
+      "slow"
+    ],
+    "description": "Tree-dwelling mammal famous for slow movement. Sloths eat leaves and sleep a lot."
+  },
+  {
+    "filename": "slug.png",
+    "slug": "slug",
+    "name": "Slug",
+    "tags": [
+      "animal",
+      "mollusk",
+      "slimy"
+    ],
+    "description": "Soft, slimy animal with no shell. Slugs leave a shiny trail as they move."
+  },
+  {
+    "filename": "snail.png",
+    "slug": "snail",
+    "name": "Snail",
+    "tags": [
+      "mollusk",
+      "shell",
+      "slow"
+    ],
+    "description": "Soft-bodied animal with a spiral shell. Snails are slow movers found in gardens and forests."
+  },
+  {
+    "filename": "snake.png",
+    "slug": "snake",
+    "name": "Snake",
+    "tags": [
+      "reptile",
+      "snake",
+      "flexible"
+    ],
+    "description": "Long, legless reptile. Snakes swallow prey whole and come in many sizes."
+  },
+  {
+    "filename": "snow-leopard.png",
+    "slug": "snow-leopard",
+    "name": "Snow Leopard",
+    "tags": [
+      "mammal",
+      "feline",
+      "snow",
+      "spotted"
+    ],
+    "description": "Large wild cat with thick fur and rosettes. Snow leopards live in mountain ranges."
+  },
+  {
+    "filename": "sow.png",
+    "slug": "sow",
+    "name": "Sow",
+    "tags": [
+      "mammal",
+      "pig",
+      "female"
+    ],
+    "description": "Adult female pig, usually the mother of piglets. Sows are kept for breeding."
+  },
+  {
+    "filename": "sparrow.png",
+    "slug": "sparrow",
+    "name": "Sparrow",
+    "tags": [
+      "bird",
+      "songbird",
+      "small"
+    ],
+    "description": "Small, cheerful songbird found everywhere. Sparrows chirp and flit in gardens and parks."
+  },
+  {
+    "filename": "spider.png",
+    "slug": "spider",
+    "name": "Spider",
+    "tags": [
+      "animal",
+      "arachnid",
+      "web"
+    ],
+    "description": "Eight-legged predator that spins webs to catch insects. Spiders live almost everywhere."
+  },
+  {
+    "filename": "spoonbill.png",
+    "slug": "spoonbill",
+    "name": "Spoonbill",
+    "tags": [
+      "bird",
+      "wader",
+      "spoon-bill"
+    ],
+    "description": "Tall wading bird with a wide, spoon-shaped bill. Spoonbills sift mud for food."
+  },
+  {
+    "filename": "squid.png",
+    "slug": "squid",
+    "name": "Squid",
+    "tags": [
+      "animal",
+      "mollusk",
+      "tentacled"
+    ],
+    "description": "Marine animal with a soft body and tentacles. Squids can squirt ink to escape predators."
+  },
+  {
+    "filename": "squirrel.png",
+    "slug": "squirrel",
+    "name": "Squirrel",
+    "tags": [
+      "mammal",
+      "rodent",
+      "bushy tail"
+    ],
+    "description": "Small, tree-dwelling rodent with a bushy tail. Squirrels store nuts and leap through trees."
+  },
+  {
+    "filename": "stallion.png",
+    "slug": "stallion",
+    "name": "Stallion",
+    "tags": [
+      "mammal",
+      "horse",
+      "stallion"
+    ],
+    "description": "Uncastrated adult male horse. Stallions are strong and often used for breeding."
+  },
+  {
+    "filename": "starfish.png",
+    "slug": "starfish",
+    "name": "Starfish",
+    "tags": [
+      "animal",
+      "sea",
+      "star-shaped"
+    ],
+    "description": "Star-shaped marine animal. Starfish regenerate lost arms and live on the sea floor."
+  },
+  {
+    "filename": "starling.png",
+    "slug": "starling",
+    "name": "Starling",
+    "tags": [
+      "bird",
+      "songbird",
+      "iridescent"
+    ],
+    "description": "Medium-sized, glossy bird. Starlings mimic sounds and gather in large flocks."
+  },
+  {
+    "filename": "stingray.png",
+    "slug": "stingray",
+    "name": "Stingray",
+    "tags": [
+      "fish",
+      "marine",
+      "flat"
+    ],
+    "description": "Flat, disc-shaped fish with a venomous tail. Stingrays glide along the ocean bottom."
+  },
+  {
+    "filename": "stork.png",
+    "slug": "stork",
+    "name": "Stork",
+    "tags": [
+      "bird",
+      "wader",
+      "long-necked"
+    ],
+    "description": "Large, long-legged bird. Storks migrate long distances and build huge nests."
+  },
+  {
+    "filename": "sun-bear.png",
+    "slug": "sun-bear",
+    "name": "Sun Bear",
+    "tags": [
+      "mammal",
+      "bear",
+      "tropical"
+    ],
+    "description": "Small, tree-climbing bear with a short, sleek coat. Sun bears are found in Southeast Asia."
+  },
+  {
+    "filename": "swordfish.png",
+    "slug": "swordfish",
+    "name": "Swordfish",
+    "tags": [
+      "fish",
+      "ocean",
+      "sword-nosed"
+    ],
+    "description": "Large, powerful fish with a long, sword-like bill. Swordfish are fast swimmers."
+  },
+  {
+    "filename": "swordtail.png",
+    "slug": "swordtail",
+    "name": "Swordtail",
+    "tags": [
+      "fish",
+      "freshwater",
+      "colorful"
+    ],
+    "description": "Small, lively fish with a long tail. Swordtails are popular aquarium fish."
+  },
+  {
+    "filename": "tadpole.png",
+    "slug": "tadpole",
+    "name": "Tadpole",
+    "tags": [
+      "amphibian",
+      "larva",
+      "aquatic"
+    ],
+    "description": "Aquatic larval stage of frogs and toads. Tadpoles have tails and breathe through gills."
+  },
+  {
+    "filename": "tamarin.png",
+    "slug": "tamarin",
+    "name": "Tamarin",
+    "tags": [
+      "mammal",
+      "primate",
+      "small"
+    ],
+    "description": "Small monkey from South America with a long tail. Tamarins live in trees and are agile."
+  },
+  {
+    "filename": "tapeworm.png",
+    "slug": "tapeworm",
+    "name": "Tapeworm",
+    "tags": [
+      "parasite",
+      "worm",
+      "flat"
+    ],
+    "description": "Parasitic flatworm that lives in intestines. Tapeworms absorb nutrients from their host."
+  },
+  {
+    "filename": "tapir.png",
+    "slug": "tapir",
+    "name": "Tapir",
+    "tags": [
+      "mammal",
+      "herbivore",
+      "rare"
+    ],
+    "description": "Large, pig-like mammal with a flexible snout. Tapirs live in forests of South America and Asia."
+  },
+  {
+    "filename": "tarsier.png",
+    "slug": "tarsier",
+    "name": "Tarsier",
+    "tags": [
+      "mammal",
+      "primate",
+      "nocturnal"
+    ],
+    "description": "Tiny nocturnal primate with big eyes. Tarsiers are expert jumpers and insect hunters."
+  },
+  {
+    "filename": "termite.png",
+    "slug": "termite",
+    "name": "Termite",
+    "tags": [
+      "insect",
+      "colony",
+      "wood"
+    ],
+    "description": "Social insect that lives in colonies and eats wood. Termites can damage buildings."
+  },
+  {
+    "filename": "tiger.png",
     "slug": "tiger",
     "name": "Tiger",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A large, striped big cat native to Asia. Tigers are powerful predators and mostly solitary animals found in forests and grasslands.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tiger-UmL6bgU3Mes0IjVxjRkLm0dpemlGhw.png"
+    "tags": [
+      "mammal",
+      "feline",
+      "predator"
+    ],
+    "description": "Large, striped big cat native to Asia. Tigers are powerful, solitary hunters."
   },
   {
-    "id": "33",
-    "filename": "Urchin.png",
-    "slug": "urchin",
-    "name": "Urchin",
-    "tags": ["animals", "sea", "nature"],
-    "desc": "A spiny marine creature with a spherical body. Sea urchins are found on the ocean floor and are important for marine ecosystems.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Urchin-tdCzARVXklM6XePDNYbZXXd51BeiEi.png"
+    "filename": "toad.png",
+    "slug": "toad",
+    "name": "Toad",
+    "tags": [
+      "amphibian",
+      "warty",
+      "land"
+    ],
+    "description": "Stocky, warty amphibian. Toads have dry skin and live on land but return to water to breed."
   },
   {
-    "id": "34",
-    "filename": "Tortoise.png",
+    "filename": "tortoise.png",
     "slug": "tortoise",
     "name": "Tortoise",
-    "tags": ["animals", "reptile", "land"],
-    "desc": "A slow-moving reptile with a protective shell. Tortoises are known for their longevity and can live for over 100 years.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tortoise-aNEpfUYwdzBMTyKRf2SC8bYosyOfgG.png"
+    "tags": [
+      "reptile",
+      "turtle",
+      "land"
+    ],
+    "description": "Land-dwelling reptile with a dome shell. Tortoises are slow and can live over 100 years."
   },
   {
-    "id": "35",
-    "filename": "Urial.png",
+    "filename": "toucan.png",
+    "slug": "toucan",
+    "name": "Toucan",
+    "tags": [
+      "bird",
+      "tropical",
+      "beaked"
+    ],
+    "description": "Colorful bird with a giant beak. Toucans live in rainforests and eat fruit."
+  },
+  {
+    "filename": "trout.png",
+    "slug": "trout",
+    "name": "Trout",
+    "tags": [
+      "fish",
+      "freshwater",
+      "sport"
+    ],
+    "description": "Freshwater fish known for leaping upstream. Trout are prized by anglers."
+  },
+  {
+    "filename": "tuna.png",
+    "slug": "tuna",
+    "name": "Tuna",
+    "tags": [
+      "fish",
+      "ocean",
+      "commercial"
+    ],
+    "description": "Fast, large ocean fish. Tuna are important for food and can swim great distances."
+  },
+  {
+    "filename": "turkey.png",
+    "slug": "turkey",
+    "name": "Turkey",
+    "tags": [
+      "bird",
+      "farm",
+      "gobbler"
+    ],
+    "description": "Large, ground-dwelling bird. Turkeys have fan-shaped tails and wattled necks."
+  },
+  {
+    "filename": "turtle.png",
+    "slug": "turtle",
+    "name": "Turtle",
+    "tags": [
+      "reptile",
+      "turtle",
+      "aquatic"
+    ],
+    "description": "Reptile with a shell, living mostly in water. Turtles can be found in rivers and seas."
+  },
+  {
+    "filename": "urchin.png",
+    "slug": "urchin",
+    "name": "Urchin",
+    "tags": [
+      "animal",
+      "echinoderm",
+      "sea"
+    ],
+    "description": "Spiny, round marine animal. Urchins graze on algae and hide in rocky crevices."
+  },
+  {
+    "filename": "urial.png",
     "slug": "urial",
     "name": "Urial",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A wild sheep with curved horns, found in Central and South Asia. Urials live in hilly and mountainous regions.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Urial-AoEJrQsdV2WsDh51ClqrORcHMzVG5J.png"
+    "tags": [
+      "mammal",
+      "sheep",
+      "wild"
+    ],
+    "description": "Wild sheep with curved horns. Urials live in mountains of Central and South Asia."
   },
   {
-    "id": "36",
-    "filename": "Zebu.png",
-    "slug": "zebu",
-    "name": "Zebu",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A type of domestic cattle with a distinctive hump on its shoulders. Zebus are adapted to hot climates and are important for agriculture in many regions.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zebu-NXgtxsFYrYKSOWD1wzOgJtQ7s4wdG1.png"
+    "filename": "vulture.png",
+    "slug": "vulture",
+    "name": "Vulture",
+    "tags": [
+      "bird",
+      "scavenger",
+      "large"
+    ],
+    "description": "Large scavenging bird. Vultures feed on carrion and help clean up the environment."
   },
   {
-    "id": "37",
-    "filename": "Wolf.png",
+    "filename": "wallaby.png",
+    "slug": "wallaby",
+    "name": "Wallaby",
+    "tags": [
+      "mammal",
+      "marsupial",
+      "jumper"
+    ],
+    "description": "Small, hopping marsupial from Australia. Wallabies look like kangaroos, but are smaller."
+  },
+  {
+    "filename": "walrus.png",
+    "slug": "walrus",
+    "name": "Walrus",
+    "tags": [
+      "mammal",
+      "marine",
+      "tusked"
+    ],
+    "description": "Large marine mammal with long tusks and whiskers. Walruses haul out on ice to rest."
+  },
+  {
+    "filename": "warthog.png",
+    "slug": "warthog",
+    "name": "Warthog",
+    "tags": [
+      "mammal",
+      "pig",
+      "wild"
+    ],
+    "description": "Wild pig with curved tusks and warts on its face. Warthogs run with tails upright."
+  },
+  {
+    "filename": "wasp.png",
+    "slug": "wasp",
+    "name": "Wasp",
+    "tags": [
+      "insect",
+      "stinger",
+      "flying"
+    ],
+    "description": "Aggressive, flying insect with a painful sting. Wasps build papery nests."
+  },
+  {
+    "filename": "weasel.png",
+    "slug": "weasel",
+    "name": "Weasel",
+    "tags": [
+      "mammal",
+      "carnivore",
+      "slender"
+    ],
+    "description": "Small, fast predator with a long body. Weasels hunt rodents and are very agile."
+  },
+  {
+    "filename": "whale.png",
+    "slug": "whale",
+    "name": "Whale",
+    "tags": [
+      "mammal",
+      "marine",
+      "giant"
+    ],
+    "description": "The largest mammal on Earth. Whales breathe air and live in oceans."
+  },
+  {
+    "filename": "wolf.png",
     "slug": "wolf",
     "name": "Wolf",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A social, intelligent predator living in packs. Wolves are found in forests, tundra, and grasslands across the Northern Hemisphere.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Wolf-MBjuLqGZTg3IlJr1yL2y9hxsUE4x0P.png"
+    "tags": [
+      "mammal",
+      "canine",
+      "pack"
+    ],
+    "description": "Social predator living in packs. Wolves hunt cooperatively in forests and tundra."
   },
   {
-    "id": "38",
-    "filename": "Xerus.png",
-    "slug": "xerus",
-    "name": "Xerus",
-    "tags": ["animals", "rodent", "land"],
-    "desc": "A ground-dwelling squirrel found in Africa. Xerus live in colonies and are known for their burrowing and social behavior.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Xerus-MvlrX0by5s8SDZ438YAzFI7Evb92Fg.png"
-  },
-  {
-    "id": "39",
-    "filename": "Wombat.png",
+    "filename": "wombat.png",
     "slug": "wombat",
     "name": "Wombat",
-    "tags": ["animals", "nature", "land"],
-    "desc": "A sturdy, burrowing marsupial native to Australia. Wombats are known for their powerful digging abilities and cube-shaped droppings.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Wombat-HsXDnS1E7AkxajbnjurmCB6edW3K04.png"
+    "tags": [
+      "mammal",
+      "marsupial",
+      "burrow"
+    ],
+    "description": "Stocky, burrowing marsupial from Australia. Wombats dig tunnels with powerful claws."
   },
   {
-    "id": "40",
-    "filename": "Zebra.png",
+    "filename": "woodpecker.png",
+    "slug": "woodpecker",
+    "name": "Woodpecker",
+    "tags": [
+      "bird",
+      "pecker",
+      "forest"
+    ],
+    "description": "Bird with a strong beak for drilling into wood. Woodpeckers tap trees for food and nests."
+  },
+  {
+    "filename": "worm.png",
+    "slug": "worm",
+    "name": "Worm",
+    "tags": [
+      "animal",
+      "worm",
+      "soil"
+    ],
+    "description": "Soft-bodied, segmented animal. Worms aerate soil and decompose organic matter."
+  },
+  {
+    "filename": "xerus.png",
+    "slug": "xerus",
+    "name": "Xerus",
+    "tags": [
+      "mammal",
+      "rodent",
+      "ground"
+    ],
+    "description": "African ground squirrel with a bushy tail. Xerus live in colonies and dig burrows."
+  },
+  {
+    "filename": "zebra.png",
     "slug": "zebra",
     "name": "Zebra",
-    "tags": ["animals", "nature", "land"],
-    "desc": "An African mammal known for its black-and-white striped coat. Zebras live in herds on grasslands and are closely related to horses.",
-    "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zebra-Y6PVQqbFIDpYHxp2ZdopydMeakFvKN.png"
+    "tags": [
+      "mammal",
+      "horse",
+      "striped"
+    ],
+    "description": "African mammal with black-and-white stripes. Zebras live in herds on open grasslands."
+  },
+  {
+    "filename": "zebu.png",
+    "slug": "zebu",
+    "name": "Zebu",
+    "tags": [
+      "mammal",
+      "cattle",
+      "humped"
+    ],
+    "description": "Domesticated cattle with a hump on their shoulders. Zebus are hardy and heat-tolerant."
   }
 ]

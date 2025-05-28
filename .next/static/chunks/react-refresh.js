@@ -1,5 +1,3 @@
-// .next/static/chunks/react-refresh.js
-
 // runtime can't be in strict mode because a global variable is assign and maybe created.
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.

@@ -1,57 +1,46 @@
-// app/image/page.tsx
-
-import { notFound } from "next/navigation"
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { promises as fs } from "fs"
-import path from "path"
-import { slugify } from "@/lib/utils"
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { promises as fs } from "fs";
+import path from "path";
+import { slugify } from "@/lib/utils";
 
 interface ImagePageProps {
-  params: Promise<{ slug: string }>
+  params: { slug: string }; // <-- fix type (no Promise here)
 }
 
 async function getImageBySlug(slug: string) {
   try {
-    // Read the data.json file from the public directory
-    const filePath = path.join(process.cwd(), "public", "data.json")
-    const fileContents = await fs.readFile(filePath, "utf8")
-    const images = JSON.parse(fileContents)
+    const filePath = path.join(process.cwd(), "public", "data.json");
+    const fileContents = await fs.readFile(filePath, "utf8");
+    const images = JSON.parse(fileContents);
 
-    // Filter out items without images
-    const validImages = images.filter((img: any) => {
-      return img.imageUrl && (img.imageUrl.startsWith("http") || img.imageUrl.startsWith("/"))
-    })
+    let image = images.find((img: any) => img.slug === slug);
 
-    // First try to find by exact slug match
-    let image = validImages.find((img: any) => img.slug === slug)
-
-    // If not found, try to find by name (converted to slug)
     if (!image) {
-      image = validImages.find((img: any) => slugify(img.name) === slug)
+      image = images.find((img: any) => slugify(img.name) === slug);
     }
-
-    return image
+    return image;
   } catch (error) {
-    console.error("Failed to read image data:", error)
-    return null
+    console.error("Failed to read image data:", error);
+    return null;
   }
 }
 
 export default async function ImagePage({ params }: ImagePageProps) {
-  const { slug } = await params
-  const image = await getImageBySlug(slug)
+  const { slug } = params;
+  const image = await getImageBySlug(slug);
 
   if (!image) {
-    notFound()
+    notFound();
   }
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto p-6">
-        <div className="mb-6">
+      <div className="max-w-4xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+        <div className="mb-4">
           <Link href="/">
             <Button variant="outline" size="sm" className="gap-2">
               <ArrowLeft className="w-4 h-4" />
@@ -59,21 +48,19 @@ export default async function ImagePage({ params }: ImagePageProps) {
             </Button>
           </Link>
         </div>
-
         <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="relative aspect-square bg-gray-100">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-12 p-4 md:p-8">
+            <div className="relative aspect-square bg-gray-100 w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0">
               <Image
-                src={image.imageUrl || "/placeholder.svg"}
+                src={`/images/${image.filename}`}
                 alt={image.name}
                 fill
-                className="object-contain p-8"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain p-4"
+                sizes="(max-width: 768px) 100vw, 33vw"
                 priority
               />
             </div>
-
-            <div className="p-8 lg:p-12 flex flex-col justify-center">
+            <div className="flex flex-col justify-center w-full">
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
                   {image.tags.map((tag: string) => (
@@ -82,15 +69,13 @@ export default async function ImagePage({ params }: ImagePageProps) {
                     </span>
                   ))}
                 </div>
-
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">{image.name}</h1>
-
-                <p className="text-lg text-gray-600 leading-relaxed">{image.desc}</p>
+                <h1 className="text-2xl md:text-3xl font-bold text-gray-900">{image.name}</h1>
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed">{image.description}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

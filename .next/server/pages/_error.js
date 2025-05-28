@@ -1,5 +1,3 @@
-// .next/server/pages/_error.js
-
 "use strict";
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
