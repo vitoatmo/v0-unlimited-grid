@@ -19,7 +19,6 @@ async function getImageBySlug(slug: string) {
     const fileContents = await fs.readFile(filePath, "utf8");
     const images = JSON.parse(fileContents);
 
-    // Try match by slug, then fallback to slugified name
     let image = images.find((img: any) => img.slug === slug);
     if (!image) image = images.find((img: any) => slugify(img.name) === slug);
 
@@ -69,7 +68,7 @@ export default async function ImagePage({ params }: ImagePageProps) {
                   ))}
                 </div>
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-900">{image.name}</h1>
-                <p className="text-base md:text-lg text-gray-600 leading-relaxed">{image.description}</p>
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed">{image.description ?? image.desc}</p>
               </div>
             </div>
           </div>

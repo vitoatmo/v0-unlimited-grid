@@ -8,31 +8,33 @@ import { BottomControls } from "@/components/bottom-controls"
 import { fetchImages, filterImages } from "@/lib/image-service"
 import type { ImageItem } from "@/lib/types"
 
-// Simple shuffle (Fisher–Yates)
-function shuffle<T>(array: T[]): T[] {
-  const arr = array.slice()
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[arr[i], arr[j]] = [arr[j], arr[i]]
-  }
-  return arr
+// Utility
+function shuffleArray<T>(arr: T[]): T[] {
+  return [...arr].sort(() => Math.random() - 0.5)
+}
+function getUniqueTags(images: ImageItem[]): string[] {
+  const tagSet = new Set<string>()
+  images.forEach(img => (img.tags || []).forEach(tag => tag && tagSet.add(tag)))
+  return Array.from(tagSet)
 }
 
 export default function HomePage() {
   const [allImages, setAllImages] = useState<ImageItem[]>([])
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedTag, setSelectedTag] = useState<string | null>(null)
-  const [filterTags, setFilterTags] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
+  const [visibleTags, setVisibleTags] = useState<string[]>([])
+  const [isShuffling, setIsShuffling] = useState(false)
 
+  // Load images and extract unique tags
   useEffect(() => {
     const loadImages = async () => {
       try {
         const images = await fetchImages()
         setAllImages(images)
-        // Get unique tags from all images, shuffle, pick 3
-        const allTags = Array.from(new Set(images.flatMap(img => img.tags)))
-        setFilterTags(shuffle(allTags).slice(0, 3))
+        // Shuffle tags and always append "All"
+        const uniqueTags = getUniqueTags(images)
+        setVisibleTags(shuffleArray(uniqueTags).slice(0, 3).concat("All"))
       } catch (error) {
         console.error("Failed to load images:", error)
       } finally {
@@ -42,17 +44,35 @@ export default function HomePage() {
     loadImages()
   }, [])
 
-  const filteredImages = useMemo(() => {
-    return filterImages(allImages, searchQuery, selectedTag)
-  }, [allImages, searchQuery, selectedTag])
+  // Shuffle the tag chips (except "All" always last)
+  const handleShuffleTags = useCallback(() => {
+    setIsShuffling(true)
+    setTimeout(() => {
+      const uniqueTags = getUniqueTags(allImages)
+      setVisibleTags(shuffleArray(uniqueTags).slice(0, 3).concat("All"))
+      setIsShuffling(false)
+    }, 200)
+  }, [allImages])
 
+  // Tag filter handler
+  const handleTagChange = useCallback((tag: string) => {
+    setSelectedTag(tag === "All" ? null : tag)
+  }, [])
+
+  // Search handler
   const handleSearchChange = useCallback((query: string) => {
     setSearchQuery(query)
   }, [])
 
-  const handleTagChange = useCallback((tag: string | null) => {
-    setSelectedTag(tag)
-  }, [])
+  // Filter images by tag/search
+  const filteredImages = useMemo(() => {
+    return filterImages(allImages, searchQuery, selectedTag)
+  }, [allImages, searchQuery, selectedTag])
+
+  // --- Add Debug Log
+  useEffect(() => {
+    console.log({ allImages, filteredImages, selectedTag, searchQuery })
+  }, [allImages, filteredImages, selectedTag, searchQuery])
 
   if (loading) {
     return (
@@ -67,15 +87,16 @@ export default function HomePage() {
 
   return (
     <>
-      <InfinitePannableGrid images={filteredImages} />
+      <InfinitePannableGrid images={filteredImages} searchQuery={searchQuery} selectedTag={selectedTag} />
       <BottomControls
         searchQuery={searchQuery}
         onSearchChange={handleSearchChange}
-        selectedTag={selectedTag}
+        selectedTag={selectedTag || "All"}
         onTagChange={handleTagChange}
+        tags={visibleTags}
+        onShuffleTags={handleShuffleTags}
+        isShuffling={isShuffling}
         totalImages={filteredImages.length}
-        allImagesCount={allImages.length}
-        filterTags={filterTags}
       />
     </>
   )

@@ -2,18 +2,19 @@
 
 "use client"
 
-import { Search } from "lucide-react"
+import { Search, Shuffle } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
 interface BottomControlsProps {
   searchQuery: string
   onSearchChange: (query: string) => void
-  selectedTag: string | null
-  onTagChange: (tag: string | null) => void
+  selectedTag: string
+  onTagChange: (tag: string) => void
+  tags: string[]               // Required: tag chips to show (eg. ["Mammal", "Nocturnal", "All"])
+  onShuffleTags: () => void
+  isShuffling?: boolean
   totalImages: number
-  allImagesCount: number
-  filterTags: string[]
 }
 
 export function BottomControls({
@@ -21,39 +22,42 @@ export function BottomControls({
   onSearchChange,
   selectedTag,
   onTagChange,
+  tags,
+  onShuffleTags,
+  isShuffling = false,
   totalImages,
-  allImagesCount,
-  filterTags = [],
 }: BottomControlsProps) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 p-4 z-50 pointer-events-auto">
-      <div className="max-w-2xl mx-auto flex items-center gap-4">
+      <div className="max-w-3xl mx-auto flex items-center gap-4">
         <div className="flex gap-2 shrink-0">
-          {filterTags.map(tag => (
+          {tags && tags.map((tag) => (
             <Button
               key={tag}
               variant={selectedTag === tag ? "default" : "outline"}
               size="sm"
-              onClick={() => onTagChange(selectedTag === tag ? null : tag)}
-              className="transition-all duration-200 capitalize"
+              onClick={() => onTagChange(tag)}
+              className="transition-all duration-200 font-semibold"
             >
               {tag}
             </Button>
           ))}
           <Button
-            variant={!selectedTag ? "default" : "outline"}
-            size="sm"
-            onClick={() => onTagChange(null)}
-            className="transition-all duration-200"
+            variant="ghost"
+            size="icon"
+            onClick={onShuffleTags}
+            aria-label="Shuffle tags"
+            disabled={isShuffling}
+            className="ml-2"
           >
-            all
+            <Shuffle className={isShuffling ? "animate-spin" : ""} />
           </Button>
         </div>
         <div className="relative flex-1 min-w-0">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
           <Input
             type="text"
-            placeholder={`Search ${totalImages} of ${allImagesCount} image names...`}
+            placeholder={`Search ${totalImages} image names...`}
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             className="pl-10 transition-all duration-200 focus:ring-2 focus:ring-blue-500"

@@ -1,3 +1,5 @@
+// components/infinite-pannable-grid.tsx
+
 "use client"
 
 import type React from "react"
@@ -16,31 +18,37 @@ interface GridCell {
 
 interface InfinitePannableGridProps {
   images: ImageItem[]
+  searchQuery?: string
+  selectedTag?: string | null
 }
 
+// Deterministic, non-random cell assignment
 function getImageForCell(row: number, col: number, images: ImageItem[]) {
   if (images.length === 0) return null
   const idx = Math.abs(row * 9973 + col * 7919) % images.length
   return images[idx]
 }
 
-export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
+export function InfinitePannableGrid({
+  images,
+  searchQuery = "",
+  selectedTag = null,
+}: InfinitePannableGridProps) {
   const router = useRouter()
   const containerRef = useRef<HTMLDivElement>(null)
   const [isPanning, setIsPanning] = useState(false)
   const [startPoint, setStartPoint] = useState<PanPosition>({ x: 0, y: 0 })
   const [panOffset, setPanOffset] = useState<PanPosition>({ x: 0, y: 0 })
   const [gridCells, setGridCells] = useState<Map<string, GridCell>>(new Map())
+  const panDistanceRef = useRef(0)
+  const pointerDownPos = useRef<{ x: number, y: number }>({ x: 0, y: 0 })
+  const clickedCellRef = useRef<string | null>(null)
+  const CLICK_THRESHOLD = 8 // px
 
-  // Track click vs drag
-  const dragStartRef = useRef<{ x: number; y: number; cellKey: string | null } | null>(null)
-  const DRAG_THRESHOLD = 10
-
-  // Grid configuration
   const CELL_SIZE = 250
   const VIEWPORT_BUFFER = 3
 
-  // Calculate visible grid bounds
+  // Find visible grid cells
   const getVisibleCellBounds = useCallback(() => {
     if (!containerRef.current) return { minRow: 0, maxRow: 0, minCol: 0, maxCol: 0 }
     const { clientWidth, clientHeight } = containerRef.current
@@ -55,7 +63,7 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
     return { minRow, maxRow, minCol, maxCol }
   }, [panOffset])
 
-  // Update grid cells
+  // Update visible grid cells
   useEffect(() => {
     if (images.length === 0) return
     const { minRow, maxRow, minCol, maxCol } = getVisibleCellBounds()
@@ -75,31 +83,29 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
       }
     }
     setGridCells(newCells)
-    // eslint-disable-next-line
   }, [images, panOffset, getVisibleCellBounds])
 
-  // Panning events
+  // --- Gesture Handlers (panning + click detection) ---
   const handlePointerDown = useCallback(
     (e: React.PointerEvent) => {
       if (e.pointerType === "mouse" && e.button !== 0) return
-      e.preventDefault()
       setIsPanning(true)
       setStartPoint({
         x: e.clientX - panOffset.x,
         y: e.clientY - panOffset.y,
       })
+      pointerDownPos.current = { x: e.clientX, y: e.clientY }
+      panDistanceRef.current = 0
 
-      // Find cell key for this pointer down
+      // Find which cell we start in
       const rect = containerRef.current?.getBoundingClientRect()
-      let cellKey: string | null = null
       if (rect) {
         const x = e.clientX - rect.left - panOffset.x
         const y = e.clientY - rect.top - panOffset.y
         const col = Math.floor(x / CELL_SIZE)
         const row = Math.floor(y / CELL_SIZE)
-        cellKey = `${row}-${col}`
+        clickedCellRef.current = `${row}-${col}`
       }
-      dragStartRef.current = { x: e.clientX, y: e.clientY, cellKey }
       if (containerRef.current) {
         containerRef.current.setPointerCapture(e.pointerId)
       }
@@ -110,6 +116,9 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
   const handlePointerMove = useCallback(
     (e: React.PointerEvent) => {
       if (!isPanning) return
+      const dx = e.clientX - pointerDownPos.current.x
+      const dy = e.clientY - pointerDownPos.current.y
+      panDistanceRef.current = Math.sqrt(dx * dx + dy * dy)
       setPanOffset({
         x: e.clientX - startPoint.x,
         y: e.clientY - startPoint.y,
@@ -124,27 +133,24 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
       if (containerRef.current) {
         containerRef.current.releasePointerCapture(e.pointerId)
       }
-
-      // Handle click: if user didn't drag far, treat as click
-      if (dragStartRef.current) {
-        const dx = e.clientX - dragStartRef.current.x
-        const dy = e.clientY - dragStartRef.current.y
-        const dist = Math.sqrt(dx * dx + dy * dy)
-        if (dist < DRAG_THRESHOLD && dragStartRef.current.cellKey) {
-          // Find the cell that was clicked
-          const cell = gridCells.get(dragStartRef.current.cellKey)
-          if (cell) {
-            const slug = cell.item.slug || slugify(cell.item.name)
-            router.push(`/image/${slug}`)
-          }
+      // Only treat as click if drag/pan distance is very small
+      if (panDistanceRef.current < CLICK_THRESHOLD && clickedCellRef.current) {
+        const cell = gridCells.get(clickedCellRef.current)
+        if (cell) {
+          // preserve query params
+          const params = new URLSearchParams()
+          if (searchQuery) params.set("search", searchQuery)
+          if (selectedTag) params.set("tag", selectedTag)
+          const slug = cell.item.slug || slugify(cell.item.name)
+          router.push(`/image/${slug}${params.toString() ? `?${params}` : ""}`)
         }
       }
-      dragStartRef.current = null
+      clickedCellRef.current = null
     },
-    [gridCells, router],
+    [gridCells, searchQuery, selectedTag, router],
   )
 
-  // Memoize the rendered cells
+  // --- Render grid cells (do NOT use onClick directly!) ---
   const renderedCells = useMemo(() => {
     return Array.from(gridCells.values()).map((cell) => {
       const isVisible =
@@ -160,7 +166,6 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
             width: `${CELL_SIZE}px`,
             height: `${CELL_SIZE}px`,
             opacity: isVisible ? 1 : 0.7,
-            // pointerEvents: "auto", // Default is fine!
           }}
         >
           <div className="w-full h-full bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer p-4 select-none">

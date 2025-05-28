@@ -842,6 +842,9 @@ body {
 .mt-auto {
   margin-top: auto;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -1070,6 +1073,9 @@ body {
 }
 .max-w-xs {
   max-width: 20rem;
+}
+.max-w-3xl {
+  max-width: 48rem;
 }
 .flex-1 {
   flex: 1 1 0%;

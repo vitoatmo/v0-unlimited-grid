@@ -2,7 +2,6 @@
 
 import type { ImageItem } from "./types";
 
-// fetches and maps data.json into array with imageUrl for Next.js <Image>
 export async function fetchImages(): Promise<ImageItem[]> {
   const res = await fetch("/data.json");
   const data = await res.json();
@@ -12,8 +11,8 @@ export async function fetchImages(): Promise<ImageItem[]> {
     filename: item.filename,
     slug: item.slug,
     name: item.name,
-    tags: item.tags,
-    description: item.description,
+    tags: item.tags ?? [],
+    desc: item.description ?? "",  // ← use item.description from JSON, but your code uses .desc
     imageUrl: `/images/${item.filename}`,
   }));
 }
@@ -26,14 +25,12 @@ export function filterImages(
 ): ImageItem[] {
   const searchLower = search.trim().toLowerCase()
   return images.filter((item) => {
-    // Tag filtering: if no tag, always true. If tag, must include in tags.
     const matchTag =
-      !selectedTag || item.tags.map(t => t.toLowerCase()).includes(selectedTag.toLowerCase())
-    // Search filtering: match name or any tag contains search string
+      !selectedTag || (item.tags ?? []).map(t => t.toLowerCase()).includes(selectedTag.toLowerCase())
     const matchSearch =
       !searchLower ||
       item.name.toLowerCase().includes(searchLower) ||
-      item.tags.some((tag) => tag.toLowerCase().includes(searchLower))
+      (item.tags ?? []).some((tag) => tag.toLowerCase().includes(searchLower))
     return matchTag && matchSearch
   })
 }
