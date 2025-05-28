@@ -1,30 +1,125 @@
-# Unlimited Grid
+# v0-unlimited-grid
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern, scalable, and production-ready Next.js (App Router) + TailwindCSS project inspired by Framer.com’s UI/UX style.
+This project features dynamic image grids, animal descriptions, reusable components, and a clean codebase for rapid growth and easy expansion.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/toolsvitoatmo-1580s-projects/v0-unlimited-grid)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/01oimzXW00U)
+---
 
-## Overview
+## 🚀 Features
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+* **Next.js App Router** for modern routing and layouts
+* **Dynamic Image Grid** with slug-based pages
+* **Animal Data Management** via simple `public/data.json`
+* **Reusable React Components** for fast development
+* **TailwindCSS** for utility-first, responsive design
+* **TypeScript** for strong typing & reliability
+* **Easy Asset Management** using `public/` folder
+* **Clear Project Structure** (best practice & scalable)
+* **Ready for SEO & Accessibility** enhancements
 
-## Deployment
+---
 
-Your project is live at:
+## 🗂️ Project Structure
 
-**[https://vercel.com/toolsvitoatmo-1580s-projects/v0-unlimited-grid](https://vercel.com/toolsvitoatmo-1580s-projects/v0-unlimited-grid)**
+```plaintext
+.
+├── app/                # Main Next.js routes and pages (App Router)
+│   └── image/          # Dynamic image routes ([slug])
+│       └── [slug]/     # Dynamic image detail pages
+├── components/         # Reusable React components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions (e.g. slugify)
+├── public/             # Static assets (images, data.json, etc)
+│   └── data.json       # List of animals and descriptions
+├── styles/             # Tailwind & global CSS
+├── package.json        # Project metadata and dependencies
+├── tailwind.config.ts  # TailwindCSS configuration
+├── tsconfig.json       # TypeScript configuration
+└── ...                 # Other config and project files
+```
 
-## Build your app
+---
 
-Continue building your app on:
+## 📦 Installation
 
-**[https://v0.dev/chat/projects/01oimzXW00U](https://v0.dev/chat/projects/01oimzXW00U)**
+1. **Clone this repo**
 
-## How It Works
+   ```sh
+   git clone https://github.com/vitoatmo/v0-unlimited-grid.git
+   cd v0-unlimited-grid
+   ```
+2. **Install dependencies**
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+   ```sh
+   npm install
+   ```
+
+   *Jika ada error dependency, gunakan:*
+
+   ```sh
+   npm install --legacy-peer-deps
+   ```
+3. **Run the development server**
+
+   ```sh
+   npm run dev
+   ```
+4. **Open in your browser:**
+   Visit [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🦄 Usage
+
+* **Home**: Dynamic grid of animal images
+* **Detail Page**: Click any image to view animal info (slug-based routing)
+* **Add/Edit Animals**: Update `public/data.json` (add new objects for each animal; includes `slug`, `imageUrl`, `description`, `tags`)
+* **Assets**: Place images in `public/` or reference external URLs
+
+---
+
+## ✨ Customization & Expansion
+
+* Add new components to `components/`
+* Add new hooks to `hooks/`
+* Modify page layouts and routes in `app/`
+* Expand animal data in `public/data.json`
+* Adjust styling in `styles/` and `tailwind.config.ts`
+
+---
+
+## 💡 Development Tips
+
+* **Component-based**: Build UI as small, reusable components
+* **Type-safe**: Use TypeScript everywhere for safety and autocompletion
+* **SEO**: Update `app/head.tsx` for meta tags, OpenGraph, etc
+* **Accessibility**: Always use descriptive `alt` tags for images
+
+---
+
+## 🛠️ Scripts
+
+```sh
+npm run dev      # Start local dev server
+npm run build    # Build for production
+npm run start    # Start production server
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repo, submit issues, or open pull requests for features and improvements.
+
+---
+
+## 📄 License
+
+MIT
+
+---
+
+## 📣 Credits
+
+Built by [Vito Atmo](https://github.com/vitoatmo).
