@@ -1,5 +1,3 @@
-// components/search-filter.tsx
-
 "use client"
 
 import { useState } from "react"
@@ -11,9 +9,10 @@ import type { FilterState } from "@/lib/types"
 interface SearchFilterProps {
   onFilterChange: (filters: FilterState) => void
   totalItems: number
+  allItemsCount: number
 }
 
-export function SearchFilter({ onFilterChange, totalItems }: SearchFilterProps) {
+export function SearchFilter({ onFilterChange, totalItems, allItemsCount }: SearchFilterProps) {
   const [search, setSearch] = useState("")
   const [selectedTags, setSelectedTags] = useState<string[]>([])
 
@@ -26,13 +25,11 @@ export function SearchFilter({ onFilterChange, totalItems }: SearchFilterProps) 
 
   const handleTagToggle = (tag: string) => {
     let newTags: string[]
-
     if (tag === "all") {
       newTags = []
     } else {
       newTags = selectedTags.includes(tag) ? selectedTags.filter((t) => t !== tag) : [...selectedTags, tag]
     }
-
     setSelectedTags(newTags)
     onFilterChange({ search, selectedTags: newTags })
   }
@@ -45,13 +42,12 @@ export function SearchFilter({ onFilterChange, totalItems }: SearchFilterProps) 
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
             <Input
               type="text"
-              placeholder={`Search ${totalItems} items`}
+              placeholder={`Search ${allItemsCount} items by name or tag`}
               value={search}
               onChange={(e) => handleSearchChange(e.target.value)}
               className="pl-10"
             />
           </div>
-
           <div className="flex flex-wrap gap-2">
             {availableTags.map((tag) => (
               <Button

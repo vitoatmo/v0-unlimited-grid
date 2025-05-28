@@ -1,5 +1,3 @@
-// app/page.tsx
-
 "use client"
 
 import { useState, useEffect, useMemo, useCallback } from "react"
@@ -30,7 +28,7 @@ export default function HomePage() {
     loadImages()
   }, [])
 
-  // Memoized filtered images to prevent unnecessary recalculations
+  // Memoized filtered images
   const filteredImages = useMemo(() => {
     return filterImages(allImages, searchQuery, selectedTag)
   }, [allImages, searchQuery, selectedTag])
@@ -42,7 +40,7 @@ export default function HomePage() {
 
   // Tag change handler
   const handleTagChange = useCallback((tag: string | null) => {
-    setSelectedTag(tag)
+    setSelectedTag(tag === "all" ? null : tag)
   }, [])
 
   if (loading) {
@@ -65,6 +63,7 @@ export default function HomePage() {
         selectedTag={selectedTag}
         onTagChange={handleTagChange}
         totalImages={filteredImages.length}
+        allImagesCount={allImages.length}
       />
     </>
   )

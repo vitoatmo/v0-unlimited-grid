@@ -11,7 +11,7 @@ export async function fetchImages(): Promise<ImageItem[]> {
     slug: item.slug,
     name: item.name,
     tags: item.tags,
-    desc: item.description,  // <- Fix here
+    description: item.description,
     imageUrl: `/images/${item.filename}`,
   }));
 }
@@ -19,20 +19,19 @@ export async function fetchImages(): Promise<ImageItem[]> {
 // Filtering helper (by name, tag, etc.)
 export function filterImages(
   images: ImageItem[],
-  searchQuery: string,
-  selectedTag: string | null
+  search: string = "",
+  selectedTag: string | null = null
 ): ImageItem[] {
-  let filtered = images;
-
-  if (searchQuery) {
-    filtered = filtered.filter((img) =>
-      img.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-  }
-  if (selectedTag) {
-    filtered = filtered.filter((img) =>
-      img.tags.includes(selectedTag)
-    );
-  }
-  return filtered;
+  const searchLower = search.trim().toLowerCase();
+  return images.filter((item) => {
+    // Tag filtering: if no tag, always true. If tag, must include in tags.
+    const matchTag =
+      !selectedTag || item.tags.map(t => t.toLowerCase()).includes(selectedTag.toLowerCase());
+    // Search filtering: match name or any tag contains search string
+    const matchSearch =
+      !searchLower ||
+      item.name.toLowerCase().includes(searchLower) ||
+      item.tags.some((tag) => tag.toLowerCase().includes(searchLower));
+    return matchTag && matchSearch;
+  });
 }

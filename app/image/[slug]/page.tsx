@@ -1,3 +1,5 @@
+// app/image/[slug]/page.tsx
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +10,7 @@ import path from "path";
 import { slugify } from "@/lib/utils";
 
 interface ImagePageProps {
-  params: { slug: string }; // <-- fix type (no Promise here)
+  params: { slug: string };
 }
 
 async function getImageBySlug(slug: string) {
@@ -17,12 +19,11 @@ async function getImageBySlug(slug: string) {
     const fileContents = await fs.readFile(filePath, "utf8");
     const images = JSON.parse(fileContents);
 
+    // Try match by slug, then fallback to slugified name
     let image = images.find((img: any) => img.slug === slug);
+    if (!image) image = images.find((img: any) => slugify(img.name) === slug);
 
-    if (!image) {
-      image = images.find((img: any) => slugify(img.name) === slug);
-    }
-    return image;
+    return image || null;
   } catch (error) {
     console.error("Failed to read image data:", error);
     return null;
@@ -33,9 +34,7 @@ export default async function ImagePage({ params }: ImagePageProps) {
   const { slug } = params;
   const image = await getImageBySlug(slug);
 
-  if (!image) {
-    notFound();
-  }
+  if (!image) return notFound();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -52,8 +51,8 @@ export default async function ImagePage({ params }: ImagePageProps) {
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 p-4 md:p-8">
             <div className="relative aspect-square bg-gray-100 w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0">
               <Image
-                src={`/images/${image.filename}`}
-                alt={image.name}
+                src={`/images/${image.filename ?? "placeholder.svg"}`}
+                alt={image.name ?? "Animal"}
                 fill
                 className="object-contain p-4"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -63,7 +62,7 @@ export default async function ImagePage({ params }: ImagePageProps) {
             <div className="flex flex-col justify-center w-full">
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
-                  {image.tags.map((tag: string) => (
+                  {(image.tags ?? []).map((tag: string) => (
                     <span key={tag} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
                       {tag}
                     </span>
