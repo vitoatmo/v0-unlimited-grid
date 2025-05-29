@@ -1,8 +1,6 @@
-// components/infinite-pannable-grid.tsx
-
 "use client";
 
-import { useState, useRef, useCallback, useEffect, useMemo } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import type { ImageItem, PanPosition } from "@/lib/types";
 import { FloatingGridImage } from "@/components/floating-grid-image";
@@ -14,16 +12,19 @@ interface InfinitePannableGridProps {
 const CELL_SIZE = 220;
 const GRID_COLS = 5;
 const VIEWPORT_BUFFER = 2;
+const DRAG_THRESHOLD = 8; // px before we start panning
 
 export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const [isPanning, setIsPanning] = useState(false);
-  const [startPoint, setStartPoint] = useState<PanPosition>({ x: 0, y: 0 });
   const [panOffset, setPanOffset] = useState<PanPosition>({ x: 0, y: 0 });
+  const [isPanning, setIsPanning] = useState(false);
 
-  // On mount, center the grid in the viewport
+  // For drag/click intent
+  const dragStart = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
+
+  // Center grid on mount
   useEffect(() => {
     if (containerRef.current) {
       const { clientWidth, clientHeight } = containerRef.current;
@@ -44,28 +45,47 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
     return { minRow, maxRow, minCol, maxCol };
   }, [panOffset]);
 
+  // Only start panning if moved > threshold
   const handlePointerDown = useCallback((e: React.PointerEvent) => {
     if (e.pointerType === "mouse" && e.button !== 0) return;
-    setIsPanning(true);
-    setStartPoint({
-      x: e.clientX - panOffset.x,
-      y: e.clientY - panOffset.y,
-    });
-    if (containerRef.current) containerRef.current.setPointerCapture(e.pointerId);
+    dragStart.current = {
+      x: e.clientX,
+      y: e.clientY,
+      panX: panOffset.x,
+      panY: panOffset.y,
+    };
+    setIsPanning(false); // Not panning until moved enough
   }, [panOffset]);
 
   const handlePointerMove = useCallback((e: React.PointerEvent) => {
-    if (!isPanning) return;
-    setPanOffset({
-      x: e.clientX - startPoint.x,
-      y: e.clientY - startPoint.y,
-    });
-  }, [isPanning, startPoint]);
+    if (!dragStart.current) return;
+    const dx = e.clientX - dragStart.current.x;
+    const dy = e.clientY - dragStart.current.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
 
-  const handlePointerUp = useCallback((e: React.PointerEvent) => {
+    if (!isPanning && distance > DRAG_THRESHOLD) {
+      setIsPanning(true);
+    }
+    if (isPanning) {
+      setPanOffset({
+        x: dragStart.current.panX + dx,
+        y: dragStart.current.panY + dy,
+      });
+    }
+  }, [isPanning]);
+
+  const handlePointerUp = useCallback(() => {
+    dragStart.current = null;
     setIsPanning(false);
-    if (containerRef.current) containerRef.current.releasePointerCapture(e.pointerId);
   }, []);
+
+  // The magic: let the image's onClick fire instantly (unless you were panning)
+  const handleImageClick = (slug: string) => {
+    if (!isPanning) {
+      router.push(`/image/${slug}`);
+    }
+    // If was panning, do nothing (don't open detail)
+  };
 
   const renderedCells = useMemo(() => {
     if (images.length === 0) return [];
@@ -85,13 +105,13 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
               marginLeft: -100,
               marginTop: -100,
             }}
-            onClick={() => router.push(`/image/${img.slug}`)}
+            onClick={() => handleImageClick(img.slug)}
           />
         );
       }
     }
     return cells;
-  }, [images, panOffset, getVisibleIndices, router]);
+  }, [images, panOffset, getVisibleIndices, router, isPanning]);
 
   return (
     <div

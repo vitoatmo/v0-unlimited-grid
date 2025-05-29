@@ -62,9 +62,10 @@ export default function ImagePage() {
             </Button>
           </Link>
         </div>
-        <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div className="overflow-hidden">
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 p-4 md:p-8">
-            <div className="relative aspect-square bg-gray-100 w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0">
+            <div className="relative aspect-square w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0">
+            {/* <div className="relative aspect-square bg-gray-100 w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0"> */}
               <Image
                 src={image.imageUrl || "/placeholder.svg"}
                 alt={image.name ?? "Animal"}
