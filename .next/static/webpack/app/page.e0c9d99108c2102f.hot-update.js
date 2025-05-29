@@ -1,3 +1,5 @@
+// .next/static/webpack/app/page.e0c9d99108c2102f.hot-update.js
+
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
  * This devtool is neither made for production nor for readable output files.

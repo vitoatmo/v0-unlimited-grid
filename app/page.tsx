@@ -1,6 +1,9 @@
+// app/page.tsx
+
 "use client"
 
 import { useState, useEffect, useMemo, useCallback } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 import { InfinitePannableGrid } from "@/components/infinite-pannable-grid"
 import { BottomControls } from "@/components/bottom-controls"
 import { fetchImages, filterImages } from "@/lib/image-service"
@@ -8,7 +11,6 @@ import type { ImageItem } from "@/lib/types"
 import { seededShuffle } from "@/lib/seeded-random"
 
 // Utility
-
 function shuffleArray<T>(arr: T[]): T[] {
   return [...arr].sort(() => Math.random() - 0.5)
 }
@@ -23,12 +25,28 @@ function getTodaySeed() {
 }
 
 export default function HomePage() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+
+  // --- Get initial state from URL params
+  const initialSearch = searchParams.get("search") ?? ""
+  const initialTag = searchParams.get("tag") ?? null
+  const initialX = parseInt(searchParams.get("x") ?? "", 10)
+  const initialY = parseInt(searchParams.get("y") ?? "", 10)
+
   const [allImages, setAllImages] = useState<ImageItem[]>([])
-  const [searchQuery, setSearchQuery] = useState("")
-  const [selectedTag, setSelectedTag] = useState<string | null>(null)
+  const [searchQuery, setSearchQuery] = useState(initialSearch)
+  const [selectedTag, setSelectedTag] = useState<string | null>(
+    initialTag && initialTag !== "All" ? initialTag : null
+  )
   const [loading, setLoading] = useState(true)
   const [visibleTags, setVisibleTags] = useState<string[]>([])
   const [isShuffling, setIsShuffling] = useState(false)
+  const [panOffset, setPanOffset] = useState<{ x: number; y: number }>(
+    !isNaN(initialX) && !isNaN(initialY)
+      ? { x: initialX, y: initialY }
+      : { x: 0, y: 0 }
+  )
 
   // Load images and extract unique tags
   useEffect(() => {
@@ -46,6 +64,7 @@ export default function HomePage() {
       }
     }
     loadImages()
+    // eslint-disable-next-line
   }, [])
 
   // Shuffle the tag chips (except "All" always last)
@@ -68,6 +87,18 @@ export default function HomePage() {
     setSearchQuery(query)
   }, [])
 
+  // Update URL params when state changes
+  useEffect(() => {
+    const params = new URLSearchParams()
+    if (searchQuery) params.set("search", searchQuery)
+    if (selectedTag) params.set("tag", selectedTag)
+    if (!isNaN(panOffset.x) && !isNaN(panOffset.y)) {
+      params.set("x", String(Math.round(panOffset.x)))
+      params.set("y", String(Math.round(panOffset.y)))
+    }
+    router.replace(`/?${params.toString()}`, { scroll: false })
+  }, [searchQuery, selectedTag, panOffset, router])
+
   // Filter images by tag/search, then apply seededShuffle
   const filteredImages = useMemo(() => {
     const filtered = filterImages(allImages, searchQuery, selectedTag)
@@ -77,8 +108,8 @@ export default function HomePage() {
 
   // --- Add Debug Log
   useEffect(() => {
-    console.log({ allImages, filteredImages, selectedTag, searchQuery })
-  }, [allImages, filteredImages, selectedTag, searchQuery])
+    console.log({ allImages, filteredImages, selectedTag, searchQuery, panOffset })
+  }, [allImages, filteredImages, selectedTag, searchQuery, panOffset])
 
   if (loading) {
     return (
@@ -93,7 +124,13 @@ export default function HomePage() {
 
   return (
     <>
-      <InfinitePannableGrid images={filteredImages} searchQuery={searchQuery} selectedTag={selectedTag} />
+      <InfinitePannableGrid
+        images={filteredImages}
+        searchQuery={searchQuery}
+        selectedTag={selectedTag}
+        panOffset={panOffset}
+        setPanOffset={setPanOffset}
+      />
       <BottomControls
         searchQuery={searchQuery}
         onSearchChange={handleSearchChange}

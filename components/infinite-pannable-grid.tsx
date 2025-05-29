@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback, useMemo } from "react";
-import { useRouter } from "next/navigation";
+import { useRef, useEffect, useCallback, useMemo } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import type { ImageItem, PanPosition } from "@/lib/types";
 import { FloatingGridImage } from "@/components/floating-grid-image";
 
 interface InfinitePannableGridProps {
   images: ImageItem[];
+  panOffset: PanPosition;
+  setPanOffset: (pos: PanPosition) => void;
 }
 
 const CELL_SIZE = 220;
@@ -14,25 +16,29 @@ const GRID_COLS = 5;
 const VIEWPORT_BUFFER = 2;
 const DRAG_THRESHOLD = 8; // px before we start panning
 
-export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
+export function InfinitePannableGrid({
+  images,
+  panOffset,
+  setPanOffset,
+}: InfinitePannableGridProps) {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const paramString = searchParams?.toString();
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const [panOffset, setPanOffset] = useState<PanPosition>({ x: 0, y: 0 });
-  const [isPanning, setIsPanning] = useState(false);
-
-  // For drag/click intent
+  const isPanningRef = useRef(false);
   const dragStart = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
 
-  // Center grid on mount
+  // Center grid on mount ONLY if panOffset is {0,0}
   useEffect(() => {
-    if (containerRef.current) {
+    if (containerRef.current && panOffset.x === 0 && panOffset.y === 0) {
       const { clientWidth, clientHeight } = containerRef.current;
       setPanOffset({
         x: Math.round(clientWidth / 2),
         y: Math.round(clientHeight / 2),
       });
     }
+    // eslint-disable-next-line
   }, []);
 
   const getVisibleIndices = useCallback(() => {
@@ -54,7 +60,7 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
       panX: panOffset.x,
       panY: panOffset.y,
     };
-    setIsPanning(false); // Not panning until moved enough
+    isPanningRef.current = false; // Not panning until moved enough
   }, [panOffset]);
 
   const handlePointerMove = useCallback((e: React.PointerEvent) => {
@@ -63,28 +69,28 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
     const dy = e.clientY - dragStart.current.y;
     const distance = Math.sqrt(dx * dx + dy * dy);
 
-    if (!isPanning && distance > DRAG_THRESHOLD) {
-      setIsPanning(true);
+    if (!isPanningRef.current && distance > DRAG_THRESHOLD) {
+      isPanningRef.current = true;
     }
-    if (isPanning) {
+    if (isPanningRef.current) {
       setPanOffset({
         x: dragStart.current.panX + dx,
         y: dragStart.current.panY + dy,
       });
     }
-  }, [isPanning]);
+  }, [setPanOffset]);
 
   const handlePointerUp = useCallback(() => {
     dragStart.current = null;
-    setIsPanning(false);
+    isPanningRef.current = false;
   }, []);
 
-  // The magic: let the image's onClick fire instantly (unless you were panning)
+  // Always pass params to detail page
   const handleImageClick = (slug: string) => {
-    if (!isPanning) {
-      router.push(`/image/${slug}`);
-    }
-    // If was panning, do nothing (don't open detail)
+    const href = paramString
+      ? `/image/${slug}?${paramString}`
+      : `/image/${slug}`;
+    router.push(href);
   };
 
   const renderedCells = useMemo(() => {
@@ -111,16 +117,16 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
       }
     }
     return cells;
-  }, [images, panOffset, getVisibleIndices, router, isPanning]);
+  }, [images, panOffset, getVisibleIndices, router, paramString]);
 
   return (
     <div
       ref={containerRef}
-      className={`fixed inset-0 overflow-hidden bg-gray-50 select-none ${isPanning ? "cursor-grabbing" : "cursor-grab"}`}
+      className={`fixed inset-0 overflow-hidden bg-gray-50 select-none`}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
-      style={{ touchAction: "none" }}
+      style={{ touchAction: "none", cursor: isPanningRef.current ? "grabbing" : "grab" }}
     >
       <div
         className="relative"
@@ -128,7 +134,7 @@ export function InfinitePannableGrid({ images }: InfinitePannableGridProps) {
           width: "100vw",
           height: "100vh",
           transform: `translate3d(${panOffset.x}px, ${panOffset.y}px, 0)`,
-          willChange: isPanning ? "transform" : "auto",
+          willChange: isPanningRef.current ? "transform" : "auto",
         }}
       >
         {renderedCells}

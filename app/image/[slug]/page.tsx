@@ -6,11 +6,14 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { slugify } from "@/lib/utils";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 
 export default function ImagePage() {
   const { slug } = useParams();
-  const router = useRouter();
+  const searchParams = useSearchParams();
+  const paramString = searchParams?.toString();
+  const backHref = paramString ? `/?${paramString}` : "/";
+
   const [image, setImage] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -55,7 +58,7 @@ export default function ImagePage() {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
         <div className="mb-4">
-          <Link href="/">
+          <Link href={backHref}>
             <Button variant="outline" size="sm" className="gap-2">
               <ArrowLeft className="w-4 h-4" />
               Back to Gallery
@@ -65,7 +68,6 @@ export default function ImagePage() {
         <div className="overflow-hidden">
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 p-4 md:p-8">
             <div className="relative aspect-square w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0">
-            {/* <div className="relative aspect-square bg-gray-100 w-full max-w-xs mx-auto md:max-w-sm md:mx-0 flex-shrink-0"> */}
               <Image
                 src={image.imageUrl || "/placeholder.svg"}
                 alt={image.name ?? "Animal"}

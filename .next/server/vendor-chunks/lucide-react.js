@@ -1,3 +1,5 @@
+// .next/server/vendor-chunks/lucide-react.js
+
 "use strict";
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
