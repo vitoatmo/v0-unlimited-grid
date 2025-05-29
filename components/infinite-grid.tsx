@@ -3,7 +3,7 @@
 "use client"
 
 import { useState, useEffect, useRef, useCallback, useMemo } from "react"
-import Image from "next/image"
+import { FloatingGridImage } from "@/components/floating-grid-image";
 import type { ImageItem, GridPosition } from "@/lib/types"
 
 interface InfiniteGridProps {
@@ -269,13 +269,16 @@ export function InfiniteGrid({ images, searchQuery, selectedTag }: InfiniteGridP
               top: `${(position.row - gridBounds.minRow) * imageSize}px`,
             }}
           >
-            <Image
-              src={item.imageUrl || "/placeholder.svg"}
+            <FloatingGridImage
+              key={key}
+              src={item.imageUrl}
               alt={item.name}
-              fill
-              className="object-cover"
-              sizes={`${imageSize}px`}
-              priority={Math.abs(position.row) < 3 && Math.abs(position.col) < 3}
+              style={{
+                left: `${(position.col - gridBounds.minCol) * imageSize}px`,
+                top: `${(position.row - gridBounds.minRow) * imageSize}px`,
+                // No need for transform; FloatingGridImage handles margin center
+              }}
+              onClick={() => {/* go to detail, e.g. router.push(`/image/${item.slug}`) */}}
             />
           </div>
         ))}

@@ -5,7 +5,7 @@
 import type React from "react"
 
 import { useState, useRef, useCallback, useEffect } from "react"
-import Image from "next/image"
+import { FloatingGridImage } from "@/components/floating-grid-image";
 import Link from "next/link"
 import type { ImageItem, PanPosition } from "@/lib/types"
 
@@ -161,12 +161,15 @@ export function PannableGrid({ images }: PannableGridProps) {
           <Link key={item.id} href={`/image/${item.slug}`} className="group block" onClick={handleLinkClick}>
             <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 cursor-pointer">
               <div className="aspect-square relative">
-                <Image
-                  src={item.imageUrl || "/placeholder.svg"}
+                <FloatingGridImage
+                  key={item.id}
+                  src={item.imageUrl}
                   alt={item.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-200"
-                  sizes="(max-width: 640px) 33vw, (max-width: 1024px) 25vw, 20vw"
+                  style={{
+                    // Calculate grid position as needed
+                    left: ..., top: ...,
+                  }}
+                  onClick={() => router.push(`/image/${item.slug}`)}
                 />
               </div>
               <div className="p-3">
