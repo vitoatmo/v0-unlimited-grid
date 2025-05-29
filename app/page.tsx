@@ -1,5 +1,3 @@
-// app/page.tsx
-
 "use client"
 
 import { useState, useEffect, useMemo, useCallback } from "react"
@@ -7,8 +5,10 @@ import { InfinitePannableGrid } from "@/components/infinite-pannable-grid"
 import { BottomControls } from "@/components/bottom-controls"
 import { fetchImages, filterImages } from "@/lib/image-service"
 import type { ImageItem } from "@/lib/types"
+import { seededShuffle } from "@/lib/seeded-random"
 
 // Utility
+
 function shuffleArray<T>(arr: T[]): T[] {
   return [...arr].sort(() => Math.random() - 0.5)
 }
@@ -16,6 +16,10 @@ function getUniqueTags(images: ImageItem[]): string[] {
   const tagSet = new Set<string>()
   images.forEach(img => (img.tags || []).forEach(tag => tag && tagSet.add(tag)))
   return Array.from(tagSet)
+}
+function getTodaySeed() {
+  const now = new Date()
+  return `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`
 }
 
 export default function HomePage() {
@@ -64,9 +68,11 @@ export default function HomePage() {
     setSearchQuery(query)
   }, [])
 
-  // Filter images by tag/search
+  // Filter images by tag/search, then apply seededShuffle
   const filteredImages = useMemo(() => {
-    return filterImages(allImages, searchQuery, selectedTag)
+    const filtered = filterImages(allImages, searchQuery, selectedTag)
+    // Shuffle deterministically by today's date
+    return seededShuffle(filtered, getTodaySeed())
   }, [allImages, searchQuery, selectedTag])
 
   // --- Add Debug Log
