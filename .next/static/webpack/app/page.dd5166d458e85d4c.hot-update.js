@@ -1,3 +1,5 @@
+// .next/static/webpack/app/page.dd5166d458e85d4c.hot-update.js
+
 "use strict";
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.

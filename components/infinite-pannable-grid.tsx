@@ -1,3 +1,5 @@
+// components/infinite-pannable-grid.tsx
+
 "use client";
 
 import { useRef, useEffect, useCallback, useMemo } from "react";
