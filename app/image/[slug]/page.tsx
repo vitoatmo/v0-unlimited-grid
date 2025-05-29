@@ -81,14 +81,22 @@ export default function ImagePage() {
             <div className="flex flex-col justify-center w-full">
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
-                  {(image.tags ?? []).map((tag: string) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  {(image.tags ?? []).map((tag: string) => {
+                    // Prepare URL params with tag replaced
+                    const params = new URLSearchParams(searchParams?.toString() || "");
+                    params.set("tag", tag);
+                    const tagHref = `/?${params.toString()}`;
+                    return (
+                      <Link href={tagHref} key={tag}>
+                        <span
+                          className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm cursor-pointer hover:bg-gray-200 transition"
+                          tabIndex={0}
+                        >
+                          {tag}
+                        </span>
+                      </Link>
+                    );
+                  })}
                 </div>
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
                   {image.name}

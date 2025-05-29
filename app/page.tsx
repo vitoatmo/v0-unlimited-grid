@@ -31,9 +31,24 @@ export default function HomePage() {
   // --- Get initial state from URL params
   const initialSearch = searchParams.get("search") ?? ""
   const initialTag = searchParams.get("tag") ?? null
-  const initialX = parseInt(searchParams.get("x") ?? "", 10)
-  const initialY = parseInt(searchParams.get("y") ?? "", 10)
 
+  // Clamp pan offset to within 2x viewport from center
+  function getClampedPanOffset(x: number, y: number) {
+    if (typeof window === "undefined") return { x: 0, y: 0 }
+    const vw = window.innerWidth
+    const vh = window.innerHeight
+    const center = { x: Math.round(vw / 2), y: Math.round(vh / 2) }
+    if (
+      isNaN(x) || isNaN(y) ||
+      Math.abs(x - center.x) > vw * 2 ||
+      Math.abs(y - center.y) > vh * 2
+    ) {
+      return center
+    }
+    return { x, y }
+  }
+
+  // State
   const [allImages, setAllImages] = useState<ImageItem[]>([])
   const [searchQuery, setSearchQuery] = useState(initialSearch)
   const [selectedTag, setSelectedTag] = useState<string | null>(
@@ -42,11 +57,20 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true)
   const [visibleTags, setVisibleTags] = useState<string[]>([])
   const [isShuffling, setIsShuffling] = useState(false)
-  const [panOffset, setPanOffset] = useState<{ x: number; y: number }>(
-    !isNaN(initialX) && !isNaN(initialY)
-      ? { x: initialX, y: initialY }
-      : { x: 0, y: 0 }
-  )
+  const [panOffset, setPanOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 })
+
+  // On mount or when URL changes, clamp panOffset using window size
+  useEffect(() => {
+    function setInitialPan() {
+      const x = parseInt(searchParams.get("x") ?? "", 10)
+      const y = parseInt(searchParams.get("y") ?? "", 10)
+      if (typeof window !== "undefined") {
+        setPanOffset(getClampedPanOffset(x, y))
+      }
+    }
+    setInitialPan()
+    // eslint-disable-next-line
+  }, [searchParams])
 
   // Load images and extract unique tags
   useEffect(() => {
