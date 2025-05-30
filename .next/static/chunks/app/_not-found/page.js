@@ -1,5 +1,3 @@
-// .next/static/chunks/app/_not-found/page.js
-
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
  * This devtool is neither made for production nor for readable output files.

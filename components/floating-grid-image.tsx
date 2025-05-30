@@ -1,6 +1,5 @@
 // components/floating-grid-image.tsx
 
-import Image from "next/image";
 import React from "react";
 
 export function FloatingGridImage({
@@ -32,17 +31,21 @@ export function FloatingGridImage({
         role="button"
         aria-label={alt}
       >
-        <Image
+        <img
           alt={alt}
           src={src}
+          draggable={false}
+          className="h-full w-full object-contain transition-transform group-hover:scale-110 active:scale-95"
+          style={{ color: "transparent" }}
           width={200}
           height={200}
-          draggable={false}
+          onError={e => {
+            if (!e.currentTarget.src.endsWith("/placeholder.svg")) {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = "/placeholder.svg";
+            }
+          }}
           loading="eager"
-          decoding="async"
-          className="h-full w-full transition-transform group-hover:scale-110 active:scale-95"
-          style={{ color: "transparent" }}
-          sizes="200px"
         />
       </div>
     </div>

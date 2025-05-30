@@ -1,5 +1,3 @@
-// .next/server/vendor-chunks/clsx.js
-
 "use strict";
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.

@@ -96,7 +96,7 @@
       "snake",
       "constrictor"
     ],
-    "description": "Huge South American snake that squeezes prey. Anacondas are among the world’s heaviest snakes."
+    "description": "Huge South American snake that squeezes prey. Anacondas are among the world\u2019s heaviest snakes."
   },
   {
     "filename": "angelfish.png",
@@ -371,7 +371,7 @@
       "snake",
       "venomous"
     ],
-    "description": "Africa’s fastest, deadliest snake. Black mambas are long and have potent venom."
+    "description": "Africa\u2019s fastest, deadliest snake. Black mambas are long and have potent venom."
   },
   {
     "filename": "blue-jay.png",
@@ -558,7 +558,7 @@
       "rodent",
       "semi-aquatic"
     ],
-    "description": "The world’s largest rodent. Capybaras love water and live in social groups."
+    "description": "The world\u2019s largest rodent. Capybaras love water and live in social groups."
   },
   {
     "filename": "caracal.png",
@@ -690,7 +690,7 @@
       "songbird",
       "black-cap"
     ],
-    "description": "Small, cheerful bird with a black cap. Chickadees are known for their “chick-a-dee” call."
+    "description": "Small, cheerful bird with a black cap. Chickadees are known for their \u201cchick-a-dee\u201d call."
   },
   {
     "filename": "chicken.png",
@@ -1856,7 +1856,7 @@
       "feline",
       "big cat"
     ],
-    "description": "The “king of the jungle.” Lions live in prides and are powerful hunters."
+    "description": "The \u201cking of the jungle.\u201d Lions live in prides and are powerful hunters."
   },
   {
     "filename": "lizard.png",
@@ -2241,7 +2241,7 @@
       "flightless",
       "fast"
     ],
-    "description": "World’s largest bird, native to Africa. Ostriches run at high speed and lay huge eggs."
+    "description": "World\u2019s largest bird, native to Africa. Ostriches run at high speed and lay huge eggs."
   },
   {
     "filename": "otter.png",
@@ -2362,7 +2362,7 @@
       "swimming",
       "tuxedo"
     ],
-    "description": "Flightless, aquatic bird. Penguins “fly” underwater and live in cold southern regions."
+    "description": "Flightless, aquatic bird. Penguins \u201cfly\u201d underwater and live in cold southern regions."
   },
   {
     "filename": "pig.png",
@@ -3366,5 +3366,2681 @@
       "humped"
     ],
     "description": "Domesticated cattle with a hump on their shoulders. Zebus are hardy and heat-tolerant."
+  },
+  {
+    "filename": "affenpinscher.png",
+    "slug": "affenpinscher",
+    "name": "Affenpinscher",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "spunky"
+    ],
+    "description": "Small, bold, and curious. Lively \u201cmonkey-like\u201d companion with a big personality."
+  },
+  {
+    "filename": "afghan-hound.png",
+    "slug": "afghan-hound",
+    "name": "Afghan Hound",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "elegant"
+    ],
+    "description": "Tall, graceful sighthound. Famous for its flowing coat and independent nature."
+  },
+  {
+    "filename": "airedale-terrier.png",
+    "slug": "airedale-terrier",
+    "name": "Airedale Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "large"
+    ],
+    "description": "The largest terrier. Confident, alert, and playful. Great all-purpose dog."
+  },
+  {
+    "filename": "akita.png",
+    "slug": "akita",
+    "name": "Akita",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "loyal"
+    ],
+    "description": "Powerful, dignified, and loyal. A natural guardian with a calm temperament."
+  },
+  {
+    "filename": "alaskan-malamute.png",
+    "slug": "alaskan-malamute",
+    "name": "Alaskan Malamute",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "sled"
+    ],
+    "description": "Powerful, wolf-like sled dog. Bred for strength, loves cold and outdoor activities."
+  },
+  {
+    "filename": "american-bulldog.png",
+    "slug": "american-bulldog",
+    "name": "American Bulldog",
+    "tags": [
+      "mammal",
+      "dog",
+      "muscular",
+      "loyal"
+    ],
+    "description": "Strong, athletic, and loyal. Great with families but needs good training."
+  },
+  {
+    "filename": "american-cocker-spaniel.png",
+    "slug": "american-cocker-spaniel",
+    "name": "American Cocker Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "friendly"
+    ],
+    "description": "Compact, cheerful, and affectionate. Loves play and grooming."
+  },
+  {
+    "filename": "american-eskimo-dog.png",
+    "slug": "american-eskimo-dog",
+    "name": "American Eskimo Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "fluffy",
+      "alert"
+    ],
+    "description": "Fluffy, intelligent, and alert. Great watchdog and family pet."
+  },
+  {
+    "filename": "american-foxhound.png",
+    "slug": "american-foxhound",
+    "name": "American Foxhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "energetic"
+    ],
+    "description": "Sleek, high-energy hunting dog. Needs space and exercise."
+  },
+  {
+    "filename": "american-hairless-terrier.png",
+    "slug": "american-hairless-terrier",
+    "name": "American Hairless Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "hairless"
+    ],
+    "description": "Small, active, and hairless. Good for allergy-prone owners."
+  },
+  {
+    "filename": "american-pit-bull-terrier.png",
+    "slug": "american-pit-bull-terrier",
+    "name": "American Pit Bull Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "strong",
+      "energetic"
+    ],
+    "description": "Muscular, loyal, and playful. Needs firm, loving training."
+  },
+  {
+    "filename": "american-staffordshire-terrier.png",
+    "slug": "american-staffordshire-terrier",
+    "name": "American Staffordshire Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "strong"
+    ],
+    "description": "Sturdy, confident, and people-oriented. Needs socialization."
+  },
+  {
+    "filename": "american-water-spaniel.png",
+    "slug": "american-water-spaniel",
+    "name": "American Water Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "swimmer"
+    ],
+    "description": "Medium-sized, curly-haired, loves water and retrieving."
+  },
+  {
+    "filename": "anatolian-shepherd-dog.png",
+    "slug": "anatolian-shepherd-dog",
+    "name": "Anatolian Shepherd Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "guardian",
+      "large"
+    ],
+    "description": "Large, powerful livestock guardian. Independent and protective."
+  },
+  {
+    "filename": "appenzeller-sennenhund.png",
+    "slug": "appenzeller-sennenhund",
+    "name": "Appenzeller Sennenhund",
+    "tags": [
+      "mammal",
+      "dog",
+      "Swiss",
+      "working"
+    ],
+    "description": "Swiss herding and farm dog. Energetic, versatile, and loyal."
+  },
+  {
+    "filename": "australian-cattle-dog.png",
+    "slug": "australian-cattle-dog",
+    "name": "Australian Cattle Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "tough"
+    ],
+    "description": "Tough, smart, high-energy herding dog. Needs lots of activity."
+  },
+  {
+    "filename": "australian-shepherd.png",
+    "slug": "australian-shepherd",
+    "name": "Australian Shepherd",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "smart"
+    ],
+    "description": "Highly intelligent, energetic, loves to work and play. Great with families."
+  },
+  {
+    "filename": "australian-terrier.png",
+    "slug": "australian-terrier",
+    "name": "Australian Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "small"
+    ],
+    "description": "Small, sturdy terrier. Brave, alert, and good companion."
+  },
+  {
+    "filename": "austrian-black-and-tan-hound.png",
+    "slug": "austrian-black-and-tan-hound",
+    "name": "Austrian Black and Tan Hound",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "scent"
+    ],
+    "description": "Scent hound bred for hunting. Calm, loyal, and determined."
+  },
+  {
+    "filename": "azawakh.png",
+    "slug": "azawakh",
+    "name": "Azawakh",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "slender"
+    ],
+    "description": "Elegant, slender sighthound. Fast, loyal, and reserved with strangers."
+  },
+  {
+    "filename": "barbet.png",
+    "slug": "barbet",
+    "name": "Barbet",
+    "tags": [
+      "mammal",
+      "dog",
+      "water",
+      "retriever"
+    ],
+    "description": "Curly-coated water dog. Friendly, playful, loves swimming."
+  },
+  {
+    "filename": "basenji.png",
+    "slug": "basenji",
+    "name": "Basenji",
+    "tags": [
+      "mammal",
+      "dog",
+      "barkless",
+      "hunter"
+    ],
+    "description": "Small, smart, \u201cbarkless\u201d dog. Clean and catlike, needs mental stimulation."
+  },
+  {
+    "filename": "basset-fauve-de-bretagne.png",
+    "slug": "basset-fauve-de-bretagne",
+    "name": "Basset Fauve de Bretagne",
+    "tags": [
+      "mammal",
+      "dog",
+      "scent",
+      "short-legged"
+    ],
+    "description": "Scent hound, low and sturdy. Affectionate and lively."
+  },
+  {
+    "filename": "basset-hound.png",
+    "slug": "basset-hound",
+    "name": "Basset Hound",
+    "tags": [
+      "mammal",
+      "dog",
+      "scent",
+      "droopy-ears"
+    ],
+    "description": "Famous for long ears, droopy look, and scent tracking. Easygoing."
+  },
+  {
+    "filename": "bavarian-mountain-scent-hound.png",
+    "slug": "bavarian-mountain-scent-hound",
+    "name": "Bavarian Mountain Scent Hound",
+    "tags": [
+      "mammal",
+      "dog",
+      "scent",
+      "tracker"
+    ],
+    "description": "Medium, focused scent-tracker. Calm, loyal, best with active owners."
+  },
+  {
+    "filename": "beagle.png",
+    "slug": "beagle",
+    "name": "Beagle",
+    "tags": [
+      "mammal",
+      "dog",
+      "scent",
+      "family"
+    ],
+    "description": "Small, friendly, scent hound. Loves food and adventure. Good family pet."
+  },
+  {
+    "filename": "bearded-collie.png",
+    "slug": "bearded-collie",
+    "name": "Bearded Collie",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "shaggy"
+    ],
+    "description": "Shaggy herder, cheerful and energetic. Needs room to run."
+  },
+  {
+    "filename": "beauceron.png",
+    "slug": "beauceron",
+    "name": "Beauceron",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "protector"
+    ],
+    "description": "Large, strong, French herding dog. Brave and loyal."
+  },
+  {
+    "filename": "bedlington-terrier.png",
+    "slug": "bedlington-terrier",
+    "name": "Bedlington Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "lamb-like"
+    ],
+    "description": "Unique lamb look, gentle but can be feisty. Good family dog."
+  },
+  {
+    "filename": "belgian-laekenois.png",
+    "slug": "belgian-laekenois",
+    "name": "Belgian Laekenois",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "Belgian"
+    ],
+    "description": "Rough-coated Belgian herder. Smart, alert, protective."
+  },
+  {
+    "filename": "belgian-malinois.png",
+    "slug": "belgian-malinois",
+    "name": "Belgian Malinois",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "working"
+    ],
+    "description": "Top working dog, often in police/military. Energetic, loyal, highly trainable."
+  },
+  {
+    "filename": "belgian-sheepdog.png",
+    "slug": "belgian-sheepdog",
+    "name": "Belgian Sheepdog",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "intelligent"
+    ],
+    "description": "Elegant, intelligent, and protective Belgian herding dog."
+  },
+  {
+    "filename": "belgian-tervuren.png",
+    "slug": "belgian-tervuren",
+    "name": "Belgian Tervuren",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "energetic"
+    ],
+    "description": "Long-haired, energetic Belgian herder. Needs lots of activity."
+  },
+  {
+    "filename": "bergamasco-sheepdog.png",
+    "slug": "bergamasco-sheepdog",
+    "name": "Bergamasco Sheepdog",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "dreadlocks"
+    ],
+    "description": "Famous for matted \u201cdreadlock\u201d coat. Calm, loyal herder."
+  },
+  {
+    "filename": "berger-picard.png",
+    "slug": "berger-picard",
+    "name": "Berger Picard",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "French"
+    ],
+    "description": "Shaggy French herding dog. Lively and independent."
+  },
+  {
+    "filename": "bernese-mountain-dog.png",
+    "slug": "bernese-mountain-dog",
+    "name": "Bernese Mountain Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "Swiss"
+    ],
+    "description": "Large, tri-colored Swiss mountain dog. Gentle, great family companion."
+  },
+  {
+    "filename": "bichon-frise.png",
+    "slug": "bichon-frise",
+    "name": "Bichon Fris\u00e9",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "fluffy"
+    ],
+    "description": "Small, white, fluffy. Playful, hypoallergenic, good for apartments."
+  },
+  {
+    "filename": "black-and-tan-coonhound.png",
+    "slug": "black-and-tan-coonhound",
+    "name": "Black and Tan Coonhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "scent",
+      "hound"
+    ],
+    "description": "Big, bold scent hound. Loves tracking and outdoor life."
+  },
+  {
+    "filename": "black-russian-terrier.png",
+    "slug": "black-russian-terrier",
+    "name": "Black Russian Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "guardian"
+    ],
+    "description": "Large, powerful guard dog. Brave, loyal, bred for protection."
+  },
+  {
+    "filename": "bloodhound.png",
+    "slug": "bloodhound",
+    "name": "Bloodhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "scent",
+      "tracking"
+    ],
+    "description": "World-class tracking nose. Gentle but stubborn. Needs space."
+  },
+  {
+    "filename": "border-collie.png",
+    "slug": "border-collie",
+    "name": "Border Collie",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "smart"
+    ],
+    "description": "Arguably the smartest breed. High energy, herding, needs lots of stimulation."
+  },
+  {
+    "filename": "border-terrier.png",
+    "slug": "border-terrier",
+    "name": "Border Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "energetic"
+    ],
+    "description": "Small, scruffy, tough terrier. Lively, loves to dig and play."
+  },
+  {
+    "filename": "borzoi.png",
+    "slug": "borzoi",
+    "name": "Borzoi",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "elegant"
+    ],
+    "description": "Russian wolfhound. Graceful, fast, gentle. Can be aloof."
+  },
+  {
+    "filename": "boston-terrier.png",
+    "slug": "boston-terrier",
+    "name": "Boston Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "tuxedo"
+    ],
+    "description": "Small \u201cAmerican Gentleman\u201d dog. Friendly, smart, easygoing."
+  },
+  {
+    "filename": "bouvier-des-flandres.png",
+    "slug": "bouvier-des-flandres",
+    "name": "Bouvier des Flandres",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "robust"
+    ],
+    "description": "Large, rugged, farm dog. Steady, loyal, protective."
+  },
+  {
+    "filename": "boxer.png",
+    "slug": "boxer",
+    "name": "Boxer",
+    "tags": [
+      "mammal",
+      "dog",
+      "muscular",
+      "playful"
+    ],
+    "description": "Muscular, bouncy, clownish dog. Good with kids, high energy."
+  },
+  {
+    "filename": "boykin-spaniel.png",
+    "slug": "boykin-spaniel",
+    "name": "Boykin Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "retriever"
+    ],
+    "description": "Medium, brown spaniel. Friendly, loves water and retrieving."
+  },
+  {
+    "filename": "bracco-italiano.png",
+    "slug": "bracco-italiano",
+    "name": "Bracco Italiano",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "Italian"
+    ],
+    "description": "Sturdy Italian pointer. Calm, loyal, good nose for birds."
+  },
+  {
+    "filename": "briard.png",
+    "slug": "briard",
+    "name": "Briard",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "French"
+    ],
+    "description": "Shaggy, loyal French herder. Protective, independent, smart."
+  },
+  {
+    "filename": "brittany.png",
+    "slug": "brittany",
+    "name": "Brittany",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "energetic"
+    ],
+    "description": "Medium, orange-white bird dog. Energetic, social, loves to hunt."
+  },
+  {
+    "filename": "broholmer.png",
+    "slug": "broholmer",
+    "name": "Broholmer",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "Danish"
+    ],
+    "description": "Large, calm Danish mastiff. Gentle with family, protective."
+  },
+  {
+    "filename": "brussels-griffon.png",
+    "slug": "brussels-griffon",
+    "name": "Brussels Griffon",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "expressive"
+    ],
+    "description": "Tiny, \u201cmonkey face\u201d toy dog. Alert, sensitive, loves attention."
+  },
+  {
+    "filename": "bull-terrier.png",
+    "slug": "bull-terrier",
+    "name": "Bull Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "muscular",
+      "unique-head"
+    ],
+    "description": "Muscular, egg-shaped head. Playful, stubborn, loyal."
+  },
+  {
+    "filename": "bulldog.png",
+    "slug": "bulldog",
+    "name": "Bulldog",
+    "tags": [
+      "mammal",
+      "dog",
+      "stocky",
+      "wrinkled"
+    ],
+    "description": "Broad, wrinkly face. Laid-back, loving, needs gentle care."
+  },
+  {
+    "filename": "bullmastiff.png",
+    "slug": "bullmastiff",
+    "name": "Bullmastiff",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "guardian"
+    ],
+    "description": "Large, strong guard dog. Gentle giant with family, natural protector."
+  },
+  {
+    "filename": "cairn-terrier.png",
+    "slug": "cairn-terrier",
+    "name": "Cairn Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "small"
+    ],
+    "description": "Small, sturdy terrier. Lively, curious, and tough."
+  },
+  {
+    "filename": "canaan-dog.png",
+    "slug": "canaan-dog",
+    "name": "Canaan Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "alert",
+      "watchdog"
+    ],
+    "description": "Ancient, smart, natural watchdog. Wary of strangers, loyal to family."
+  },
+  {
+    "filename": "cane-corso.png",
+    "slug": "cane-corso",
+    "name": "Cane Corso",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "guardian"
+    ],
+    "description": "Powerful Italian mastiff. Protective, loyal, needs strong handling."
+  },
+  {
+    "filename": "cardigan-welsh-corgi.png",
+    "slug": "cardigan-welsh-corgi",
+    "name": "Cardigan Welsh Corgi",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "long-tail"
+    ],
+    "description": "Long-tailed Corgi. Smart, loyal, and energetic herder."
+  },
+  {
+    "filename": "carolina-dog.png",
+    "slug": "carolina-dog",
+    "name": "Carolina Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "primitive",
+      "independent"
+    ],
+    "description": "Primitive, \u201cAmerican Dingo.\u201d Intelligent, reserved, loyal."
+  },
+  {
+    "filename": "catahoula-leopard-dog.png",
+    "slug": "catahoula-leopard-dog",
+    "name": "Catahoula Leopard Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "spotted",
+      "working"
+    ],
+    "description": "Spotted, tough, versatile working dog. Needs challenge and space."
+  },
+  {
+    "filename": "caucasian-shepherd-dog.png",
+    "slug": "caucasian-shepherd-dog",
+    "name": "Caucasian Shepherd Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "guardian"
+    ],
+    "description": "Massive, powerful flock guardian. Protective and independent."
+  },
+  {
+    "filename": "cavalier-king-charles-spaniel.png",
+    "slug": "cavalier-king-charles-spaniel",
+    "name": "Cavalier King Charles Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "friendly"
+    ],
+    "description": "Small, affectionate, elegant lapdog. Gentle and social."
+  },
+  {
+    "filename": "central-asian-shepherd-dog.png",
+    "slug": "central-asian-shepherd-dog",
+    "name": "Central Asian Shepherd Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "guardian",
+      "large"
+    ],
+    "description": "Large, rugged guardian breed. Loyal, calm, needs strong leadership."
+  },
+  {
+    "filename": "cesky-terrier.png",
+    "slug": "cesky-terrier",
+    "name": "Cesky Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "Czech"
+    ],
+    "description": "Rare Czech terrier. Calm, loyal, good for families."
+  },
+  {
+    "filename": "chesapeake-bay-retriever.png",
+    "slug": "chesapeake-bay-retriever",
+    "name": "Chesapeake Bay Retriever",
+    "tags": [
+      "mammal",
+      "dog",
+      "retriever",
+      "swimmer"
+    ],
+    "description": "Strong, rugged water retriever. Loyal, needs exercise."
+  },
+  {
+    "filename": "chihuahua.png",
+    "slug": "chihuahua",
+    "name": "Chihuahua",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "tiny"
+    ],
+    "description": "Tiny but bold. Lively, loyal, can be feisty."
+  },
+  {
+    "filename": "chinese-crested.png",
+    "slug": "chinese-crested",
+    "name": "Chinese Crested",
+    "tags": [
+      "mammal",
+      "dog",
+      "hairless",
+      "toy"
+    ],
+    "description": "Hairless or powderpuff. Affectionate, quirky, playful."
+  },
+  {
+    "filename": "chinese-shar-pei.png",
+    "slug": "chinese-shar-pei",
+    "name": "Chinese Shar-Pei",
+    "tags": [
+      "mammal",
+      "dog",
+      "wrinkled",
+      "guard"
+    ],
+    "description": "Distinct wrinkly skin. Calm, loyal, can be stubborn."
+  },
+  {
+    "filename": "chinook.png",
+    "slug": "chinook",
+    "name": "Chinook",
+    "tags": [
+      "mammal",
+      "dog",
+      "sled",
+      "friendly"
+    ],
+    "description": "Rare sled dog, gentle and friendly. Good with families."
+  },
+  {
+    "filename": "chow-chow.png",
+    "slug": "chow-chow",
+    "name": "Chow Chow",
+    "tags": [
+      "mammal",
+      "dog",
+      "fluffy",
+      "aloof"
+    ],
+    "description": "Lion-like, fluffy. Independent, loyal, often reserved."
+  },
+  {
+    "filename": "cirneco-dell-etna.png",
+    "slug": "cirneco-dell-etna",
+    "name": "Cirneco dell\u2019Etna",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "Italian"
+    ],
+    "description": "Slender Sicilian hound. Agile, alert, low maintenance."
+  },
+  {
+    "filename": "clumber-spaniel.png",
+    "slug": "clumber-spaniel",
+    "name": "Clumber Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "heavy"
+    ],
+    "description": "Large, gentle spaniel. Calm, steady, affectionate."
+  },
+  {
+    "filename": "cockapoo.png",
+    "slug": "cockapoo",
+    "name": "Cockapoo",
+    "tags": [
+      "mammal",
+      "dog",
+      "mix",
+      "companion"
+    ],
+    "description": "Poodle-Cocker mix. Friendly, smart, popular family pet."
+  },
+  {
+    "filename": "cocker-spaniel-english.png",
+    "slug": "cocker-spaniel-english",
+    "name": "Cocker Spaniel (English)",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "playful"
+    ],
+    "description": "Cheerful, affectionate, active. Loves attention and play."
+  },
+  {
+    "filename": "collie.png",
+    "slug": "collie",
+    "name": "Collie",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "family"
+    ],
+    "description": "Graceful, devoted herding dog. Great with kids. Famous for \u201cLassie.\u201d"
+  },
+  {
+    "filename": "coton-de-tulear.png",
+    "slug": "coton-de-tulear",
+    "name": "Coton de Tulear",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "fluffy"
+    ],
+    "description": "Fluffy, happy companion from Madagascar. Affectionate and lively."
+  },
+  {
+    "filename": "curly-coated-retriever.png",
+    "slug": "curly-coated-retriever",
+    "name": "Curly-Coated Retriever",
+    "tags": [
+      "mammal",
+      "dog",
+      "retriever",
+      "curly"
+    ],
+    "description": "Distinct curly coat. Energetic, smart, loves water."
+  },
+  {
+    "filename": "dachshund.png",
+    "slug": "dachshund",
+    "name": "Dachshund",
+    "tags": [
+      "mammal",
+      "dog",
+      "short-legged",
+      "bold"
+    ],
+    "description": "\u201cWiener dog.\u201d Bold, playful, stubborn. Loyal to family."
+  },
+  {
+    "filename": "dalmatian.png",
+    "slug": "dalmatian",
+    "name": "Dalmatian",
+    "tags": [
+      "mammal",
+      "dog",
+      "spotted",
+      "energetic"
+    ],
+    "description": "Iconic spots. Athletic, smart, needs plenty of exercise."
+  },
+  {
+    "filename": "dandie-dinmont-terrier.png",
+    "slug": "dandie-dinmont-terrier",
+    "name": "Dandie Dinmont Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "unique"
+    ],
+    "description": "Long-bodied, rare terrier. Gentle, affectionate, stubborn."
+  },
+  {
+    "filename": "doberman-pinscher.png",
+    "slug": "doberman-pinscher",
+    "name": "Doberman Pinscher",
+    "tags": [
+      "mammal",
+      "dog",
+      "guard",
+      "sleek"
+    ],
+    "description": "Sleek, powerful, alert guard dog. Loyal and protective."
+  },
+  {
+    "filename": "dogo-argentino.png",
+    "slug": "dogo-argentino",
+    "name": "Dogo Argentino",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "hunter"
+    ],
+    "description": "Strong, muscular hunter. Confident, needs experienced owner."
+  },
+  {
+    "filename": "dogue-de-bordeaux.png",
+    "slug": "dogue-de-bordeaux",
+    "name": "Dogue de Bordeaux",
+    "tags": [
+      "mammal",
+      "dog",
+      "mastiff",
+      "French"
+    ],
+    "description": "Massive, wrinkly French mastiff. Gentle but protective."
+  },
+  {
+    "filename": "drentsche-patrijshond.png",
+    "slug": "drentsche-patrijshond",
+    "name": "Drentsche Patrijshond",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "Dutch"
+    ],
+    "description": "Dutch gundog. Energetic, friendly, good with kids."
+  },
+  {
+    "filename": "drever.png",
+    "slug": "drever",
+    "name": "Drever",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "Swedish"
+    ],
+    "description": "Swedish scenthound. Calm, sturdy, good for hunting and home."
+  },
+  {
+    "filename": "dutch-shepherd.png",
+    "slug": "dutch-shepherd",
+    "name": "Dutch Shepherd",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "smart"
+    ],
+    "description": "Smart, athletic, versatile herding dog. Needs mental and physical stimulation."
+  },
+  {
+    "filename": "english-bulldog.png",
+    "slug": "english-bulldog",
+    "name": "English Bulldog",
+    "tags": [
+      "mammal",
+      "dog",
+      "stocky",
+      "wrinkled"
+    ],
+    "description": "Sturdy, wrinkled, friendly. Laid-back and good with families."
+  },
+  {
+    "filename": "english-cocker-spaniel.png",
+    "slug": "english-cocker-spaniel",
+    "name": "English Cocker Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "cheerful"
+    ],
+    "description": "Happy, lively, affectionate spaniel. Loves to play and explore."
+  },
+  {
+    "filename": "english-foxhound.png",
+    "slug": "english-foxhound",
+    "name": "English Foxhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "hunter"
+    ],
+    "description": "Traditional fox hunter. Athletic, energetic, needs exercise."
+  },
+  {
+    "filename": "english-setter.png",
+    "slug": "english-setter",
+    "name": "English Setter",
+    "tags": [
+      "mammal",
+      "dog",
+      "setter",
+      "elegant"
+    ],
+    "description": "Elegant bird dog. Gentle, friendly, good with kids."
+  },
+  {
+    "filename": "english-shepherd.png",
+    "slug": "english-shepherd",
+    "name": "English Shepherd",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "smart"
+    ],
+    "description": "Versatile, intelligent herder. Loyal and adaptable."
+  },
+  {
+    "filename": "english-springer-spaniel.png",
+    "slug": "english-springer-spaniel",
+    "name": "English Springer Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "active"
+    ],
+    "description": "Energetic, friendly, classic spaniel. Loves outdoor play and water."
+  },
+  {
+    "filename": "english-toy-spaniel.png",
+    "slug": "english-toy-spaniel",
+    "name": "English Toy Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "companion"
+    ],
+    "description": "Small, loving lapdog. Affectionate, gentle, ideal companion."
+  },
+  {
+    "filename": "entlebucher-mountain-dog.png",
+    "slug": "entlebucher-mountain-dog",
+    "name": "Entlebucher Mountain Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "Swiss",
+      "herder"
+    ],
+    "description": "Swiss herder. Medium size, active, loyal, and versatile."
+  },
+  {
+    "filename": "estrela-mountain-dog.png",
+    "slug": "estrela-mountain-dog",
+    "name": "Estrela Mountain Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "guardian",
+      "large"
+    ],
+    "description": "Big, tough livestock guardian. Protective and devoted."
+  },
+  {
+    "filename": "field-spaniel.png",
+    "slug": "field-spaniel",
+    "name": "Field Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "smart"
+    ],
+    "description": "Medium spaniel. Gentle, intelligent, calm. Loves family life."
+  },
+  {
+    "filename": "finnish-lapphund.png",
+    "slug": "finnish-lapphund",
+    "name": "Finnish Lapphund",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "herder"
+    ],
+    "description": "Friendly, fluffy herder from Finland. Loves cold and family."
+  },
+  {
+    "filename": "finnish-spitz.png",
+    "slug": "finnish-spitz",
+    "name": "Finnish Spitz",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "foxlike"
+    ],
+    "description": "Fox-like, lively, known for \u201cbarking bird dog.\u201d Active and playful."
+  },
+  {
+    "filename": "flat-coated-retriever.png",
+    "slug": "flat-coated-retriever",
+    "name": "Flat-Coated Retriever",
+    "tags": [
+      "mammal",
+      "dog",
+      "retriever",
+      "friendly"
+    ],
+    "description": "Cheerful, energetic retriever. Loves people, needs lots of activity."
+  },
+  {
+    "filename": "french-bulldog.png",
+    "slug": "french-bulldog",
+    "name": "French Bulldog",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "playful"
+    ],
+    "description": "Compact, bat-eared, playful companion. Adapts well to city life."
+  },
+  {
+    "filename": "german-longhaired-pointer.png",
+    "slug": "german-longhaired-pointer",
+    "name": "German Longhaired Pointer",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "versatile"
+    ],
+    "description": "Elegant, all-purpose German hunting dog. Loyal and adaptable."
+  },
+  {
+    "filename": "german-pinscher.png",
+    "slug": "german-pinscher",
+    "name": "German Pinscher",
+    "tags": [
+      "mammal",
+      "dog",
+      "smart",
+      "medium"
+    ],
+    "description": "Medium, athletic, alert watchdog. Confident and loyal."
+  },
+  {
+    "filename": "german-shepherd-dog.png",
+    "slug": "german-shepherd-dog",
+    "name": "German Shepherd Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "working",
+      "intelligent"
+    ],
+    "description": "Highly trainable, loyal, protective. Top police/military dog."
+  },
+  {
+    "filename": "german-shorthaired-pointer.png",
+    "slug": "german-shorthaired-pointer",
+    "name": "German Shorthaired Pointer",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "active"
+    ],
+    "description": "Versatile, energetic hunting dog. Needs lots of exercise."
+  },
+  {
+    "filename": "german-spitz.png",
+    "slug": "german-spitz",
+    "name": "German Spitz",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "fluffy"
+    ],
+    "description": "Fluffy, alert, lively. Good companion, loyal watchdog."
+  },
+  {
+    "filename": "german-wirehaired-pointer.png",
+    "slug": "german-wirehaired-pointer",
+    "name": "German Wirehaired Pointer",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "rugged"
+    ],
+    "description": "Rugged, hardworking, energetic pointer. Needs activity."
+  },
+  {
+    "filename": "giant-schnauzer.png",
+    "slug": "giant-schnauzer",
+    "name": "Giant Schnauzer",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "working"
+    ],
+    "description": "Largest schnauzer. Protective, smart, loyal. Needs strong leadership."
+  },
+  {
+    "filename": "glen-of-imaal-terrier.png",
+    "slug": "glen-of-imaal-terrier",
+    "name": "Glen of Imaal Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "Irish"
+    ],
+    "description": "Rare Irish terrier. Tough, low to ground, gentle with family."
+  },
+  {
+    "filename": "golden-retriever.png",
+    "slug": "golden-retriever",
+    "name": "Golden Retriever",
+    "tags": [
+      "mammal",
+      "dog",
+      "retriever",
+      "friendly"
+    ],
+    "description": "Famous for friendly, gentle nature. Great with kids, eager to please."
+  },
+  {
+    "filename": "gordon-setter.png",
+    "slug": "gordon-setter",
+    "name": "Gordon Setter",
+    "tags": [
+      "mammal",
+      "dog",
+      "setter",
+      "black-tan"
+    ],
+    "description": "Large, black-and-tan setter. Strong, loyal, loves running."
+  },
+  {
+    "filename": "grand-bleu-de-gascogne.png",
+    "slug": "grand-bleu-de-gascogne",
+    "name": "Grand Bleu de Gascogne",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "French"
+    ],
+    "description": "Large, deep-voiced French scent hound. Steady and brave."
+  },
+  {
+    "filename": "great-dane.png",
+    "slug": "great-dane",
+    "name": "Great Dane",
+    "tags": [
+      "mammal",
+      "dog",
+      "giant",
+      "gentle"
+    ],
+    "description": "\u201cGentle giant.\u201d Very large, friendly, and patient."
+  },
+  {
+    "filename": "great-pyrenees.png",
+    "slug": "great-pyrenees",
+    "name": "Great Pyrenees",
+    "tags": [
+      "mammal",
+      "dog",
+      "guardian",
+      "fluffy"
+    ],
+    "description": "Large, white, fluffy guardian. Calm, protective, loves outdoors."
+  },
+  {
+    "filename": "greater-swiss-mountain-dog.png",
+    "slug": "greater-swiss-mountain-dog",
+    "name": "Greater Swiss Mountain Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "Swiss",
+      "large"
+    ],
+    "description": "Large, tri-colored Swiss dog. Strong, versatile, loves work."
+  },
+  {
+    "filename": "greyhound.png",
+    "slug": "greyhound",
+    "name": "Greyhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "fast"
+    ],
+    "description": "Slim, super-fast sprinter. Gentle, calm, low-maintenance indoors."
+  },
+  {
+    "filename": "hamiltonstovare.png",
+    "slug": "hamiltonstovare",
+    "name": "Hamiltonstovare",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "Swedish"
+    ],
+    "description": "Swedish hound. Sturdy, energetic, loves the outdoors."
+  },
+  {
+    "filename": "harrier.png",
+    "slug": "harrier",
+    "name": "Harrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "energetic"
+    ],
+    "description": "Medium hound, strong nose, friendly, needs exercise."
+  },
+  {
+    "filename": "havanese.png",
+    "slug": "havanese",
+    "name": "Havanese",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "companion"
+    ],
+    "description": "Small, silky companion. Social, playful, good for families."
+  },
+  {
+    "filename": "irish-setter.png",
+    "slug": "irish-setter",
+    "name": "Irish Setter",
+    "tags": [
+      "mammal",
+      "dog",
+      "setter",
+      "red"
+    ],
+    "description": "Striking red coat. Energetic, loves running, affectionate."
+  },
+  {
+    "filename": "irish-terrier.png",
+    "slug": "irish-terrier",
+    "name": "Irish Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "bold"
+    ],
+    "description": "Fiery, loyal terrier. Fearless and affectionate."
+  },
+  {
+    "filename": "irish-water-spaniel.png",
+    "slug": "irish-water-spaniel",
+    "name": "Irish Water Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "curly"
+    ],
+    "description": "Curly-coated, water-loving spaniel. Playful, smart, energetic."
+  },
+  {
+    "filename": "irish-wolfhound.png",
+    "slug": "irish-wolfhound",
+    "name": "Irish Wolfhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "giant",
+      "gentle"
+    ],
+    "description": "Tallest dog breed. Calm, loyal, gentle with family."
+  },
+  {
+    "filename": "italian-greyhound.png",
+    "slug": "italian-greyhound",
+    "name": "Italian Greyhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "small"
+    ],
+    "description": "Petite, elegant, fast. Affectionate and sensitive."
+  },
+  {
+    "filename": "jack-russell-terrier.png",
+    "slug": "jack-russell-terrier",
+    "name": "Jack Russell Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "lively"
+    ],
+    "description": "Small, bold, lively terrier. Tireless and loves to dig."
+  },
+  {
+    "filename": "japanese-chin.png",
+    "slug": "japanese-chin",
+    "name": "Japanese Chin",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "catlike"
+    ],
+    "description": "Small, elegant, catlike toy dog. Quiet, affectionate, refined."
+  },
+  {
+    "filename": "japanese-spitz.png",
+    "slug": "japanese-spitz",
+    "name": "Japanese Spitz",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "fluffy"
+    ],
+    "description": "Small, white, fluffy. Cheerful, social, adaptable."
+  },
+  {
+    "filename": "keeshond.png",
+    "slug": "keeshond",
+    "name": "Keeshond",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "companion"
+    ],
+    "description": "Fluffy, alert, social. Great watchdog and family pet."
+  },
+  {
+    "filename": "kerry-blue-terrier.png",
+    "slug": "kerry-blue-terrier",
+    "name": "Kerry Blue Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "blue"
+    ],
+    "description": "Blue-grey coat, lively, loyal, and strong-willed."
+  },
+  {
+    "filename": "king-charles-spaniel.png",
+    "slug": "king-charles-spaniel",
+    "name": "King Charles Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "companion"
+    ],
+    "description": "Gentle, affectionate, small lapdog. Loves attention."
+  },
+  {
+    "filename": "kishu-ken.png",
+    "slug": "kishu-ken",
+    "name": "Kishu Ken",
+    "tags": [
+      "mammal",
+      "dog",
+      "Japanese",
+      "hunter"
+    ],
+    "description": "Ancient Japanese hunter. Reserved, loyal, independent."
+  },
+  {
+    "filename": "komondor.png",
+    "slug": "komondor",
+    "name": "Komondor",
+    "tags": [
+      "mammal",
+      "dog",
+      "mop-coat",
+      "guardian"
+    ],
+    "description": "Large, mop-like corded coat. Natural livestock guardian, calm."
+  },
+  {
+    "filename": "kromfohrlander.png",
+    "slug": "kromfohrlander",
+    "name": "Kromfohrl\u00e4nder",
+    "tags": [
+      "mammal",
+      "dog",
+      "rare",
+      "companion"
+    ],
+    "description": "Rare German companion dog. Friendly, adaptable, active."
+  },
+  {
+    "filename": "kuvasz.png",
+    "slug": "kuvasz",
+    "name": "Kuvasz",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "guardian"
+    ],
+    "description": "Powerful Hungarian guardian. Loyal, smart, independent."
+  },
+  {
+    "filename": "labrador-retriever.png",
+    "slug": "labrador-retriever",
+    "name": "Labrador Retriever",
+    "tags": [
+      "mammal",
+      "dog",
+      "retriever",
+      "friendly"
+    ],
+    "description": "Most popular breed. Friendly, outgoing, loves to retrieve and swim."
+  },
+  {
+    "filename": "lagotto-romagnolo.png",
+    "slug": "lagotto-romagnolo",
+    "name": "Lagotto Romagnolo",
+    "tags": [
+      "mammal",
+      "dog",
+      "curly",
+      "truffle"
+    ],
+    "description": "Curly-haired, truffle hunter. Smart, active, affectionate."
+  },
+  {
+    "filename": "lakeland-terrier.png",
+    "slug": "lakeland-terrier",
+    "name": "Lakeland Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "lively"
+    ],
+    "description": "Small, lively, confident terrier. Needs activity."
+  },
+  {
+    "filename": "lancashire-heeler.png",
+    "slug": "lancashire-heeler",
+    "name": "Lancashire Heeler",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "herder"
+    ],
+    "description": "Small, energetic cattle dog. Alert, spirited, loyal."
+  },
+  {
+    "filename": "leonberger.png",
+    "slug": "leonberger",
+    "name": "Leonberger",
+    "tags": [
+      "mammal",
+      "dog",
+      "giant",
+      "gentle"
+    ],
+    "description": "Massive, gentle, friendly. Good with kids, likes swimming."
+  },
+  {
+    "filename": "lhasa-apso.png",
+    "slug": "lhasa-apso",
+    "name": "Lhasa Apso",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "long-haired"
+    ],
+    "description": "Small, long-haired watchdog. Loyal, independent, protective."
+  },
+  {
+    "filename": "lowchen.png",
+    "slug": "lowchen",
+    "name": "L\u00f6wchen",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "companion"
+    ],
+    "description": "\u201cLittle Lion Dog.\u201d Rare, lively, affectionate."
+  },
+  {
+    "filename": "maltese.png",
+    "slug": "maltese",
+    "name": "Maltese",
+    "tags": [
+      "mammal",
+      "dog",
+      "tiny",
+      "companion"
+    ],
+    "description": "Tiny, white, silky coat. Playful, affectionate, good for apartments."
+  },
+  {
+    "filename": "manchester-terrier.png",
+    "slug": "manchester-terrier",
+    "name": "Manchester Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "sleek"
+    ],
+    "description": "Sleek, agile, lively terrier. Confident and smart."
+  },
+  {
+    "filename": "maremma-sheepdog.png",
+    "slug": "maremma-sheepdog",
+    "name": "Maremma Sheepdog",
+    "tags": [
+      "mammal",
+      "dog",
+      "guardian",
+      "white"
+    ],
+    "description": "Large, white Italian flock guardian. Calm and loyal."
+  },
+  {
+    "filename": "mastiff.png",
+    "slug": "mastiff",
+    "name": "Mastiff",
+    "tags": [
+      "mammal",
+      "dog",
+      "giant",
+      "guardian"
+    ],
+    "description": "Giant, powerful guard dog. Gentle with family, natural protector."
+  },
+  {
+    "filename": "miniature-american-shepherd.png",
+    "slug": "miniature-american-shepherd",
+    "name": "Miniature American Shepherd",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "small"
+    ],
+    "description": "Small herder, smart, agile, loyal. Great with active families."
+  },
+  {
+    "filename": "miniature-bull-terrier.png",
+    "slug": "miniature-bull-terrier",
+    "name": "Miniature Bull Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "playful"
+    ],
+    "description": "Compact, playful, egg-shaped head. Fun-loving, energetic."
+  },
+  {
+    "filename": "miniature-pinscher.png",
+    "slug": "miniature-pinscher",
+    "name": "Miniature Pinscher",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "energetic"
+    ],
+    "description": "Small, sleek \u201cKing of Toys.\u201d Fearless and lively."
+  },
+  {
+    "filename": "miniature-schnauzer.png",
+    "slug": "miniature-schnauzer",
+    "name": "Miniature Schnauzer",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "smart"
+    ],
+    "description": "Small, smart, friendly, energetic. Distinct beard and eyebrows."
+  },
+  {
+    "filename": "neapolitan-mastiff.png",
+    "slug": "neapolitan-mastiff",
+    "name": "Neapolitan Mastiff",
+    "tags": [
+      "mammal",
+      "dog",
+      "giant",
+      "wrinkled"
+    ],
+    "description": "Giant, wrinkly, intimidating. Protective, calm with family."
+  },
+  {
+    "filename": "newfoundland.png",
+    "slug": "newfoundland",
+    "name": "Newfoundland",
+    "tags": [
+      "mammal",
+      "dog",
+      "giant",
+      "swimmer"
+    ],
+    "description": "Massive, gentle water dog. Loves kids, strong swimmer."
+  },
+  {
+    "filename": "norfolk-terrier.png",
+    "slug": "norfolk-terrier",
+    "name": "Norfolk Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "small"
+    ],
+    "description": "Small, bold, friendly terrier. Loves adventure."
+  },
+  {
+    "filename": "norrbottenspets.png",
+    "slug": "norrbottenspets",
+    "name": "Norrbottenspets",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "Swedish"
+    ],
+    "description": "Rare Swedish spitz. Alert, active, good hunter."
+  },
+  {
+    "filename": "norwegian-buhund.png",
+    "slug": "norwegian-buhund",
+    "name": "Norwegian Buhund",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "herder"
+    ],
+    "description": "Spitz herder from Norway. Energetic, smart, loyal."
+  },
+  {
+    "filename": "norwegian-elkhound.png",
+    "slug": "norwegian-elkhound",
+    "name": "Norwegian Elkhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "spitz",
+      "hunter"
+    ],
+    "description": "Hardy, grey hunting spitz. Brave, loyal, energetic."
+  },
+  {
+    "filename": "norwegian-lundehund.png",
+    "slug": "norwegian-lundehund",
+    "name": "Norwegian Lundehund",
+    "tags": [
+      "mammal",
+      "dog",
+      "rare",
+      "flexible"
+    ],
+    "description": "Unique, flexible toes. Rare, agile, quirky companion."
+  },
+  {
+    "filename": "norwich-terrier.png",
+    "slug": "norwich-terrier",
+    "name": "Norwich Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "small"
+    ],
+    "description": "Small, scruffy, energetic. Friendly, good with families."
+  },
+  {
+    "filename": "nova-scotia-duck-tolling-retriever.png",
+    "slug": "nova-scotia-duck-tolling-retriever",
+    "name": "Nova Scotia Duck Tolling Retriever",
+    "tags": [
+      "mammal",
+      "dog",
+      "retriever",
+      "active"
+    ],
+    "description": "Medium, energetic, loves water and retrieving. Fun family dog."
+  },
+  {
+    "filename": "old-english-sheepdog.png",
+    "slug": "old-english-sheepdog",
+    "name": "Old English Sheepdog",
+    "tags": [
+      "mammal",
+      "dog",
+      "shaggy",
+      "herder"
+    ],
+    "description": "Large, shaggy, playful herder. Gentle and affectionate."
+  },
+  {
+    "filename": "otterhound.png",
+    "slug": "otterhound",
+    "name": "Otterhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "swimmer"
+    ],
+    "description": "Large, shaggy, water-loving scent hound. Cheerful, independent."
+  },
+  {
+    "filename": "papillon.png",
+    "slug": "papillon",
+    "name": "Papillon",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "butterfly-ears"
+    ],
+    "description": "Tiny, lively, butterfly-eared companion. Smart and alert."
+  },
+  {
+    "filename": "pekingese.png",
+    "slug": "pekingese",
+    "name": "Pekingese",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "fluffy"
+    ],
+    "description": "Regal, fluffy toy dog. Loyal, independent, can be stubborn."
+  },
+  {
+    "filename": "pembroke-welsh-corgi.png",
+    "slug": "pembroke-welsh-corgi",
+    "name": "Pembroke Welsh Corgi",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "tailless"
+    ],
+    "description": "Short, tailless Corgi. Energetic, smart, good family dog."
+  },
+  {
+    "filename": "perro-de-presa-canario.png",
+    "slug": "perro-de-presa-canario",
+    "name": "Perro de Presa Canario",
+    "tags": [
+      "mammal",
+      "dog",
+      "mastiff",
+      "guardian"
+    ],
+    "description": "Large, muscular, natural guardian. Needs experienced handler."
+  },
+  {
+    "filename": "petit-basset-griffon-vendeen.png",
+    "slug": "petit-basset-griffon-vendeen",
+    "name": "Petit Basset Griffon Vend\u00e9en",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "small"
+    ],
+    "description": "Short, shaggy French scent hound. Happy, curious, lively."
+  },
+  {
+    "filename": "pharaoh-hound.png",
+    "slug": "pharaoh-hound",
+    "name": "Pharaoh Hound",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "elegant"
+    ],
+    "description": "Sleek, elegant, ancient sighthound. Friendly and graceful."
+  },
+  {
+    "filename": "plott.png",
+    "slug": "plott",
+    "name": "Plott",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "hunter"
+    ],
+    "description": "Rugged American hound. Tough, brave, loves hunting."
+  },
+  {
+    "filename": "pointer.png",
+    "slug": "pointer",
+    "name": "Pointer",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "athletic"
+    ],
+    "description": "Lean, powerful bird dog. Energetic, loyal, needs exercise."
+  },
+  {
+    "filename": "polish-lowland-sheepdog.png",
+    "slug": "polish-lowland-sheepdog",
+    "name": "Polish Lowland Sheepdog",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "shaggy"
+    ],
+    "description": "Medium, shaggy, hard-working herder. Loyal and lively."
+  },
+  {
+    "filename": "pomeranian.png",
+    "slug": "pomeranian",
+    "name": "Pomeranian",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "fluffy"
+    ],
+    "description": "Tiny, fluffy, fox-like. Bold, lively, needs regular grooming."
+  },
+  {
+    "filename": "poodle-miniature.png",
+    "slug": "poodle-miniature",
+    "name": "Poodle (Miniature)",
+    "tags": [
+      "mammal",
+      "dog",
+      "poodle",
+      "smart"
+    ],
+    "description": "Smart, athletic, hypoallergenic. Medium size, easy to train."
+  },
+  {
+    "filename": "poodle-standard.png",
+    "slug": "poodle-standard",
+    "name": "Poodle (Standard)",
+    "tags": [
+      "mammal",
+      "dog",
+      "poodle",
+      "large"
+    ],
+    "description": "Large, elegant, very smart, versatile. Great swimmer and performer."
+  },
+  {
+    "filename": "poodle-toy.png",
+    "slug": "poodle-toy",
+    "name": "Poodle (Toy)",
+    "tags": [
+      "mammal",
+      "dog",
+      "poodle",
+      "tiny"
+    ],
+    "description": "Smallest poodle, playful, smart, good for apartments."
+  },
+  {
+    "filename": "portuguese-water-dog.png",
+    "slug": "portuguese-water-dog",
+    "name": "Portuguese Water Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "curly",
+      "swimmer"
+    ],
+    "description": "Curly, strong swimmer. Smart, loyal, active, loves water."
+  },
+  {
+    "filename": "presa-canario.png",
+    "slug": "presa-canario",
+    "name": "Pres\u0103 Canario",
+    "tags": [
+      "mammal",
+      "dog",
+      "mastiff",
+      "guardian"
+    ],
+    "description": "Large, powerful mastiff. Protective, needs firm owner."
+  },
+  {
+    "filename": "pug.png",
+    "slug": "pug",
+    "name": "Pug",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "wrinkled"
+    ],
+    "description": "Comical, wrinkly face. Small, friendly, loves people."
+  },
+  {
+    "filename": "puli.png",
+    "slug": "puli",
+    "name": "Puli",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "corded-coat"
+    ],
+    "description": "Small, mop-like cords. Agile, energetic herder."
+  },
+  {
+    "filename": "pumi.png",
+    "slug": "pumi",
+    "name": "Pumi",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "curly"
+    ],
+    "description": "Small, curly Hungarian herder. Lively, smart, vocal."
+  },
+  {
+    "filename": "pyrenean-shepherd.png",
+    "slug": "pyrenean-shepherd",
+    "name": "Pyrenean Shepherd",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "small"
+    ],
+    "description": "Energetic, small French herder. Fast and smart."
+  },
+  {
+    "filename": "rat-terrier.png",
+    "slug": "rat-terrier",
+    "name": "Rat Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "lively"
+    ],
+    "description": "Small, tough, energetic. Great vermin hunter."
+  },
+  {
+    "filename": "redbone-coonhound.png",
+    "slug": "redbone-coonhound",
+    "name": "Redbone Coonhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "red"
+    ],
+    "description": "Sleek, red-coated hound. Energetic, loves tracking."
+  },
+  {
+    "filename": "rhodesian-ridgeback.png",
+    "slug": "rhodesian-ridgeback",
+    "name": "Rhodesian Ridgeback",
+    "tags": [
+      "mammal",
+      "dog",
+      "large",
+      "hunter"
+    ],
+    "description": "Large, athletic, distinctive ridge. Confident, loyal, needs exercise."
+  },
+  {
+    "filename": "rottweiler.png",
+    "slug": "rottweiler",
+    "name": "Rottweiler",
+    "tags": [
+      "mammal",
+      "dog",
+      "guardian",
+      "strong"
+    ],
+    "description": "Powerful, confident guardian. Loyal, needs experienced owner."
+  },
+  {
+    "filename": "saint-bernard.png",
+    "slug": "saint-bernard",
+    "name": "Saint Bernard",
+    "tags": [
+      "mammal",
+      "dog",
+      "giant",
+      "gentle"
+    ],
+    "description": "Giant, gentle Swiss rescue dog. Calm, affectionate, needs space."
+  },
+  {
+    "filename": "saluki.png",
+    "slug": "saluki",
+    "name": "Saluki",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "elegant"
+    ],
+    "description": "Graceful, ancient sighthound. Fast, gentle, reserved."
+  },
+  {
+    "filename": "samoyed.png",
+    "slug": "samoyed",
+    "name": "Samoyed",
+    "tags": [
+      "mammal",
+      "dog",
+      "fluffy",
+      "white"
+    ],
+    "description": "Large, white, fluffy dog. Friendly, great for cold climates."
+  },
+  {
+    "filename": "schipperke.png",
+    "slug": "schipperke",
+    "name": "Schipperke",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "spitz"
+    ],
+    "description": "Small, foxlike, alert. Fearless, energetic watchdog."
+  },
+  {
+    "filename": "scottish-deerhound.png",
+    "slug": "scottish-deerhound",
+    "name": "Scottish Deerhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "giant"
+    ],
+    "description": "Tall, wiry-coated sighthound. Gentle, needs space."
+  },
+  {
+    "filename": "scottish-terrier.png",
+    "slug": "scottish-terrier",
+    "name": "Scottish Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "small"
+    ],
+    "description": "Distinctive bearded look. Bold, loyal, independent."
+  },
+  {
+    "filename": "sealyham-terrier.png",
+    "slug": "sealyham-terrier",
+    "name": "Sealyham Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "white"
+    ],
+    "description": "Small, white, rare terrier. Playful, affectionate, needs socializing."
+  },
+  {
+    "filename": "shetland-sheepdog.png",
+    "slug": "shetland-sheepdog",
+    "name": "Shetland Sheepdog",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "fluffy"
+    ],
+    "description": "Small, smart, fluffy herder. Loyal and eager to please."
+  },
+  {
+    "filename": "shiba-inu.png",
+    "slug": "shiba-inu",
+    "name": "Shiba Inu",
+    "tags": [
+      "mammal",
+      "dog",
+      "Japanese",
+      "foxlike"
+    ],
+    "description": "Small, foxlike, independent. Spirited and clean."
+  },
+  {
+    "filename": "shih-tzu.png",
+    "slug": "shih-tzu",
+    "name": "Shih Tzu",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "long-haired"
+    ],
+    "description": "Toy breed, long hair. Affectionate, charming, needs grooming."
+  },
+  {
+    "filename": "siberian-husky.png",
+    "slug": "siberian-husky",
+    "name": "Siberian Husky",
+    "tags": [
+      "mammal",
+      "dog",
+      "sled",
+      "energetic"
+    ],
+    "description": "Athletic, high-energy sled dog. Friendly, mischievous, loves cold."
+  },
+  {
+    "filename": "silky-terrier.png",
+    "slug": "silky-terrier",
+    "name": "Silky Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "silky"
+    ],
+    "description": "Small, silky-haired terrier. Lively and confident."
+  },
+  {
+    "filename": "skye-terrier.png",
+    "slug": "skye-terrier",
+    "name": "Skye Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "long"
+    ],
+    "description": "Long-bodied, flowing coat. Loyal, dignified, can be reserved."
+  },
+  {
+    "filename": "sloughi.png",
+    "slug": "sloughi",
+    "name": "Sloughi",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "North-African"
+    ],
+    "description": "Sleek, sensitive North African sighthound. Calm, loyal, needs gentle handling."
+  },
+  {
+    "filename": "small-munsterlander-pointer.png",
+    "slug": "small-munsterlander-pointer",
+    "name": "Small Munsterlander Pointer",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "versatile"
+    ],
+    "description": "Versatile, medium pointer. Social, active, loves hunting and swimming."
+  },
+  {
+    "filename": "smooth-fox-terrier.png",
+    "slug": "smooth-fox-terrier",
+    "name": "Smooth Fox Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "lively"
+    ],
+    "description": "Classic, lively terrier. Bold, energetic, good for active owners."
+  },
+  {
+    "filename": "soft-coated-wheaten-terrier.png",
+    "slug": "soft-coated-wheaten-terrier",
+    "name": "Soft Coated Wheaten Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "soft-coat"
+    ],
+    "description": "Silky, soft-coated terrier. Happy, lively, friendly."
+  },
+  {
+    "filename": "spanish-water-dog.png",
+    "slug": "spanish-water-dog",
+    "name": "Spanish Water Dog",
+    "tags": [
+      "mammal",
+      "dog",
+      "curly",
+      "swimmer"
+    ],
+    "description": "Curly-coated, strong swimmer. Hardworking and energetic."
+  },
+  {
+    "filename": "spinone-italiano.png",
+    "slug": "spinone-italiano",
+    "name": "Spinone Italiano",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "Italian"
+    ],
+    "description": "Sturdy, wiry-coated Italian pointer. Loyal, calm, affectionate."
+  },
+  {
+    "filename": "staffordshire-bull-terrier.png",
+    "slug": "staffordshire-bull-terrier",
+    "name": "Staffordshire Bull Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "muscular"
+    ],
+    "description": "Muscular, compact terrier. Brave, loyal, loving with family."
+  },
+  {
+    "filename": "standard-schnauzer.png",
+    "slug": "standard-schnauzer",
+    "name": "Standard Schnauzer",
+    "tags": [
+      "mammal",
+      "dog",
+      "schnauzer",
+      "medium"
+    ],
+    "description": "Medium, strong, smart. Good watchdog, loyal companion."
+  },
+  {
+    "filename": "sussex-spaniel.png",
+    "slug": "sussex-spaniel",
+    "name": "Sussex Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "golden"
+    ],
+    "description": "Golden-brown, low spaniel. Calm, affectionate, can be stubborn."
+  },
+  {
+    "filename": "swedish-vallhund.png",
+    "slug": "swedish-vallhund",
+    "name": "Swedish Vallhund",
+    "tags": [
+      "mammal",
+      "dog",
+      "herder",
+      "spitz"
+    ],
+    "description": "Small, spitz herder. Agile, playful, ancient Viking breed."
+  },
+  {
+    "filename": "thai-ridgeback.png",
+    "slug": "thai-ridgeback",
+    "name": "Thai Ridgeback",
+    "tags": [
+      "mammal",
+      "dog",
+      "ridgeback",
+      "athletic"
+    ],
+    "description": "Athletic, smooth-coated, distinctive ridge. Loyal, independent."
+  },
+  {
+    "filename": "tibetan-mastiff.png",
+    "slug": "tibetan-mastiff",
+    "name": "Tibetan Mastiff",
+    "tags": [
+      "mammal",
+      "dog",
+      "guardian",
+      "large"
+    ],
+    "description": "Large, powerful guardian. Independent, protective, needs space."
+  },
+  {
+    "filename": "tibetan-spaniel.png",
+    "slug": "tibetan-spaniel",
+    "name": "Tibetan Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "small",
+      "alert"
+    ],
+    "description": "Small, intelligent, alert. Loyal, catlike companion."
+  },
+  {
+    "filename": "tibetan-terrier.png",
+    "slug": "tibetan-terrier",
+    "name": "Tibetan Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "medium",
+      "shaggy"
+    ],
+    "description": "Shaggy, sturdy, medium dog. Friendly, lively, adaptable."
+  },
+  {
+    "filename": "toy-fox-terrier.png",
+    "slug": "toy-fox-terrier",
+    "name": "Toy Fox Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "lively"
+    ],
+    "description": "Tiny, lively, bold terrier. Great for active families."
+  },
+  {
+    "filename": "treeing-walker-coonhound.png",
+    "slug": "treeing-walker-coonhound",
+    "name": "Treeing Walker Coonhound",
+    "tags": [
+      "mammal",
+      "dog",
+      "hound",
+      "hunter"
+    ],
+    "description": "Fast, determined treeing hound. Loves chasing scents."
+  },
+  {
+    "filename": "vizsla.png",
+    "slug": "vizsla",
+    "name": "Vizsla",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "Hungarian"
+    ],
+    "description": "Sleek, red-coated Hungarian pointer. Energetic, affectionate, needs exercise."
+  },
+  {
+    "filename": "weimaraner.png",
+    "slug": "weimaraner",
+    "name": "Weimaraner",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "gray"
+    ],
+    "description": "Sleek, gray, energetic pointer. Smart, loyal, needs exercise."
+  },
+  {
+    "filename": "welsh-springer-spaniel.png",
+    "slug": "welsh-springer-spaniel",
+    "name": "Welsh Springer Spaniel",
+    "tags": [
+      "mammal",
+      "dog",
+      "spaniel",
+      "red-white"
+    ],
+    "description": "Cheerful, red-and-white spaniel. Energetic, loving, needs activity."
+  },
+  {
+    "filename": "welsh-terrier.png",
+    "slug": "welsh-terrier",
+    "name": "Welsh Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "sturdy"
+    ],
+    "description": "Compact, lively, sturdy terrier. Friendly, adventurous, bold."
+  },
+  {
+    "filename": "west-highland-white-terrier.png",
+    "slug": "west-highland-white-terrier",
+    "name": "West Highland White Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "white"
+    ],
+    "description": "\u201cWestie.\u201d Small, white, spirited, friendly, good with kids."
+  },
+  {
+    "filename": "whippet.png",
+    "slug": "whippet",
+    "name": "Whippet",
+    "tags": [
+      "mammal",
+      "dog",
+      "sighthound",
+      "slim"
+    ],
+    "description": "Slim, fast, gentle. Calm indoors, loves to run outdoors."
+  },
+  {
+    "filename": "wire-fox-terrier.png",
+    "slug": "wire-fox-terrier",
+    "name": "Wire Fox Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "terrier",
+      "wiry"
+    ],
+    "description": "Bold, energetic, wiry-haired. Classic show and hunting terrier."
+  },
+  {
+    "filename": "wirehaired-pointing-griffon.png",
+    "slug": "wirehaired-pointing-griffon",
+    "name": "Wirehaired Pointing Griffon",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "wiry"
+    ],
+    "description": "Medium, wiry pointer. Energetic, smart, needs activity."
+  },
+  {
+    "filename": "wirehaired-vizsla.png",
+    "slug": "wirehaired-vizsla",
+    "name": "Wirehaired Vizsla",
+    "tags": [
+      "mammal",
+      "dog",
+      "pointer",
+      "wiry"
+    ],
+    "description": "Hungarian pointer with wiry coat. Energetic, loving, needs space."
+  },
+  {
+    "filename": "xoloitzcuintli.png",
+    "slug": "xoloitzcuintli",
+    "name": "Xoloitzcuintli",
+    "tags": [
+      "mammal",
+      "dog",
+      "hairless",
+      "ancient"
+    ],
+    "description": "Ancient, hairless Mexican breed. Calm, loyal, good for allergy sufferers."
+  },
+  {
+    "filename": "yorkshire-terrier.png",
+    "slug": "yorkshire-terrier",
+    "name": "Yorkshire Terrier",
+    "tags": [
+      "mammal",
+      "dog",
+      "toy",
+      "silky"
+    ],
+    "description": "Small, silky, feisty terrier. Confident, loves attention, popular city pet."
   }
 ]
