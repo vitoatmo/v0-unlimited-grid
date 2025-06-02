@@ -9,8 +9,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Pannable Image Gallery",
-  description: "Explore images with smooth panning and filtering",
+  title: "Animalls Collection",
+  description: "A vibrant library of 500+ free 3D animal icons, crafted with AI. Download transparent PNGs, explore by habitat or type, and elevate any design. Lifetime access available for just $29!",
     generator: 'v0.dev'
 }
 
