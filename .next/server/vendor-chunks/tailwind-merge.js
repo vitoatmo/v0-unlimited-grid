@@ -1,5 +1,3 @@
-// .next/server/vendor-chunks/tailwind-merge.js
-
 "use strict";
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
